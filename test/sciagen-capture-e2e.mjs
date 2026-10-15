@@ -25,7 +25,9 @@ const RESOURCES = {
 		"<div style=display:none><p>HIDDEN_TEXT_MARKER</p></div>" +
 		"<div id=my-cursor style=position:fixed;pointer-events:none>dot</div>" +
 		"<div class=film data-src=/film.mp4></div><picture><source srcset=/still.webp type=image/webp><img src=/timeline.gif></picture>" +
-		"<model-viewer src=/models/cube.glb></model-viewer><a href=/models/scene.gltf>scene</a></body></html>"],
+		"<model-viewer src=/models/cube.glb></model-viewer><a href=/models/scene.gltf>scene</a>" +
+		// stands in for UI another extension injects into every page
+		"<script>const host = document.createElement('div'); document.body.append(host); host.attachShadow({ mode: 'open' }).innerHTML = '<p>EXT_WIDGET' + '_MARKER</p><img src=chrome-extension://abcdefghijklmnopabcdefghijklmnop/favicon.png>';</script></body></html>"],
 	"/anim.gif": ["image/gif", GIF],
 	"/clip.webm": ["video/webm", Buffer.from("VIDEO_MARKER")],
 	"/film.mp4": ["video/mp4", Buffer.from("FILM_MARKER")],
@@ -89,6 +91,11 @@ try {
 		console.log("saved " + SAVE_URL + " -> " + SAVE_OUTPUT + " (" + Math.round(content.length / 1024) + " KB)");
 		EXPECTED_CHECKS.length = 0;
 	}
+	if (!SAVE_URL) {
+		const ok = !content.includes("EXT_WIDGET_MARKER");
+		failures += ok ? 0 : 1;
+		console.log((ok ? "ok   " : "FAIL ") + "other extensions' UI left out");
+	}
 	for (const [label, expected] of EXPECTED_CHECKS) {
 		const ok = content.includes(expected);
 		failures += ok ? 0 : 1;
@@ -98,22 +105,29 @@ try {
 		}
 	}
 	if (!SAVE_URL) {
-		// toolbar button path: same as clicking the Sciagen icon, which first reloads the tab
-		readdirSync(downloadDir).forEach(filename => rmSync(join(downloadDir, filename)));
+		// toolbar button path: same as clicking the Sciagen icon
+		// the first file stays: deleting it while Chrome saves a same-named one can interrupt that download
+		const previousFilenames = readdirSync(downloadDir);
 		pageRequestCount = 0;
-		await cdp.Target.createTarget({ url: pageURL });
+		const { targetId: pageTargetId } = await cdp.Target.createTarget({ url: pageURL });
+		if (process.env.SF_DEBUG) {
+			const { sessionId: pageSessionId } = await cdp.Target.attachToTarget({ targetId: pageTargetId, flatten: true });
+			cdp.Runtime.addEventListener("consoleAPICalled", ({ params }) => params.sessionId == pageSessionId && console.log("PAGE", params.type, params.args.map(arg => arg.value || arg.description).join(" ")));
+			cdp.Runtime.addEventListener("exceptionThrown", ({ params }) => params.sessionId == pageSessionId && console.log("PAGE EXCEPTION", params.exceptionDetails.exception && params.exceptionDetails.exception.description));
+			await cdp.Runtime.enable(null, pageSessionId);
+		}
 		await waitFor(() => pageRequestCount, "test page opened");
 		const workerTarget = (await getTargets()).find(target => target.type == "service_worker" && target.url.includes(extensionId));
 		const { sessionId: workerSessionId } = await cdp.Target.attachToTarget({ targetId: workerTarget.id, flatten: true });
 		await waitFor(async () => (await cdp.Runtime.evaluate({
-			expression: "chrome.tabs.query({}).then(tabs => tabs.find(tab => tab.url == " + JSON.stringify(pageURL) + " && tab.status == 'complete')).then(tab => tab && (chrome.action.onClicked.dispatch(tab), true))",
+			expression: "chrome.tabs.query({}).then(tabs => tabs.filter(tab => tab.url == " + JSON.stringify(pageURL) + ").sort((tab1, tab2) => tab2.id - tab1.id)[0]).then(tab => tab && tab.status == 'complete' && tab).then(tab => tab && (chrome.action.onClicked.dispatch(tab), true))",
 			awaitPromise: true, returnByValue: true
 		}, workerSessionId)).result.value, "toolbar click dispatched");
 		const toolbarSavedPath = await waitFor(() => {
-			const filename = readdirSync(downloadDir).find(filename => filename.endsWith(".html"));
+			const filename = readdirSync(downloadDir).find(filename => filename.endsWith(".html") && !previousFilenames.includes(filename));
 			return filename && join(downloadDir, filename);
 		}, "page saved from toolbar", 60000);
-		const checks = [["toolbar save reloaded the page first", pageRequestCount >= 2], ["toolbar save embedded the video", readFileSync(toolbarSavedPath, "utf8").includes(EXPECTED["video embedded"])]];
+		const checks = [["toolbar save kept the page as is (no reload)", pageRequestCount == 1], ["toolbar save embedded the video", readFileSync(toolbarSavedPath, "utf8").includes(EXPECTED["video embedded"])]];
 		for (const [label, ok] of checks) {
 			failures += ok ? 0 : 1;
 			console.log((ok ? "ok   " : "FAIL ") + label);
@@ -122,6 +136,9 @@ try {
 } catch (error) {
 	failures++;
 	console.error("FATAL", error);
+	if (process.env.SF_DEBUG) {
+		console.error("downloads:", readdirSync(downloadDir));
+	}
 } finally {
 	chrome.kill();
 	server.close();

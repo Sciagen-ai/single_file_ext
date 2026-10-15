@@ -190,7 +190,6 @@ const DEFAULT_CONFIG = {
 	blockVideos: false,
 	blockAudios: false,
 	delayBeforeProcessing: 0,
-	reloadBeforeSave: true,
 	delayAfterProcessing: 0,
 	_migratedTemplateFormat: true,
 	_migratedDeferredContentOptions: true,

@@ -301,6 +301,8 @@ async function capturePage(message) {
 async function processPage(options) {
 	const restoreFiles = await embedLinkedFiles(options);
 	const restoreCursors = options.removeCustomCursors && markCursorElements();
+	const restoreExtensionElements = markExtensionElements();
+	options.removedElementsSelector = [options.removedElementsSelector, "[" + EXTENSION_ELEMENT_ATTRIBUTE_NAME + "]"].filter(Boolean).join(",");
 	try {
 		const page = await runProcessor(options);
 		if (restoreFiles && page && typeof page.content == "string") {
@@ -318,7 +320,40 @@ async function processPage(options) {
 		if (restoreCursors) {
 			restoreCursors();
 		}
+		restoreExtensionElements();
 	}
+}
+
+// UI injected by other browser extensions (quick search bars, bookmark panels, Grammarly-like buttons...)
+// is recognised by its chrome-extension:// resources and left out of the saved page. A widget living in a
+// shadow root is dropped whole when its host sits directly in <body>/<html>, otherwise only the element itself.
+const EXTENSION_ELEMENT_ATTRIBUTE_NAME = "data-sciagen-extension-ui";
+const EXTENSION_URL_REGEXP = /^\s*(chrome|moz|safari-web)-extension:/i;
+
+function markExtensionElements() {
+	const marked = new Set();
+	const visit = root => root.querySelectorAll("*").forEach(element => {
+		if (Array.from(element.attributes).some(attribute => EXTENSION_URL_REGEXP.test(attribute.value))) {
+			let target = element;
+			let host = element.getRootNode().host;
+			while (host) {
+				target = host;
+				host = host.getRootNode().host;
+			}
+			if (target != element && target.parentElement != document.body && target.parentElement != document.documentElement) {
+				target = element;
+			}
+			marked.add(target);
+		}
+		if (element.shadowRoot) {
+			visit(element.shadowRoot);
+		}
+	});
+	visit(document);
+	// ponytail: removal goes through removedElementsSelector, which only sees the light DOM, so an element
+	// marked deep inside a page's own shadow root is kept
+	marked.forEach(element => element.setAttribute(EXTENSION_ELEMENT_ATTRIBUTE_NAME, ""));
+	return () => marked.forEach(element => element.removeAttribute(EXTENSION_ELEMENT_ATTRIBUTE_NAME));
 }
 
 // Custom cursors: CSS cursor images/cursor:none are reset to the browser defaults, and JS cursor followers

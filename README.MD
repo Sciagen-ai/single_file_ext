@@ -4,7 +4,6 @@ Chrome extension (Manifest V3) that saves a complete web page into one self-cont
 
 Changes from SingleFile:
 
-- Reloads the tab with the cache bypassed before saving, so every resource is fetched fresh (`reloadBeforeSave`, default on).
 - Embeds videos and audio as data URIs (`blockVideos` / `blockAudios` off), so media from external sources is stored in the HTML file itself.
 - Keeps hidden elements (`removeHiddenElements` off), such as collapsed sections, inactive tabs and hidden panels.
 - Embeds 3D files (`.glb .gltf .obj .stl .fbx .usdz .ply .dae .3mf ...`) referenced from attributes, e.g. `<model-viewer src>`, A-Frame assets, or links. When it finds 3D files it keeps the page scripts so viewers still render offline.

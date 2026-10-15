@@ -155,9 +155,6 @@ async function saveTabs(tabs, options = {}) {
 					runTask(taskInfo);
 				}
 			} else {
-				if (tabOptions.reloadBeforeSave && !editor.isEditor(tab)) {
-					await reloadTab(tabId);
-				}
 				ui.onStart(tabId, INJECT_SCRIPTS_STEP);
 				let scriptsInjected;
 				try {
@@ -184,26 +181,6 @@ async function saveTabs(tabs, options = {}) {
 	}));
 	pendingTasks.filter(Boolean).forEach(addTask);
 	runTasks();
-}
-
-// Fresh network hit (cache bypassed) so every resource is downloaded again before capture
-function reloadTab(tabId) {
-	return new Promise(resolve => {
-		const done = () => {
-			globalThis.clearTimeout(timeout);
-			browser.tabs.onUpdated.removeListener(onUpdated);
-			resolve();
-		};
-		const onUpdated = (updatedTabId, changeInfo) => {
-			if (updatedTabId == tabId && changeInfo.status == "complete") {
-				done();
-			}
-		};
-		const timeout = globalThis.setTimeout(done, 60000);
-		browser.tabs.onUpdated.addListener(onUpdated);
-		// never let a failed reload block the save
-		Promise.resolve().then(() => browser.tabs.reload(tabId, { bypassCache: true })).catch(done);
-	});
 }
 
 async function captureTab(tab, options = {}) {

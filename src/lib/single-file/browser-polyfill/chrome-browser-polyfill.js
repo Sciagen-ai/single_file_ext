@@ -262,7 +262,6 @@ if (typeof globalThis == "undefined") {
 			create: createProperties => nativeAPI.tabs.create(createProperties),
 			get: options => nativeAPI.tabs.get(options),
 			remove: tabId => nativeAPI.tabs.remove(tabId),
-			reload: (tabId, reloadProperties) => nativeAPI.tabs.reload(tabId, reloadProperties),
 			update: (tabId, updateProperties) => nativeAPI.tabs.update(tabId, updateProperties)
 		},
 		devtools: {
