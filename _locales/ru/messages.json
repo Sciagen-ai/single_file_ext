@@ -1,0 +1,1520 @@
+{
+	"extensionDescription": {
+		"message": "Сохранение полной страницы в едином HTML-файле",
+		"description": "Description of the extension."
+	},
+	"commandSaveSelectedTabs": {
+		"message": "Сохранить выбранные вкладки или выбранное на них содержимое",
+		"description": "Command (Ctrl+Shift+Y): 'Save the selected tabs or their selected contents'"
+	},
+	"commandSaveAllTabs": {
+		"message": "Сохранить все вкладки",
+		"description": "Command (Ctrl+Shift+U): 'Save all tabs'"
+	},
+	"commandCustomShortcut": {
+		"message": "Пользовательская горячая клавиша",
+		"description": "Command label: 'Custom shortcut'"
+	},
+	"commandCustomShortcut0": {
+		"message": "Пользовательская горячая клавиша №1",
+		"description": "Command label: 'Custom shortcut #1'"
+	},
+	"commandCustomShortcut1": {
+		"message": "Пользовательская горячая клавиша №2",
+		"description": "Command label: 'Custom shortcut #2'"
+	},
+	"commandCustomShortcut2": {
+		"message": "Пользовательская горячая клавиша №3",
+		"description": "Command label: 'Custom shortcut #3'"
+	},
+	"commandCustomShortcut3": {
+		"message": "Пользовательская горячая клавиша №4",
+		"description": "Command label: 'Custom shortcut #4'"
+	},
+	"commandCustomShortcut4": {
+		"message": "Пользовательская горячая клавиша №5",
+		"description": "Command label: 'Custom shortcut #5'"
+	},
+	"commandCustomShortcut5": {
+		"message": "Пользовательская горячая клавиша №6",
+		"description": "Command label: 'Custom shortcut #6'"
+	},
+	"commandCustomShortcut6": {
+		"message": "Пользовательская горячая клавиша №7",
+		"description": "Command label: 'Custom shortcut #7'"
+	},
+	"commandCustomShortcut7": {
+		"message": "Пользовательская горячая клавиша №8",
+		"description": "Command label: 'Custom shortcut #8'"
+	},
+	"commandCustomShortcut8": {
+		"message": "Пользовательская горячая клавиша №9",
+		"description": "Command label: 'Custom shortcut #9'"
+	},
+	"commandCustomShortcut9": {
+		"message": "Пользовательская горячая клавиша №10",
+		"description": "Command label: 'Custom shortcut #10'"
+	},
+	"menuSavePage": {
+		"message": "Сохранить страницу",
+		"description": "Menu entry: 'Save page with Sciagen'"
+	},
+	"menuSaveSelectedLinks": {
+		"message": "Сохранить выбранные ссылки",
+		"description": "Menu entry: 'Save selected links'"
+	},
+	"menuEditPage": {
+		"message": "Аннотировать страницу...",
+		"description": "Menu entry: 'Annotate the page...'"
+	},
+	"menuEditAndSavePage": {
+		"message": "Аннотировать и сохранить страницу...",
+		"description": "Menu entry: 'Annotate and save the page...'"
+	},
+	"menuSaveWithProfile": {
+		"message": "Сохранить с профилем",
+		"description": "Menu entry: 'Save with profile'"
+	},
+	"menuViewPendingSaves": {
+		"message": "Просмотр отложенных сохранений...",
+		"description": "Menu entry: 'View pending saves...'"
+	},
+	"menuSelectProfile": {
+		"message": "Выберите профиль по умолчанию",
+		"description": "Menu entry: 'Select the default profile'"
+	},
+	"menuUpdateRule": {
+		"message": "Выберите профиль текущего правила",
+		"description": "Menu entry: 'Select the profile of the current rule'"
+	},
+	"menuCreateDomainRule": {
+		"message": "Выберите профиль текущего домена",
+		"description": "Menu entry: 'Select the profile of the current domain'"
+	},
+	"menuSaveSelection": {
+		"message": "Сохранить выделенное",
+		"description": "Menu entry: 'Save selection'"
+	},
+	"menuSaveFrame": {
+		"message": "Сохранить фрейм",
+		"description": "Menu entry: 'Save frame'"
+	},
+	"menuSaveTabs": {
+		"message": "Сохранить вкладки",
+		"description": "Menu entry (Sciagen button only): 'Save tabs'"
+	},
+	"menuSaveSelectedTabs": {
+		"message": "Сохранить выбранные вкладки",
+		"description": "Menu entry: 'Save selected tabs'"
+	},
+	"menuSaveUnpinnedTabs": {
+		"message": "Сохранить незакреплённые вкладки",
+		"description": "Menu entry: 'Save unpinned tabs'"
+	},
+	"menuSaveAllTabs": {
+		"message": "Сохранить все вкладки",
+		"description": "Menu entry: 'Save all tabs'"
+	},
+	"menuBatchSaveUrls": {
+		"message": "Пакетное сохранение URL...",
+		"description": "Menu entry: 'Batch save URLs...'"
+	},
+	"menuAutoSave": {
+		"message": "Автосохранение",
+		"description": "Menu entry: 'Auto-save'"
+	},
+	"menuAutoSaveDisabled": {
+		"message": "Отключено",
+		"description": "Menu entry: 'Auto-save' > Disabled'"
+	},
+	"menuAutoSaveTab": {
+		"message": "Автосохранение этой вкладки",
+		"description": "Menu entry: 'Auto-save' > Auto-save this tab'"
+	},
+	"menuAutoSaveUnpinnedTabs": {
+		"message": "Автосохранение незакреплённых вкладок",
+		"description": "Menu entry: 'Auto-save' > Auto-save unpinned tabs'"
+	},
+	"menuAutoSaveAllTabs": {
+		"message": "Автосохранение всех вкладок",
+		"description": "Menu entry: 'Auto-save' > Auto-save all tabs'"
+	},
+	"buttonDefaultTooltip": {
+		"message": "Сохранить страницу с помощью Sciagen",
+		"description": "Button title: 'Save page with Sciagen'"
+	},
+	"buttonBlockedBadge": {
+		"message": "🚫",
+		"description": "Button badge when the page is blocked: '🚫'"
+	},
+	"buttonBlockedTooltip": {
+		"message": "Эта страница не может быть сохранена Sciagen",
+		"description": "Button title: 'This page cannot be saved with Sciagen'"
+	},
+	"buttonInitializingTooltip": {
+		"message": "Инициализация Sciagen",
+		"description": "Button title during initialization: 'Initializing Sciagen (x/2)'"
+	},
+	"buttonInitializingBadge": {
+		"message": "•••",
+		"description": "Badge label during initialization: '•••'"
+	},
+	"buttonSaveProgressTooltip": {
+		"message": "Ход сохранения: ",
+		"description": "Button title during save: 'Save progress: xx%'"
+	},
+	"buttonUploadProgressTooltip": {
+		"message": "Ход загрузки: ",
+		"description": "Button title during save: 'Upload progress: xx%'"
+	},
+	"buttonOKBadge": {
+		"message": "OK",
+		"description": "Badge label: 'OK'"
+	},
+	"buttonErrorBadge": {
+		"message": "ERR",
+		"description": "Badge label for unexpected errors"
+	},
+	"buttonAutoSaveActiveTooltip": {
+		"message": "Автосохранение активно",
+		"description": "Button title: 'Auto-save active'"
+	},
+	"buttonAutoSaveActiveBadge": {
+		"message": "[A]",
+		"description": "Badge label when auto-save is active"
+	},
+	"optionsTitle": {
+		"message": "Параметры",
+		"description": "Options page title"
+	},
+	"optionsNewWindowLink": {
+		"message": "Открыть настройки в новой вкладке",
+		"description": "Accessible label of the icon opening the options in a new tab"
+	},
+	"optionsEditorLink": {
+		"message": "Открыть редактор настроек",
+		"description": "Accessible label of the icon opening the options editor"
+	},
+	"optionsUserInterfaceSubTitle": {
+		"message": "Пользовательский интерфейс",
+		"description": "Options sub-title: 'User interface'"
+	},
+	"optionAddMenuEntry": {
+		"message": "добавить пункт в контекстное меню веб-страницы",
+		"description": "Options page label: 'add entry in the context menu of the webpage'"
+	},
+	"optionDisplayShadow": {
+		"message": "наложить тень на страницу во время обработки",
+		"description": "Options page label: 'overlay a shadow on the page during processing'"
+	},
+	"optionDisplayInfobar": {
+		"message": "показать информационную панель при просмотре сохранённой страницы",
+		"description": "Options page label: 'display an infobar when viewing a saved page'"
+	},
+	"optionInfobarTemplate": {
+		"message": "шаблон содержимого информационной панели",
+		"description": "Options page label: 'template of the infobar content'"
+	},
+	"optionBlockMixedContent": {
+		"message": "блокировать смешанное содержимое",
+		"description": "Options page label: 'block mixed content'"
+	},
+	"optionSaveOriginalURLs": {
+		"message": "сохранить оригинальные URL встроенных ресурсов",
+		"description": "Options page label: 'save original URLs of embedded resources'"
+	},
+	"optionIncludeInfobar": {
+		"message": "добавить информационную панель в сохраняемую страницу",
+		"description": "Options page label: 'include the infobar in the saved page'"
+	},
+	"optionOpenInfobar": {
+		"message": "не закрывать информационную панель",
+		"description": "Options page label: 'keep infobar open'"
+	},
+	"optionAnimateInfobar": {
+		"message": "анимация информационной панели",
+		"description": "Options page label: 'animate the infobar'"
+	},
+	"optionRemoveInfobarSavedDate": {
+		"message": "не включать дату сохранения",
+		"description": "Options page label: 'do not include the saved date'"
+	},
+	"optionConfirmInfobar": {
+		"message": "открыть диалоговое окно для редактирования содержимого информационной панели",
+		"description": "Options page label: 'open a prompt dialog to edit the infobar content'"
+	},
+	"optionAutoClose": {
+		"message": "автозакрытие вкладки после сохранения страницы",
+		"description": "Options page label: 'auto-close the tab after the page is saved'"
+	},
+	"optionCustomShortcut": {
+		"message": "горячая клавиша команды",
+		"description": "Options page label: 'keyboard shortcut command'"
+	},
+	"optionCustomShortcutDefault": {
+		"message": "горячая клавиша по умолчанию",
+		"description": "Options page label: 'default shortcut'"
+	},
+	"optionsFileNameSubTitle": {
+		"message": "Имя файла",
+		"description": "Options sub-title: 'File name'"
+	},
+	"optionFilenameTemplate": {
+		"message": "шаблон",
+		"description": "Options page label: 'template'"
+	},
+	"optionFilenameMaxLength": {
+		"message": "максимальная длина",
+		"description": "Options page label: 'max length'"
+	},
+	"optionFilenameMaxLengthBytesUnit": {
+		"message": "байт",
+		"description": "Options page label: 'bytes'"
+	},
+	"optionFilenameMaxLengthCharsUnit": {
+		"message": "символов",
+		"description": "Options page label: 'characters'"
+	},
+	"optionFilenameReplacementCharacter": {
+		"message": "заменяющий символ",
+		"description": "Options page label: 'replacement character'"
+	},
+	"optionFilenameReplacements": {
+		"message": "символы, заменяемые в именах файлов",
+		"description": "Options page label: 'characters replaced in file names'"
+	},
+	"optionsFilenameReplacedCharacters": {
+		"message": "Символ(ы)",
+		"description": "Options page column label in the replaced characters table: 'Character(s)'"
+	},
+	"optionsFilenameReplacementCharacters": {
+		"message": "Заменяется на",
+		"description": "Options page column label in the replaced characters table: 'Replaced with'"
+	},
+	"optionsFilenameReplacedCharactersPlaceholder": {
+		"message": "Введите символ (например, «:»)",
+		"description": "Placeholder in the replaced characters table: 'Type a character (e.g. \":\")'"
+	},
+	"optionsAddFilenameReplacementTooltip": {
+		"message": "Добавить символ",
+		"description": "Popup text 'Add the character' in the options page"
+	},
+	"optionsDeleteFilenameReplacementTooltip": {
+		"message": "Не заменять этот символ",
+		"description": "Popup text 'Stop replacing this character' in the options page"
+	},
+	"optionsFilenameReplacementsResetButton": {
+		"message": "Восстановить символы по умолчанию",
+		"description": "Button label 'Restore default characters' in the options page"
+	},
+	"optionsFilenameReplacementsPreviewFilename": {
+		"message": "Проверить имя файла",
+		"description": "Options page column label in the preview table: 'Test a file name'"
+	},
+	"optionsFilenameReplacementsPreviewResult": {
+		"message": "Результат",
+		"description": "Options page column label in the preview table: 'Result'"
+	},
+	"optionsFilenameReplacementsPreviewPlaceholder": {
+		"message": "Введите имя файла",
+		"description": "Placeholder in the preview table: 'Type a file name'"
+	},
+	"optionReplaceEmojisInFilename": {
+		"message": "заменять эмодзи текстом",
+		"description": "Options page label: 'replace emojis with text'"
+	},
+	"optionSaveFilenameTemplateData": {
+		"message": "сохранить данные шаблона имени файла на странице",
+		"description": "Options page label: 'save the filename template data into the page'"
+	},
+	"optionConfirmFilename": {
+		"message": "открыть диалоговое окно «Сохранить как» для подтверждения имени файла",
+		"description": "Options page label: 'open the \"Save as\" dialog to confirm the file name'"
+	},
+	"optionFilenameConflictAction": {
+		"message": "решение конфликта имён файлов",
+		"description": "Options page label: 'filename conflict resolution'"
+	},
+	"optionFilenameConflictActionUniquify": {
+		"message": "создать уникальное имя",
+		"description": "Value for 'filename conflict resolution' option: 'create a unique name'"
+	},
+	"optionFilenameConflictActionOverwrite": {
+		"message": "перезаписать существующий файл",
+		"description": "Value for 'filename conflict resolution' option: 'overwrite the existing file'"
+	},
+	"optionFilenameConflictActionPrompt": {
+		"message": "запросить новое имя",
+		"description": "Value for 'name conflict resolution' option: 'prompt for a name'"
+	},
+	"optionFilenameConflictActionSkip": {
+		"message": "пропустить дублирующиеся файлы",
+		"description": "Value for 'filename conflict resolution' option: 'skip duplicate files'"
+	},
+	"optionsHTMLContentSubTitle": {
+		"message": "Содержимое HTML",
+		"description": "Options sub-title: 'HTML content'"
+	},
+	"optionCompressHTML": {
+		"message": "сжать содержимое HTML",
+		"description": "Options page label: 'compress HTML content'"
+	},
+	"optionRemoveFrames": {
+		"message": "удалить фреймы",
+		"description": "Options page label: 'remove frames'"
+	},
+	"optionRemoveHiddenElements": {
+		"message": "удалить скрытые элементы",
+		"description": "Options page label: 'remove hidden elements'"
+	},
+	"optionRemovedElementsSelector": {
+		"message": "удалить указанные элементы",
+		"description": "Options page label: 'remove specific elements'"
+	},
+	"optionsFileFormatSubTitle": {
+		"message": "Формат файла",
+		"description": "Options sub-title: 'File format'"
+	},
+	"optionFileFormat": {
+		"message": "формат",
+		"description": "Options page label: 'format'"
+	},
+	"optionFileFormatSelectHTML": {
+		"message": "HTML",
+		"description": "Options page label: 'HTML'"
+	},
+	"optionFileFormatSelectSelfExtractingUniversal": {
+		"message": "самораспаковывающийся ZIP (универсальный)",
+		"description": "Options page label: 'self-extracting ZIP (universal)'"
+	},
+	"optionFileFormatSelectSelfExtracting": {
+		"message": "самораспаковывающийся ZIP",
+		"description": "Options page label: 'self-extracting ZIP'"
+	},
+	"optionFileFormatSelectZIP": {
+		"message": "ZIP",
+		"description": "Options page label: 'ZIP'"
+	},
+	"optionPassword": {
+		"message": "пароль",
+		"description": "Options page label: 'password'"
+	},
+	"optionCreateRootDirectory": {
+		"message": "создать корневую папку",
+		"description": "Options page label: 'create a root directory'"
+	},
+	"optionDisableCompression": {
+		"message": "отключить сжатие",
+		"description": "Options page label: 'disable compression'"
+	},
+	"optionPreventAppendedData": {
+		"message": "не добавлять данные после данных ZIP",
+		"description": "Options page label: 'do not append data after the ZIP data'"
+	},
+	"optionInsertTextBody": {
+		"message": "делать текст доступным для поиска",
+		"description": "Options page label: 'make text searchable'"
+	},
+	"optionInsertEmbeddedImage": {
+		"message": "встроенное изображение",
+		"description": "Options page label: 'embed image'"
+	},
+	"optionInsertEmbeddedScreenshotImage": {
+		"message": "снимок страницы",
+		"description": "Options page label: 'page screenshot'"
+	},
+	"optionInsertEmbeddedCustomImage": {
+		"message": "своё изображение",
+		"description": "Options page label: 'custom image'"
+	},
+	"optionsInfobarSubTitle": {
+		"message": "Информационная панель",
+		"description": "Options sub-title: 'Infobar'"
+	},
+	"optionsImagesSubTitle": {
+		"message": "Изображения",
+		"description": "Options sub-title: 'Images'"
+	},
+	"optionsDeferredContentSubTitle": {
+		"message": "Отложенное содержимое",
+		"description": "Options sub-title: 'Deferred content'"
+	},
+	"optionGroupDuplicateImages": {
+		"message": "группировать дубликаты изображений",
+		"description": "Options page label: 'group duplicate images together'"
+	},
+	"optionImageReductionFactor": {
+		"message": "коэффициент уменьшения изображения",
+		"description": "Options page label: 'image reduction factor'"
+	},
+	"optionImageQuality": {
+		"message": "качество уменьшенных изображений",
+		"description": "Options page label: 'quality of resized images'"
+	},
+	"optionLoadDeferredContent": {
+		"message": "сохранить содержимое, загружаемое при прокрутке",
+		"description": "Options page label: 'save content loaded while scrolling'"
+	},
+	"optionLoadDeferredContentMaxIdleTime": {
+		"message": "максимальное время простоя (мс)",
+		"description": "Options page label: 'maximum idle time (ms)'"
+	},
+	"optionLoadDeferredContentKeepZoomLevel": {
+		"message": "уменьшить масштаб страницы во время сохранения",
+		"description": "Options page label: 'zoom out the page during the capture'"
+	},
+	"optionLoadDeferredContentDispatchScrollEvent": {
+		"message": "имитировать прокрутку",
+		"description": "Options page label: 'simulate scrolling'"
+	},
+	"optionLoadDeferredContentBeforeFrames": {
+		"message": "сначала загружать во фреймах",
+		"description": "Options page label: 'load in frames first'"
+	},
+	"optionRemoveAlternativeImages": {
+		"message": "удалить изображения для альтернативных разрешений экрана",
+		"description": "Options page label: 'remove images for alternative screen resolutions'"
+	},
+	"optionsFontsSubTitle": {
+		"message": "Шрифты",
+		"description": "Options sub-title: 'Fonts'"
+	},
+	"optionRemoveUnusedFonts": {
+		"message": "удалить неиспользуемые шрифты",
+		"description": "Options page label: 'remove unused fonts'"
+	},
+	"optionRemoveAlternativeFonts": {
+		"message": "удалить альтернативные шрифты",
+		"description": "Options page label: 'remove alternative fonts'"
+	},
+	"optionsStylesheetsSubTitle": {
+		"message": "Таблицы стилей",
+		"description": "Options sub-title: 'Stylesheets'"
+	},
+	"optionGroupDuplicateStylesheets": {
+		"message": "группировать повторяющиеся таблицы стилей",
+		"description": "Options page label: 'group duplicate stylesheets together'"
+	},
+	"optionMoveStylesInHead": {
+		"message": "переместить в основной элемент стили, найденные вне него",
+		"description": "Options page label: 'move in the head element the styles found outside of it'"
+	},
+	"optionCustomStylesheet": {
+		"message": "применить пользовательскую таблицу стилей перед сохранением страницы",
+		"description": "Options page label: 'apply a custom stylesheet before saving the page'"
+	},
+	"optionRemoveUnusedStyles": {
+		"message": "удалить неиспользуемые стили",
+		"description": "Options page label: 'remove unused styles'"
+	},
+	"optionRemoveAlternativeMedias": {
+		"message": "удалить таблицы стилей для экранов альтернативных устройств",
+		"description": "Options page label: 'remove stylesheets for alternative devices to screens'"
+	},
+	"optionsNetworkSubTitle": {
+		"message": "Сеть",
+		"description": "Options sub-title: 'Network'"
+	},
+	"optionsBlockedResources": {
+		"message": "блокируемые ресурсы",
+		"description": "Options page label: 'blocked resources'"
+	},
+	"optionsAcceptHeaders": {
+		"message": "Заголовок «Accept»",
+		"description": "Options page label: '\"Accept\" header'"
+	},
+	"optionResourceScript": {
+		"message": "скрипты",
+		"description": "Options page label: 'scripts'"
+	},
+	"optionResourceVideo": {
+		"message": "видео",
+		"description": "Options page label: 'videos'"
+	},
+	"optionResourceAudio": {
+		"message": "аудио",
+		"description": "Options page label: 'audios'"
+	},
+	"optionResourceDocument": {
+		"message": "документы",
+		"description": "Options page label: 'documents'"
+	},
+	"optionResourceFont": {
+		"message": "шрифты",
+		"description": "Options page label: 'fonts'"
+	},
+	"optionResourceStylesheet": {
+		"message": "таблицы стилей",
+		"description": "Options page label: 'stylesheets'"
+	},
+	"optionResourceImage": {
+		"message": "изображения",
+		"description": "Options page label: 'images'"
+	},
+	"optionsDestinationSubTitle": {
+		"message": "Место назначения",
+		"description": "Options sub-title: 'Destination'"
+	},
+	"optionsBookmarkSubTitle": {
+		"message": "Закладки",
+		"description": "Options sub-title: 'Bookmarks'"
+	},
+	"optionsAutoSaveSubTitle": {
+		"message": "Автосохранение",
+		"description": "Options sub-title: 'Auto-save'"
+	},
+	"optionsAutoSettingsSubTitle": {
+		"message": "Правила автонастройки",
+		"description": "Options sub-title: the table of rules that pick a profile automatically from the URL of the page being saved"
+	},
+	"optionsDeleteDisplayedRulesConfirm": {
+		"message": "Подтвердите удаление всех отображаемых правил",
+		"description": "Popup text 'Confirm the deletion of all displayed rules'"
+	},
+	"optionsDeleteRulesTooltip": {
+		"message": "Удалить все отображаемые правила",
+		"description": "Popup text 'Delete all displayed rules'"
+	},
+	"optionsAutoSettingsUrl": {
+		"message": "URL",
+		"description": "Column header in the Auto-settings rules table: the complete or partial URL a rule matches against the page being saved"
+	},
+	"optionsAutoSettingsUrlPlaceholder": {
+		"message": "Введите полный или частичный URL (например, example.com)",
+		"description": "Placeholder of the URL field in the Auto-settings rules table"
+	},
+	"optionsAutoSettingsProfile": {
+		"message": "Профиль",
+		"description": "Column header in the Auto-settings rules table, naming the profile of settings used when a page matching the rule is saved manually. It is a noun, the name of a profile, not an instruction to save"
+	},
+	"optionsAutoSettingsAutoSaveProfile": {
+		"message": "Профиль автосохранения",
+		"description": "Column header in the Auto-settings rules table, naming the profile of settings used when a page matching the rule is saved automatically. It is a noun phrase, 'the profile used for auto-saving', never 'automatically save the profile'"
+	},
+	"optionsAutoSettingsShowAllProfiles": {
+		"message": "показать все профили",
+		"description": "Checkbox label under the Auto-settings rules table: list the rules of every profile instead of only those of the profile selected above"
+	},
+	"optionsAutoSettingsShowAutoSaveProfile": {
+		"message": "показывать столбец «Профиль автосохранения»",
+		"description": "Checkbox label under the Auto-settings rules table: show or hide the 'Auto-save profile' column. The quoted name must match the translation of optionsAutoSettingsAutoSaveProfile"
+	},
+	"optionsUpdateRuleTooltip": {
+		"message": "Обновить правило",
+		"description": "Popup text 'Update the rule' in the options page"
+	},
+	"optionsDeleteRuleTooltip": {
+		"message": "Удалить правило",
+		"description": "Popup text 'Delete the rule' in the options page"
+	},
+	"optionsAddRuleTooltip": {
+		"message": "Добавить правило",
+		"description": "Popup text 'Add the rule' in the options page"
+	},
+	"optionsValidateChangesTooltip": {
+		"message": "Подтвердить изменения",
+		"description": "Popup text 'Validate changes' in the options page"
+	},
+	"optionsCancelChangesTooltip": {
+		"message": "Отменить изменения",
+		"description": "Popup text 'Cancel changes' in the options page"
+	},
+	"optionsDeleteRuleConfirm": {
+		"message": "Подтвердите удаление выбранного правила",
+		"description": "Popup text 'Confirm the deletion of the selected rule' in the options page"
+	},
+	"optionAutoSaveLoadOrUnload": {
+		"message": "автосохранение после загрузки или выгрузки страницы",
+		"description": "auto-save after page load or on page unload"
+	},
+	"optionAutoSaveLoad": {
+		"message": "автосохранение после загрузки страницы",
+		"description": "Options page label: 'auto-save after page load'"
+	},
+	"optionAutoSaveUnload": {
+		"message": "автосохранение после выгрузки страницы",
+		"description": "Options page label: 'auto-save on page unload'"
+	},
+	"optionAutoSaveDiscard": {
+		"message": "автосохранение при сбросе вкладки",
+		"description": "Options page label: 'auto-save on tab discard'"
+	},
+	"optionAutoSaveRemove": {
+		"message": "автосохранение при удалении вкладки",
+		"description": "Options page label: 'auto-save on tab removal'"
+	},
+	"optionAutoSaveDelay": {
+		"message": "задержка автосохранения после загрузки страницы (сек.)",
+		"description": "Options page label: 'auto-save waiting delay after page load (s)'"
+	},
+	"optionAutoSaveRepeat": {
+		"message": "переодическое автосохранение",
+		"description": "Options page label: 'auto-save periodically'"
+	},
+	"optionAutoSaveRepeatDelay": {
+		"message": "период (сек.)",
+		"description": "Options page label: 'period (s)'"
+	},
+	"optionAutoSaveExternalSave": {
+		"message": "сохранять страницу с помощью Sciagen Companion",
+		"description": "Options page label: 'save the page with Sciagen Companion'"
+	},
+	"optionsEditorSubTitle": {
+		"message": "Редактор аннотаций",
+		"description": "Options sub-title: 'Annotation editor'"
+	},
+	"optionOpenEditor": {
+		"message": "аннотировать страницу перед сохранением",
+		"description": "Options page label: 'annotate the page before saving'"
+	},
+	"optionOpenSavedPage": {
+		"message": "открывать сохранённые страницы в новой вкладке",
+		"description": "Options page label: 'open saved pages in a new tab'"
+	},
+	"optionAutoOpenEditor": {
+		"message": "сохранять открытые страницы из редактора аннотаций Sciagen",
+		"description": "Options page label: 'open pages saved with Sciagen in the annotation editor'"
+	},
+	"optionDefaultEditorMode": {
+		"message": "режим по умолчанию",
+		"description": "Options page label: 'default mode'"
+	},
+	"optionDefaultEditorModeNormal": {
+		"message": "обычный",
+		"description": "Options page label: 'default mode > normal'"
+	},
+	"optionDefaultEditorModeEdit": {
+		"message": "редактировать страницу",
+		"description": "Options page label: 'default mode > edit the page'"
+	},
+	"optionDefaultEditorModeFormat": {
+		"message": "форматировать страницу",
+		"description": "Options page label: 'default mode > format the page'"
+	},
+	"optionDefaultEditorModeCut": {
+		"message": "удалить элементы",
+		"description": "Options page label: 'default mode > remove elements'"
+	},
+	"optionDefaultEditorModeCutExternal": {
+		"message": "удалить внешние элементы",
+		"description": "Options page label: 'default mode > remove external elements'"
+	},
+	"optionApplySystemTheme": {
+		"message": "использовать системную тему при форматировании страницы",
+		"description": "Title of the button 'apply the system theme when formatting a page'"
+	},
+	"optionContentWidth": {
+		"message": "ширина содержимого при форматировании страницы (em)",
+		"description": "Options page label: 'content width when formatting a page (em)'"
+	},
+	"optionWarnUnsavedPage": {
+		"message": "предупреждать при закрытии страницы с несохранёнными изменениями",
+		"description": "Title of the button 'warn if leaving page with unsaved changes'"
+	},
+	"optionDisplayInfobarInEditor": {
+		"message": "показать информационную панель",
+		"description": "Title of the button 'display the infobar'"
+	},
+	"optionsMiscSubTitle": {
+		"message": "Разное",
+		"description": "Options sub-title: 'Misc.'"
+	},
+	"optionsExternalCapturePermissionsSubTitle": {
+		"message": "Внешний API захвата",
+		"description": "Options sub-title: 'External capture API'"
+	},
+	"optionExternalCaptureAllowedIds": {
+		"message": "разрешённые расширения, по одному в строке",
+		"description": "Options page label: 'allowed extensions, one per line'"
+	},
+	"optionExternalCaptureDeniedIds": {
+		"message": "заблокированные расширения, по одному в строке",
+		"description": "Options page label: 'blocked extensions, one per line'"
+	},
+	"optionsExternalCapturePendingRequest": {
+		"message": "Расширение $EXTENSION_ID$ хочет использовать Sciagen для сохранения страниц в этом браузере и получения их HTML-содержимого. Если вы разрешите, оно сможет в любой момент сохранить любую вкладку без повторного запроса, пока вы не удалите его из списка ниже.",
+		"description": "Options page prompt to approve an external extension capture request.",
+		"placeholders": {
+			"extension_id": {
+				"content": "$1",
+				"example": "archivebox@example.com"
+			}
+		}
+	},
+	"optionsExternalCaptureApproveButton": {
+		"message": "Разрешить",
+		"description": "Options button: 'Allow'"
+	},
+	"optionsExternalCaptureDenyButton": {
+		"message": "Запретить",
+		"description": "Options button: 'Deny'"
+	},
+	"optionBackgroundSave": {
+		"message": "сохранять страницы в фоновом режиме",
+		"description": "Options page label: 'save pages in background'"
+	},
+	"optionDisplayStats": {
+		"message": "показывать статистику в консоли после обработки",
+		"description": "Options page label: 'display stats in the console after processing'"
+	},
+	"optionSetMaxResourceSize": {
+		"message": "установить максимальный размер",
+		"description": "Options page label: 'set maximum size'"
+	},
+	"optionMaxResourceSize": {
+		"message": "максимальный размер (МБ)",
+		"description": "Options page label: 'maximum size (MB)'"
+	},
+	"optionSetMaxResourceDelay": {
+		"message": "установить максимальное время загрузки",
+		"description": "Options page label: 'set maximum download time'"
+	},
+	"optionMaxResourceDelay": {
+		"message": "максимальное время загрузки (сек.)",
+		"description": "Options page label: 'maximum download time (s)'"
+	},
+	"optionPassReferrerOnError": {
+		"message": "пропустить заголовок «Referer» после ошибки запроса перекрёстного источника",
+		"description": "Options page label: 'pass \"Referer\" header after a cross-origin request error'"
+	},
+	"optionSaveRawPage": {
+		"message": "сохранить исходную страницу",
+		"description": "Options page label: 'save raw page'"
+	},
+	"optionInsertMetaCSP": {
+		"message": "установить политику безопасности содержимого",
+		"description": "Options page label: 'set content security policy'"
+	},
+	"optionInsertCanonicalLink": {
+		"message": "сохранить каноническую ссылку страницы",
+		"description": "Options page label: 'save the canonical link of the page'"
+	},
+	"optionSaveToClipboard": {
+		"message": "копировать в буфер обмена",
+		"description": "Options page label: 'copy to clipboard'"
+	},
+	"optionSaveToFilesystem": {
+		"message": "сохранить как файл",
+		"description": "Options page label: 'save to filesystem'"
+	},
+	"optionSharePage": {
+		"message": "поделиться страницей",
+		"description": "Options page label: 'share page'"
+	},
+	"optionAddProof": {
+		"message": "добавить доказательство существования",
+		"description": "Options page label: 'add proof of existence'"
+	},
+	"optionsAddProofConfirm": {
+		"message": "Подтвердите, что разрешаете Sciagen отправлять в Woleet API SHA256-хеш каждой сохраняемой вами страницы. Дополнительную информацию об этой функции можно найти на странице помощи или нажав на знак вопроса рядом с параметром.",
+		"description": "Popup text displayed wen enabling the option 'add proof of existence'"
+	},
+	"optionWoleetKey": {
+		"message": "токен доступа",
+		"description": "Options page label: 'access token'"
+	},
+	"optionSaveToGDrive": {
+		"message": "загрузить на Google Drive",
+		"description": "Options page label: 'upload to Google Drive'"
+	},
+	"optionSaveToDropbox": {
+		"message": "загрузить на Dropbox",
+		"description": "Options page label: 'upload to Dropbox'"
+	},
+	"optionSaveToGitHub": {
+		"message": "загрузить на GitHub",
+		"description": "Options page label: 'upload to GitHub'"
+	},
+	"optionGitHubToken": {
+		"message": "токен доступа",
+		"description": "Options page label: 'access token'"
+	},
+	"optionGitHubUser": {
+		"message": "имя пользователя",
+		"description": "Options page label: 'user name'"
+	},
+	"optionGitHubRepository": {
+		"message": "имя репозитория",
+		"description": "Options page label: 'repository name'"
+	},
+	"optionGitHubBranch": {
+		"message": "имя ветки",
+		"description": "Options page label: 'branch name'"
+	},
+	"optionSaveToS3": {
+		"message": "загрузить на Amazon S3",
+		"description": "Options page label: 'upload to Amazon S3'"
+	},
+	"optionS3Domain": {
+		"message": "домен",
+		"description": "Options page label: 'domain'"
+	},
+	"optionS3Region": {
+		"message": "регион",
+		"description": "Options page label: 'region'"
+	},
+	"optionS3Bucket": {
+		"message": "имя сегмента",
+		"description": "Options page label: 'bucket name'"
+	},
+	"optionS3AccessKey": {
+		"message": "ключ доступа",
+		"description": "Options page label: 'access key'"
+	},
+	"optionS3SecretKey": {
+		"message": "секретный ключ",
+		"description": "Options page label: 'secret key'"
+	},
+	"optionSaveWithWebDAV": {
+		"message": "загрузить на WebDAV-сервер",
+		"description": "Options page label: 'upload to a WebDAV server'"
+	},
+	"optionWebDAVURL": {
+		"message": "URL",
+		"description": "Options page label: 'URL'"
+	},
+	"optionWebDAVUser": {
+		"message": "имя пользователя",
+		"description": "Options page label: 'user identifier'"
+	},
+	"optionWebDAVPassword": {
+		"message": "пароль",
+		"description": "Options page label: 'password'"
+	},
+	"optionSaveWithMCP": {
+		"message": "загрузить на MCP-сервер",
+		"description": "Options page label: 'upload to an MCP server'"
+	},
+	"optionMCPServerUrl": {
+		"message": "URL",
+		"description": "Options page label: 'server URL'"
+	},
+	"optionMCPAuthToken": {
+		"message": "токен аутентификации",
+		"description": "Options page label: 'authentication token'"
+	},
+	"optionSaveWithCompanion": {
+		"message": "сохранять с помощью Sciagen Companion",
+		"description": "Options page label: 'save with Sciagen Companion'"
+	},
+	"optionSaveCreatedBookmarks": {
+		"message": "сохранить страницу недавно созданной закладки",
+		"description": "Options page label: 'save the page of a newly created bookmark'"
+	},
+	"optionReplaceBookmarkURL": {
+		"message": "связать новую закладку с сохранённой страницей",
+		"description": "Options page label: 'link the new bookmark to the saved page'"
+	},
+	"optionAllowedBookmarkFolders": {
+		"message": "разрешённые папки",
+		"description": "Options page label: 'allowed folders'"
+	},
+	"optionIgnoredBookmarkFolders": {
+		"message": "игнорируемые папки",
+		"description": "Options page label: 'ignored folders'"
+	},
+	"optionsHelpLink": {
+		"message": "помощь",
+		"description": "Options help link"
+	},
+	"optionSynchronize": {
+		"message": "параметры синхронизации",
+		"description": "Options label: 'synchronize options'"
+	},
+	"optionsResetButton": {
+		"message": "Сброс",
+		"description": "Options button: 'Reset'"
+	},
+	"optionsResetTooltip": {
+		"message": "Сбросить все параметры к значениям по умолчанию",
+		"description": "Options 'Reset' button tooltip"
+	},
+	"optionsResetConfirm": {
+		"message": "Подтвердите сброс всех параметров или текущего профиля",
+		"description": "Popup text 'Confirm the reset of all options or the current profile' in the options page"
+	},
+	"optionsResetAllButton": {
+		"message": "Сбросить все параметры",
+		"description": "Options confirm button: 'Reset all options'"
+	},
+	"optionsResetCurrentButton": {
+		"message": "Сбросить текущий профиль",
+		"description": "Options confirm button: 'Reset current profile'"
+	},
+	"optionsOKButton": {
+		"message": "OK",
+		"description": "Options confirm button: 'OK'"
+	},
+	"optionsCancelButton": {
+		"message": "Отмена",
+		"description": "Options confirm button: 'Cancel'"
+	},
+	"optionsExportButton": {
+		"message": "Экспорт",
+		"description": "Options button: 'Export'"
+	},
+	"optionsImportButton": {
+		"message": "Импорт",
+		"description": "Options button: 'Import'"
+	},
+	"logPanelDeferredContent": {
+		"message": "Отложенное содержимое",
+		"description": "Label 'Deferred content' in the log panel"
+	},
+	"logPanelFrameContents": {
+		"message": "Содержимое фреймов",
+		"description": "Label 'Frame contents' in the log panel"
+	},
+	"logPanelEmbeddedImage": {
+		"message": "Встроенное изображение",
+		"description": "Label 'Embedded image' in the log panel"
+	},
+	"logPanelStep": {
+		"message": "Шаг",
+		"description": "Label 'Step' (for 'Step x / 4') in the log panel"
+	},
+	"logPanelWidth": {
+		"message": "190",
+		"description": "Width of the log panel in pixels, it should be adjusted for the longest label beginning with 'log' (e.g. 'logPanelDeferredContent')"
+	},
+	"maskCancelButton": {
+		"message": "Отмена (Esc)",
+		"description": "Button 'Cancel (Esc)' in the mask displayed while a page is being saved"
+	},
+	"topPanelError": {
+		"message": "Ошибка Sciagen: ",
+		"description": "Label 'Sciagen error: ' in the top panel when displaying an error message"
+	},
+	"topPanelCopyDetailsButton": {
+		"message": "Скопировать подробности",
+		"description": "Button label 'Copy details' in the top panel next to an error message"
+	},
+	"topPanelEmbeddedImageButton": {
+		"message": "Открыть изображение...",
+		"description": "Top panel button 'Open image...' when embedding an image"
+	},
+	"topPanelSharePageButton": {
+		"message": "Поделиться страницей...",
+		"description": "Top panel button 'Share page...' when sharing a page"
+	},
+	"topPanelShareSelectionButton": {
+		"message": "Поделиться выделенным...",
+		"description": "Top panel button 'Share selection...' when sharing selected content"
+	},
+	"profileDefaultSettings": {
+		"message": "Настройки по умолчанию",
+		"description": "Label 'Default settings' of the default settings in the options page"
+	},
+	"profileDisabled": {
+		"message": "Отключено",
+		"description": "Label 'Disabled' of the disabled profile name in the options page"
+	},
+	"profileAddButtonTooltip": {
+		"message": "Добавить профиль",
+		"description": "Tooltip 'Add a new profile' in the options page"
+	},
+	"profileRenameButtonTooltip": {
+		"message": "Переименовать профиль",
+		"description": "Tooltip 'Rename the profile' in the options page"
+	},
+	"profileDeleteButtonTooltip": {
+		"message": "Удалить профиль",
+		"description": "Tooltip 'Delete the profile' in the options page"
+	},
+	"profileAddPrompt": {
+		"message": "Введите имя для этого профиля",
+		"description": "Popup text 'Enter a name for this new profile' in the options page"
+	},
+	"profileDeleteConfirm": {
+		"message": "Подтвердите удаление выбранного профиля",
+		"description": "Popup text 'Confirm the deletion of the selected profile' in the options page"
+	},
+	"profileRenamePrompt": {
+		"message": "Введите новое имя для выбранного профиля",
+		"description": "Popup text 'Enter a new name for the selected profile' in the options page"
+	},
+	"editorAddYellowNote": {
+		"message": "Добавить жёлтую заметку",
+		"description": "Title of the button 'Add a yellow note' in the editor"
+	},
+	"editorAddPinkNote": {
+		"message": "Добавить розовую заметку",
+		"description": "Title of the button 'Add a pink note' in the editor"
+	},
+	"editorAddBlueNote": {
+		"message": "Добавить синюю заметку",
+		"description": "Title of the button 'Add a blue note' in the editor"
+	},
+	"editorAddGreenNote": {
+		"message": "Добавить зелёную заметку",
+		"description": "Title of the button 'Add a green note' in the editor"
+	},
+	"editorHighlightYellow": {
+		"message": "Выделить выбранный текст жёлтым цветом",
+		"description": "Title of the button 'Highlight selected text in yellow' in the editor"
+	},
+	"editorHighlightPink": {
+		"message": "Выделить выбранный текст розовым цветом",
+		"description": "Title of the button 'Highlight selected text in pink' in the editor"
+	},
+	"editorHighlightBlue": {
+		"message": "Выделить выбранный текст синим цветом",
+		"description": "Title of the button 'Highlight selected text in blue' in the editor"
+	},
+	"editorHighlightGreen": {
+		"message": "Выделить выбранный текст зелёным цветом",
+		"description": "Title of the button 'Highlight selected text in green' in the editor"
+	},
+	"editorToggleNotes": {
+		"message": "Показать/скрыть заметки",
+		"description": "Title of the button 'Display/hide notes' in the editor"
+	},
+	"editorToggleHighlights": {
+		"message": "Показать/скрыть выделение текста",
+		"description": "Title of the button 'Display/hide the highlighted text' in the editor"
+	},
+	"editorRemoveHighlight": {
+		"message": "Удалить выделение выбранного текста",
+		"description": "Title of the button 'Remove the selected highlighted text' in the editor"
+	},
+	"editorEditPage": {
+		"message": "Включить/отключить режим «только для чтения»",
+		"description": "Title of the button 'Enable/disable read-only' in the editor"
+	},
+	"editorFormatPage": {
+		"message": "Форматировать страницу для лучшей читаемости",
+		"description": "Title of the button 'Format the page for better readability' in the editor"
+	},
+	"editorCutInnerPage": {
+		"message": "Включить/отключить удаление внутренних элементов",
+		"description": "Title of the button 'Enable/disable removing of internal elements' in the editor"
+	},
+	"editorCutOuterPage": {
+		"message": "Включить/отключить удаление внешних элементов",
+		"description": "Title of the button 'Enable/disable removing of external elements' in the editor"
+	},
+	"editorUndoCutPage": {
+		"message": "Восстановить последний удалённый элемент",
+		"description": "Title of the button 'Restore last removed element' in the editor"
+	},
+	"editorUndoAllCutPage": {
+		"message": "Восстановить все удалённые элементы",
+		"description": "Title of the button 'Restore all removed elements' in the editor"
+	},
+	"editorRedoCutPage": {
+		"message": "Удалить последний восстановленный элемент",
+		"description": "Title of the button 'Remove last restored element' in the editor"
+	},
+	"editorSavePage": {
+		"message": "Сохранить страницу",
+		"description": "Title of the button 'Save the page' in the editor"
+	},
+	"editorPrintPage": {
+		"message": "Печать страницы",
+		"description": "Title of the button 'Print the page' in the editor"
+	},
+	"editorImportMht": {
+		"message": "Импорт MHTML-файла",
+		"description": "Title of the button 'Import MHTML file' in the editor"
+	},
+	"editorArchiveToc": {
+		"message": "Оглавление",
+		"description": "Title of the table of contents button displayed in the editor when viewing a multi-page archive"
+	},
+	"pendingsTitle": {
+		"message": "Отложенное сохранение",
+		"description": "Title of the pending save page 'Pending saves' in the editor"
+	},
+	"pendingsCancelAllButton": {
+		"message": "Отменить все",
+		"description": "Pending saves button 'Cancel all'"
+	},
+	"pendingsURLTitle": {
+		"message": "URL",
+		"description": "Title of the first column in the table of the pending saves 'URL'"
+	},
+	"pendingsTitleTitle": {
+		"message": "Заголовок",
+		"description": "Title of the first column in the table of the pending saves 'Title'"
+	},
+	"pendingsStatusTitle": {
+		"message": "статус",
+		"description": "Title of the second column in the table of the pending saves 'status'"
+	},
+	"pendingsPendingStatus": {
+		"message": "отложено",
+		"description": "Value of 'status' for pending saves"
+	},
+	"pendingsProcessingStatus": {
+		"message": "выполнение",
+		"description": "Value of 'status' for current saves"
+	},
+	"pendingsCancellingStatus": {
+		"message": "отмена",
+		"description": "Value of 'status' for cancelled saves"
+	},
+	"pendingsNoPendings": {
+		"message": "Нет отложенных сохранений",
+		"description": "Label displayed when there are no pending saves"
+	},
+	"pendingsAddUrlsButton": {
+		"message": "Добавить URL",
+		"description": "button 'Add URLs'"
+	},
+	"pendingsAddUrls": {
+		"message": "Введите список URL, разделённых новой строкой",
+		"description": "Label of the add URLs input"
+	},
+	"pendingsAddUrlsOKButton": {
+		"message": "OK",
+		"description": "Add URLs popup confirm button: 'OK'"
+	},
+	"pendingsAddUrlsCancelButton": {
+		"message": "Отмена",
+		"description": "Add URLs popup cancel button: 'Cancel'"
+	},
+	"batchSaveUrlsTitle": {
+		"message": "Пакетное сохранение URL",
+		"description": "Title of the 'batch save URLs' page"
+	},
+	"batchSaveUrlsNoURLs": {
+		"message": "Нет URL",
+		"description": "Label displayed when there are no URLs"
+	},
+	"batchSaveUrlsAddUrlButton": {
+		"message": "Добавить URL",
+		"description": "label of the button 'Add URL'"
+	},
+	"batchSaveUrlsAddUrlsButton": {
+		"message": "Добавить URL...",
+		"description": "label of the button 'Add URLs...'"
+	},
+	"batchSaveUrlsRemoveAllButton": {
+		"message": "Удалить все",
+		"description": "label of the button 'Remove all'"
+	},
+	"batchSaveUrlsSavePagesButton": {
+		"message": "Сохранить страницы",
+		"description": "label of the button 'Save pages'"
+	},
+	"batchSaveUrlsURLTitle": {
+		"message": "URL",
+		"description": "Title of the column in the table of the URLs"
+	},
+	"batchSaveUrlsProfileAuto": {
+		"message": "Профиль по правилам и текущему выбору",
+		"description": "First entry of the profile dropdown of the 'batch save URLs' page: the profile of each URL comes from the rules and from the profile selected in the options page"
+	},
+	"batchSaveUrlsSkippedByRule": {
+		"message": "Пропущено: правило назначает этой странице отключённый профиль",
+		"description": "Status displayed next to a URL the batch save skipped because its rule maps it to the disabled profile"
+	},
+	"optionSaveToRestFormApi": {
+		"message": "загрузить в API формы REST",
+		"description": "Options page label: 'upload to a REST Form API'"
+	},
+	"optionRestFormApiUrl": {
+		"message": "URL",
+		"description": "Options page label: 'URL'"
+	},
+	"optionRestFormApiToken": {
+		"message": "токен авторизации",
+		"description": "Options page label: 'authorization token'"
+	},
+	"optionRestFormApiFileFieldName": {
+		"message": "имя поля данных архива",
+		"description": "Options page label: 'archive data field name'"
+	},
+	"optionRestFormApiUrlFieldName": {
+		"message": "имя поля URL архива",
+		"description": "Options page label: 'archive URL field name'"
+	},
+	"optionsEditorTitle": {
+		"message": "Редактор параметров",
+		"description": "Options title: 'Options editor'"
+	},
+	"optionsEditorSaveButton": {
+		"message": "Сохранить",
+		"description": "Options editor button: 'Save'"
+	},
+	"optionsEditorConfigSaved": {
+		"message": "Конфигурация сохранена",
+		"description": "Options editor message: 'Configuration saved'"
+	},
+	"optionsEditorInvalidJSON": {
+		"message": "Неправильный JSON",
+		"description": "Options editor error message: 'Invalid JSON'"
+	},
+	"optionsMenusSubTitle": {
+		"message": "Меню",
+		"description": "Options sub-title: 'Menus'"
+	},
+	"optionMenusEditor": {
+		"message": "выбор отображаемых в меню пунктов и их порядок (общие для всех профилей)",
+		"description": "Options page label: 'choose the entries displayed in the menus and their order (shared by all profiles)'"
+	},
+	"optionMenusEditorLink": {
+		"message": "Открыть редактор меню...",
+		"description": "Options page link: 'Open the menu editor...'"
+	},
+	"optionMenusDefault": {
+		"message": "меню по умолчанию",
+		"description": "Options page state: 'default menus'"
+	},
+	"optionMenusCustomized": {
+		"message": "настроенные меню",
+		"description": "Options page state: 'customized menus'"
+	},
+	"menuSubmenu": {
+		"message": "Подменю",
+		"description": "Menu editor entry: 'Submenu'"
+	},
+	"menuSeparator": {
+		"message": "Разделитель",
+		"description": "Menu editor entry: 'Separator'"
+	},
+	"menusTitle": {
+		"message": "Редактор меню",
+		"description": "Menu editor title"
+	},
+	"menusSubTitle": {
+		"message": "Выберите, что и в каком порядке отображается в каждом меню Sciagen. Эти настройки общие для всех профилей.",
+		"description": "Menu editor sub-title"
+	},
+	"menusSurfaceLabel": {
+		"message": "Меню",
+		"description": "Menu editor label of the menu selector"
+	},
+	"menusSurfacePage": {
+		"message": "Контекстное меню страницы",
+		"description": "Menu editor menu name: 'Page context menu'"
+	},
+	"menusSurfaceButton": {
+		"message": "Меню кнопки",
+		"description": "Menu editor menu name: 'Button menu'"
+	},
+	"menusSurfaceTab": {
+		"message": "Меню вкладки",
+		"description": "Menu editor menu name: 'Tab menu'"
+	},
+	"menusUseForAllButton": {
+		"message": "Использовать для всех меню",
+		"description": "Menu editor button: 'Use for all menus'"
+	},
+	"menusUseForAllTooltip": {
+		"message": "Заменить остальные меню текущим",
+		"description": "Menu editor tooltip of the 'Use for all menus' button"
+	},
+	"menusUseForAllStatus": {
+		"message": "Все меню теперь используют эти пункты.",
+		"description": "Menu editor status after using a layout for all menus"
+	},
+	"menusContextPage": {
+		"message": "Страница",
+		"description": "Menu editor context: 'Page'"
+	},
+	"menusContextSelection": {
+		"message": "Выделение",
+		"description": "Menu editor context: 'Selection'"
+	},
+	"menusContextFrame": {
+		"message": "Фрейм",
+		"description": "Menu editor context: 'Frame'"
+	},
+	"menusContextLink": {
+		"message": "Ссылка",
+		"description": "Menu editor context: 'Link'"
+	},
+	"menusHintPage": {
+		"message": "Отображается при щелчке правой кнопкой мыши по странице. Серые пункты не показываются в выбранном контексте.",
+		"description": "Menu editor hint of the page context menu"
+	},
+	"menusHintButton": {
+		"message": "Отображается при щелчке правой кнопкой мыши по кнопке Sciagen на панели инструментов.",
+		"description": "Menu editor hint of the button menu"
+	},
+	"menusHintTab": {
+		"message": "Отображается при щелчке правой кнопкой мыши по вкладке.",
+		"description": "Menu editor hint of the tab menu"
+	},
+	"menusAddLabel": {
+		"message": "Добавить",
+		"description": "Menu editor label of the entry selector"
+	},
+	"menusAddButton": {
+		"message": "Добавить",
+		"description": "Menu editor button: 'Add'"
+	},
+	"menusEditHint": {
+		"message": "Новые пункты добавляются после выбранного или внутрь выбранного подменю. Перетаскивайте пункты, чтобы изменить порядок, перетащите на подменю, чтобы вложить, дважды щёлкните по названию, чтобы переименовать, нажмите Delete, чтобы удалить.",
+		"description": "Menu editor hint about editing"
+	},
+	"menusDynamicBadge": {
+		"message": "динамический",
+		"description": "Menu editor badge of the entries managed by Sciagen"
+	},
+	"menusRemoveTooltip": {
+		"message": "Удалить из этого меню",
+		"description": "Menu editor tooltip of the remove button"
+	},
+	"menusActionLimitLine": {
+		"message": "Отображаются только первые пункты (не более $1)",
+		"description": "Menu editor line marking the entries hidden by the browser in the button menu"
+	},
+	"menusActionLimitNote": {
+		"message": "Браузер показывает в меню кнопки не более $1 пунктов верхнего уровня.",
+		"description": "Menu editor note about the limit of top-level entries in the button menu"
+	},
+	"menusActionLimitLineWrapped": {
+		"message": "Firefox переносит следующие пункты в подменю «Sciagen»",
+		"description": "Menu editor line marking the entries Firefox moves into an automatic submenu in the button menu"
+	},
+	"menusActionLimitNoteWrapped": {
+		"message": "Firefox оставляет в меню кнопки первые пункты верхнего уровня (не более $1), а остальные переносит в подменю «Sciagen».",
+		"description": "Menu editor note about Firefox moving the extra top-level entries of the button menu into an automatic submenu"
+	},
+	"menusWrapButton": {
+		"message": "Свернуть остальные в подменю",
+		"description": "Menu editor button: 'Wrap the rest in a submenu'"
+	},
+	"menusMoreSubmenu": {
+		"message": "Ещё...",
+		"description": "Menu editor default label of the submenu created to wrap the hidden entries"
+	},
+	"menusInspectorEmpty": {
+		"message": "Выберите пункт меню, чтобы изменить его название, привязать его к профилю или выбрать, когда он отображается.",
+		"description": "Menu editor text when no entry is selected"
+	},
+	"menusInspectorSeparator": {
+		"message": "Разделитель. Перетащите, чтобы переместить, нажмите Delete, чтобы удалить.",
+		"description": "Menu editor text when a separator is selected"
+	},
+	"menusLabelField": {
+		"message": "Название",
+		"description": "Menu editor field: 'Label'"
+	},
+	"menusLabelHelp": {
+		"message": "Оставьте пустым, чтобы использовать стандартное название. В Windows и Linux символ & перед буквой делает её клавишей быстрого доступа.",
+		"description": "Menu editor help of the 'Label' field"
+	},
+	"menusProfileField": {
+		"message": "Профиль",
+		"description": "Menu editor field: 'Profile'"
+	},
+	"menusProfileNone": {
+		"message": "Профиль, действующий для страницы",
+		"description": "Menu editor option when no profile is bound to the entry"
+	},
+	"menusProfileHelp": {
+		"message": "Привяжите этот пункт к профилю, чтобы сохранять с ним в один щелчок независимо от текущего профиля.",
+		"description": "Menu editor help of the 'Profile' field"
+	},
+	"menusPresentationField": {
+		"message": "Представление",
+		"description": "Menu editor field: 'Presentation'"
+	},
+	"menusPresentationSubmenu": {
+		"message": "Одно подменю «Сохранить с профилем»",
+		"description": "Menu editor presentation option: submenu"
+	},
+	"menusPresentationInline": {
+		"message": "По одному пункту на профиль, прямо в списке",
+		"description": "Menu editor presentation option: inline"
+	},
+	"menusPresentationHelp": {
+		"message": "Список соответствует профилям, заданным в параметрах. Чтобы показать только некоторые профили, вместо этого добавьте пункты «Сохранить страницу», привязанные к ним.",
+		"description": "Menu editor help of the 'Presentation' field"
+	},
+	"menusContentsField": {
+		"message": "Содержимое",
+		"description": "Menu editor field: 'Contents'"
+	},
+	"menusContentsHelp": {
+		"message": "Этот пункт — группа переключателей, варианты которой управляются Sciagen. Его можно переместить или переименовать, но нельзя изменить его варианты.",
+		"description": "Menu editor help of the 'Contents' field"
+	},
+	"menusContextsField": {
+		"message": "Отображается при щелчке правой кнопкой мыши",
+		"description": "Menu editor field: 'Appears when right-clicking'"
+	},
+	"menusAltLabelHelp": {
+		"message": "Без собственного названия меню показывает «$1», когда пункт применяется к странице.",
+		"description": "Menu editor help about the alternative label of an entry"
+	},
+	"menusSubmenuField": {
+		"message": "Подменю",
+		"description": "Menu editor field: 'Submenu'"
+	},
+	"menusSubmenuHelp": {
+		"message": "Пунктов: $1. Перетащите пункты на эту строку, чтобы добавить их.",
+		"description": "Menu editor help of the 'Submenu' field"
+	},
+	"menusRemoveButton": {
+		"message": "Удалить из этого меню",
+		"description": "Menu editor button: 'Remove from this menu'"
+	},
+	"menusPageOnly": {
+		"message": "«$1» существует только в контекстном меню страницы.",
+		"description": "Menu editor status when an entry is not allowed in a menu"
+	},
+	"menusJsonLabel": {
+		"message": "Меню в формате JSON",
+		"description": "Menu editor section: 'Layout as JSON'"
+	},
+	"menusJsonApplyButton": {
+		"message": "Применить",
+		"description": "Menu editor button: 'Apply'"
+	},
+	"menusJsonInvalid": {
+		"message": "Недопустимый JSON",
+		"description": "Menu editor status: 'Invalid JSON'"
+	},
+	"menusJsonIgnored": {
+		"message": "Применено, но пропущено недопустимых пунктов: $1.",
+		"description": "Menu editor status after applying JSON that contained entries which are not valid (unknown action, wrong shape)"
+	},
+	"menusUnsupportedBadge": {
+		"message": "не поддерживается",
+		"description": "Menu editor badge of the entries the current browser cannot show"
+	},
+	"menusUnsupportedActionHelp": {
+		"message": "Этот браузер не поддерживает этот пункт, поэтому он не отображается.",
+		"description": "Menu editor note for an entry the current browser cannot show"
+	},
+	"menusProfileMissingHelp": {
+		"message": "Профиль «$1» больше не существует, поэтому этот пункт использует профиль, действующий для страницы.",
+		"description": "Menu editor note for an entry bound to a deleted profile"
+	},
+	"menusEmptySubmenuHelp": {
+		"message": "В этом подменю нет видимых пунктов, поэтому оно не отображается.",
+		"description": "Menu editor note for a submenu whose entries are all skipped"
+	},
+	"menusResetButton": {
+		"message": "Восстановить по умолчанию",
+		"description": "Menu editor button: 'Reset to default'"
+	},
+	"menusResetConfirm": {
+		"message": "Восстановить меню по умолчанию?",
+		"description": "Menu editor confirmation before restoring the default menus"
+	},
+	"menusSaveError": {
+		"message": "Не удалось сохранить меню: $1",
+		"description": "Menu editor status when saving the layout fails (for example the sync storage quota)"
+	},
+	"menusUnsupported": {
+		"message": "Этот браузер не поддерживает меню расширений, поэтому здесь нечего настраивать.",
+		"description": "Menu editor message shown instead of the editor when the browser has no menus API (for example on Android)"
+	},
+	"menusProfilesBadge": {
+		"message": "нужно 2+ профиля",
+		"description": "Menu editor badge of the entries that only appear when more than one profile exists"
+	},
+	"menusProfilesHelp": {
+		"message": "Этот пункт отображается, только если у вас больше одного профиля.",
+		"description": "Menu editor note for the entries that only appear when more than one profile exists"
+	},
+	"menusContextHelp": {
+		"message": "Этот пункт не отображается в выбранном контексте ($1).",
+		"description": "Menu editor note for an entry whose contexts exclude the context selected above the list"
+	}
+}

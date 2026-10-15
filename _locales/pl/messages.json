@@ -1,0 +1,1520 @@
+{
+	"extensionDescription": {
+		"message": "Zapisuj kompletną stronę w pojedynczym pliku HTML.",
+		"description": "Description of the extension."
+	},
+	"commandSaveSelectedTabs": {
+		"message": "Zapisz wybrane karty lub ich wybraną zawartość",
+		"description": "Command (Ctrl+Shift+Y): 'Save the selected tabs or their selected contents'"
+	},
+	"commandSaveAllTabs": {
+		"message": "Zapisz wszystkie karty",
+		"description": "Command (Ctrl+Shift+U): 'Save all tabs'"
+	},
+	"commandCustomShortcut": {
+		"message": "Skrót niestandardowy",
+		"description": "Command label: 'Custom shortcut'"
+	},
+	"commandCustomShortcut0": {
+		"message": "Skrót niestandardowy nr 1",
+		"description": "Command label: 'Custom shortcut #1'"
+	},
+	"commandCustomShortcut1": {
+		"message": "Skrót niestandardowy nr 2",
+		"description": "Command label: 'Custom shortcut #2'"
+	},
+	"commandCustomShortcut2": {
+		"message": "Skrót niestandardowy nr 3",
+		"description": "Command label: 'Custom shortcut #3'"
+	},
+	"commandCustomShortcut3": {
+		"message": "Skrót niestandardowy nr 4",
+		"description": "Command label: 'Custom shortcut #4'"
+	},
+	"commandCustomShortcut4": {
+		"message": "Skrót niestandardowy nr 5",
+		"description": "Command label: 'Custom shortcut #5'"
+	},
+	"commandCustomShortcut5": {
+		"message": "Skrót niestandardowy nr 6",
+		"description": "Command label: 'Custom shortcut #6'"
+	},
+	"commandCustomShortcut6": {
+		"message": "Skrót niestandardowy nr 7",
+		"description": "Command label: 'Custom shortcut #7'"
+	},
+	"commandCustomShortcut7": {
+		"message": "Skrót niestandardowy nr 8",
+		"description": "Command label: 'Custom shortcut #8'"
+	},
+	"commandCustomShortcut8": {
+		"message": "Skrót niestandardowy nr 9",
+		"description": "Command label: 'Custom shortcut #9'"
+	},
+	"commandCustomShortcut9": {
+		"message": "Skrót niestandardowy nr 10",
+		"description": "Command label: 'Custom shortcut #10'"
+	},
+	"menuSavePage": {
+		"message": "Zapisz stronę z Sciagen",
+		"description": "Menu entry: 'Save page with Sciagen'"
+	},
+	"menuSaveSelectedLinks": {
+		"message": "Zapisz wybrane odnośniki",
+		"description": "Menu entry: 'Save selected links'"
+	},
+	"menuEditPage": {
+		"message": "Adnotuj stronę...",
+		"description": "Menu entry: 'Annotate the page...'"
+	},
+	"menuEditAndSavePage": {
+		"message": "Adnotuj i zapisz stronę...",
+		"description": "Menu entry: 'Annotate and save the page...'"
+	},
+	"menuSaveWithProfile": {
+		"message": "Zapisz stronę z profilem",
+		"description": "Menu entry: 'Save with profile'"
+	},
+	"menuViewPendingSaves": {
+		"message": "Zobacz oczekujące zapisy...",
+		"description": "Menu entry: 'View pending saves...'"
+	},
+	"menuSelectProfile": {
+		"message": "Wybierz profil domyślny",
+		"description": "Menu entry: 'Select the default profile'"
+	},
+	"menuUpdateRule": {
+		"message": "Wybierz profil bieżącej reguły",
+		"description": "Menu entry: 'Select the profile of the current rule'"
+	},
+	"menuCreateDomainRule": {
+		"message": "Wybierz profil bieżącej domeny",
+		"description": "Menu entry: 'Select the profile of the current domain'"
+	},
+	"menuSaveSelection": {
+		"message": "Zapisz wybór",
+		"description": "Menu entry: 'Save selection'"
+	},
+	"menuSaveFrame": {
+		"message": "Zapisz ramkę",
+		"description": "Menu entry: 'Save frame'"
+	},
+	"menuSaveTabs": {
+		"message": "Zapisz karty",
+		"description": "Menu entry (Sciagen button only): 'Save tabs'"
+	},
+	"menuSaveSelectedTabs": {
+		"message": "Zapisz wybrane karty",
+		"description": "Menu entry: 'Save selected tabs'"
+	},
+	"menuSaveUnpinnedTabs": {
+		"message": "Zapisz odpięte karty",
+		"description": "Menu entry: 'Save unpinned tabs'"
+	},
+	"menuSaveAllTabs": {
+		"message": "Zapisz wszystkie karty",
+		"description": "Menu entry: 'Save all tabs'"
+	},
+	"menuBatchSaveUrls": {
+		"message": "Zapisz wsadowo adresy URL...",
+		"description": "Menu entry: 'Batch save URLs...'"
+	},
+	"menuAutoSave": {
+		"message": "Automatyczny zapis",
+		"description": "Menu entry: 'Auto-save'"
+	},
+	"menuAutoSaveDisabled": {
+		"message": "Wyłączony",
+		"description": "Menu entry: 'Auto-save' > Disabled'"
+	},
+	"menuAutoSaveTab": {
+		"message": "Automatycznie zapisz tę kartę",
+		"description": "Menu entry: 'Auto-save' > Auto-save this tab'"
+	},
+	"menuAutoSaveUnpinnedTabs": {
+		"message": "Automatycznie zapisz odpięte karty",
+		"description": "Menu entry: 'Auto-save' > Auto-save unpinned tabs'"
+	},
+	"menuAutoSaveAllTabs": {
+		"message": "Automatycznie zapisz wszystkie karty",
+		"description": "Menu entry: 'Auto-save' > Auto-save all tabs'"
+	},
+	"buttonDefaultTooltip": {
+		"message": "Zapisz stronę z Sciagen",
+		"description": "Button title: 'Save page with Sciagen'"
+	},
+	"buttonBlockedBadge": {
+		"message": "🚫",
+		"description": "Button badge when the page is blocked: '🚫'"
+	},
+	"buttonBlockedTooltip": {
+		"message": "Tej strony nie można zapisać z Sciagen",
+		"description": "Button title: 'This page cannot be saved with Sciagen'"
+	},
+	"buttonInitializingTooltip": {
+		"message": "Inicjowanie Sciagen",
+		"description": "Button title during initialization: 'Initializing Sciagen (x/2)'"
+	},
+	"buttonInitializingBadge": {
+		"message": "•••",
+		"description": "Badge label during initialization: '•••'"
+	},
+	"buttonSaveProgressTooltip": {
+		"message": "Postęp zapisywania: ",
+		"description": "Button title during save: 'Save progress: xx%'"
+	},
+	"buttonUploadProgressTooltip": {
+		"message": "Postęp przesyłania: ",
+		"description": "Button title during save: 'Upload progress: xx%'"
+	},
+	"buttonOKBadge": {
+		"message": "OK",
+		"description": "Badge label: 'OK'"
+	},
+	"buttonErrorBadge": {
+		"message": "ERR",
+		"description": "Badge label for unexpected errors"
+	},
+	"buttonAutoSaveActiveTooltip": {
+		"message": "Automatyczny zapis aktywny",
+		"description": "Button title: 'Auto-save active'"
+	},
+	"buttonAutoSaveActiveBadge": {
+		"message": "[A]",
+		"description": "Badge label when auto-save is active"
+	},
+	"optionsTitle": {
+		"message": "Opcje",
+		"description": "Options page title"
+	},
+	"optionsNewWindowLink": {
+		"message": "Otwórz opcje w nowej karcie",
+		"description": "Accessible label of the icon opening the options in a new tab"
+	},
+	"optionsEditorLink": {
+		"message": "Otwórz edytor opcji",
+		"description": "Accessible label of the icon opening the options editor"
+	},
+	"optionsUserInterfaceSubTitle": {
+		"message": "Interfejs użytkownika",
+		"description": "Options sub-title: 'User interface'"
+	},
+	"optionAddMenuEntry": {
+		"message": "dodawaj wpis w menu kontekstowym strony",
+		"description": "Options page label: 'add entry in the context menu of the webpage'"
+	},
+	"optionDisplayShadow": {
+		"message": "nakładaj cień na stronę podczas przetwarzania",
+		"description": "Options page label: 'overlay a shadow on the page during processing'"
+	},
+	"optionDisplayInfobar": {
+		"message": "wyświetlaj pasek informacyjny podczas przeglądania zapisanej strony",
+		"description": "Options page label: 'display an infobar when viewing a saved page'"
+	},
+	"optionInfobarTemplate": {
+		"message": "szablon zawartości paska informacyjnego",
+		"description": "Options page label: 'template of the infobar content'"
+	},
+	"optionBlockMixedContent": {
+		"message": "blokuj zawartość mieszaną",
+		"description": "Options page label: 'block mixed content'"
+	},
+	"optionSaveOriginalURLs": {
+		"message": "zapisuj oryginalne adresy URL zasobów osadzonych",
+		"description": "Options page label: 'save original URLs of embedded resources'"
+	},
+	"optionIncludeInfobar": {
+		"message": "dołączaj pasek informacyjny do zapisanej strony",
+		"description": "Options page label: 'include the infobar in the saved page'"
+	},
+	"optionOpenInfobar": {
+		"message": "utrzymuj pasek informacyjny otwarty",
+		"description": "Options page label: 'keep infobar open'"
+	},
+	"optionAnimateInfobar": {
+		"message": "animuj pasek informacyjny",
+		"description": "Options page label: 'animate the infobar'"
+	},
+	"optionRemoveInfobarSavedDate": {
+		"message": "nie dołączaj zapisanej daty",
+		"description": "Options page label: 'do not include the saved date'"
+	},
+	"optionConfirmInfobar": {
+		"message": "otwieraj okno dialogowe z monitem, aby edytować zawartość paska informacyjnego",
+		"description": "Options page label: 'open a prompt dialog to edit the infobar content'"
+	},
+	"optionAutoClose": {
+		"message": "automatycznie zamykaj kartę po zapisaniu strony",
+		"description": "Options page label: 'auto-close the tab after the page is saved'"
+	},
+	"optionCustomShortcut": {
+		"message": "polecenie skrótu klawiaturowego",
+		"description": "Options page label: 'keyboard shortcut command'"
+	},
+	"optionCustomShortcutDefault": {
+		"message": "skrót domyślny",
+		"description": "Options page label: 'default shortcut'"
+	},
+	"optionsFileNameSubTitle": {
+		"message": "Nazwa pliku",
+		"description": "Options sub-title: 'File name'"
+	},
+	"optionFilenameTemplate": {
+		"message": "szablon",
+		"description": "Options page label: 'template'"
+	},
+	"optionFilenameMaxLength": {
+		"message": "maksymalna długość",
+		"description": "Options page label: 'max length'"
+	},
+	"optionFilenameMaxLengthBytesUnit": {
+		"message": "bajty",
+		"description": "Options page label: 'bytes'"
+	},
+	"optionFilenameMaxLengthCharsUnit": {
+		"message": "znaki",
+		"description": "Options page label: 'characters'"
+	},
+	"optionFilenameReplacementCharacter": {
+		"message": "znak zastępczy",
+		"description": "Options page label: 'replacement character'"
+	},
+	"optionFilenameReplacements": {
+		"message": "znaki zastępowane w nazwach plików",
+		"description": "Options page label: 'characters replaced in file names'"
+	},
+	"optionsFilenameReplacedCharacters": {
+		"message": "Znak(i)",
+		"description": "Options page column label in the replaced characters table: 'Character(s)'"
+	},
+	"optionsFilenameReplacementCharacters": {
+		"message": "Zastępowane przez",
+		"description": "Options page column label in the replaced characters table: 'Replaced with'"
+	},
+	"optionsFilenameReplacedCharactersPlaceholder": {
+		"message": "Wpisz znak (np. \":\")",
+		"description": "Placeholder in the replaced characters table: 'Type a character (e.g. \":\")'"
+	},
+	"optionsAddFilenameReplacementTooltip": {
+		"message": "Dodaj znak",
+		"description": "Popup text 'Add the character' in the options page"
+	},
+	"optionsDeleteFilenameReplacementTooltip": {
+		"message": "Nie zastępuj tego znaku",
+		"description": "Popup text 'Stop replacing this character' in the options page"
+	},
+	"optionsFilenameReplacementsResetButton": {
+		"message": "Przywróć domyślne znaki",
+		"description": "Button label 'Restore default characters' in the options page"
+	},
+	"optionsFilenameReplacementsPreviewFilename": {
+		"message": "Przetestuj nazwę pliku",
+		"description": "Options page column label in the preview table: 'Test a file name'"
+	},
+	"optionsFilenameReplacementsPreviewResult": {
+		"message": "Wynik",
+		"description": "Options page column label in the preview table: 'Result'"
+	},
+	"optionsFilenameReplacementsPreviewPlaceholder": {
+		"message": "Wpisz nazwę pliku",
+		"description": "Placeholder in the preview table: 'Type a file name'"
+	},
+	"optionReplaceEmojisInFilename": {
+		"message": "zamień emotikony na tekst",
+		"description": "Options page label: 'replace emojis with text'"
+	},
+	"optionSaveFilenameTemplateData": {
+		"message": "zapisz dane szablonu nazwy pliku na stronie",
+		"description": "Options page label: 'save the filename template data into the page'"
+	},
+	"optionConfirmFilename": {
+		"message": "otwieraj okno \"Zapisz jako\", aby potwierdzić nazwę pliku",
+		"description": "Options page label: 'open the \"Save as\" dialog to confirm the file name'"
+	},
+	"optionFilenameConflictAction": {
+		"message": "rozwiązywanie konfliktu nazwy pliku",
+		"description": "Options page label: 'filename conflict resolution'"
+	},
+	"optionFilenameConflictActionUniquify": {
+		"message": "stwórz unikalną nazwę pliku",
+		"description": "Value for 'filename conflict resolution' option: 'create a unique name'"
+	},
+	"optionFilenameConflictActionOverwrite": {
+		"message": "nadpisz istniejący plik",
+		"description": "Value for 'filename conflict resolution' option: 'overwrite the existing file'"
+	},
+	"optionFilenameConflictActionPrompt": {
+		"message": "zapytaj o nazwę",
+		"description": "Value for 'name conflict resolution' option: 'prompt for a name'"
+	},
+	"optionFilenameConflictActionSkip": {
+		"message": "pomiń duplikaty plików",
+		"description": "Value for 'filename conflict resolution' option: 'skip duplicate files'"
+	},
+	"optionsHTMLContentSubTitle": {
+		"message": "Zawartość HTML",
+		"description": "Options sub-title: 'HTML content'"
+	},
+	"optionCompressHTML": {
+		"message": "kompresuj zawartość HTML",
+		"description": "Options page label: 'compress HTML content'"
+	},
+	"optionRemoveFrames": {
+		"message": "usuwaj ramki",
+		"description": "Options page label: 'remove frames'"
+	},
+	"optionRemoveHiddenElements": {
+		"message": "usuwaj ukryte elementy",
+		"description": "Options page label: 'remove hidden elements'"
+	},
+	"optionRemovedElementsSelector": {
+		"message": "usuwaj określone elementy",
+		"description": "Options page label: 'remove specific elements'"
+	},
+	"optionsFileFormatSubTitle": {
+		"message": "Format pliku",
+		"description": "Options sub-title: 'File format'"
+	},
+	"optionFileFormat": {
+		"message": "format",
+		"description": "Options page label: 'format'"
+	},
+	"optionFileFormatSelectHTML": {
+		"message": "HTML",
+		"description": "Options page label: 'HTML'"
+	},
+	"optionFileFormatSelectSelfExtractingUniversal": {
+		"message": "samorozpakowujący się plik ZIP (uniwersalny)",
+		"description": "Options page label: 'self-extracting ZIP (universal)'"
+	},
+	"optionFileFormatSelectSelfExtracting": {
+		"message": "samorozpakowujący się plik ZIP",
+		"description": "Options page label: 'self-extracting ZIP'"
+	},
+	"optionFileFormatSelectZIP": {
+		"message": "ZIP",
+		"description": "Options page label: 'ZIP'"
+	},
+	"optionPassword": {
+		"message": "hasło",
+		"description": "Options page label: 'password'"
+	},
+	"optionCreateRootDirectory": {
+		"message": "utwórz katalog główny",
+		"description": "Options page label: 'create a root directory'"
+	},
+	"optionDisableCompression": {
+		"message": "wyłącz kompresję",
+		"description": "Options page label: 'disable compression'"
+	},
+	"optionPreventAppendedData": {
+		"message": "nie dołączaj danych po danych ZIP",
+		"description": "Options page label: 'do not append data after the ZIP data'"
+	},
+	"optionInsertTextBody": {
+		"message": "uczyń tekst przeszukiwalnym",
+		"description": "Options page label: 'make text searchable'"
+	},
+	"optionInsertEmbeddedImage": {
+		"message": "osadź obraz",
+		"description": "Options page label: 'embed image'"
+	},
+	"optionInsertEmbeddedScreenshotImage": {
+		"message": "zrzut ekranu strony",
+		"description": "Options page label: 'page screenshot'"
+	},
+	"optionInsertEmbeddedCustomImage": {
+		"message": "obraz niestandardowy",
+		"description": "Options page label: 'custom image'"
+	},
+	"optionsInfobarSubTitle": {
+		"message": "Pasek informacyjny",
+		"description": "Options sub-title: 'Infobar'"
+	},
+	"optionsImagesSubTitle": {
+		"message": "Obrazy",
+		"description": "Options sub-title: 'Images'"
+	},
+	"optionsDeferredContentSubTitle": {
+		"message": "Odroczona treść",
+		"description": "Options sub-title: 'Deferred content'"
+	},
+	"optionGroupDuplicateImages": {
+		"message": "grupuj zduplikowane obrazy razem",
+		"description": "Options page label: 'group duplicate images together'"
+	},
+	"optionImageReductionFactor": {
+		"message": "współczynnik redukcji obrazów",
+		"description": "Options page label: 'image reduction factor'"
+	},
+	"optionImageQuality": {
+		"message": "jakość zmniejszonych obrazów",
+		"description": "Options page label: 'quality of resized images'"
+	},
+	"optionLoadDeferredContent": {
+		"message": "zapisuj treść ładowaną podczas przewijania",
+		"description": "Options page label: 'save content loaded while scrolling'"
+	},
+	"optionLoadDeferredContentMaxIdleTime": {
+		"message": "maksymalny czas bezczynności (ms)",
+		"description": "Options page label: 'maximum idle time (ms)'"
+	},
+	"optionLoadDeferredContentKeepZoomLevel": {
+		"message": "pomniejsz stronę podczas zapisywania",
+		"description": "Options page label: 'zoom out the page during the capture'"
+	},
+	"optionLoadDeferredContentDispatchScrollEvent": {
+		"message": "symuluj przewijanie",
+		"description": "Options page label: 'simulate scrolling'"
+	},
+	"optionLoadDeferredContentBeforeFrames": {
+		"message": "ładuj najpierw w ramkach",
+		"description": "Options page label: 'load in frames first'"
+	},
+	"optionRemoveAlternativeImages": {
+		"message": "usuwaj obrazy dla alternatywnych rozdzielczości ekranu",
+		"description": "Options page label: 'remove images for alternative screen resolutions'"
+	},
+	"optionsFontsSubTitle": {
+		"message": "Czcionki",
+		"description": "Options sub-title: 'Fonts'"
+	},
+	"optionRemoveUnusedFonts": {
+		"message": "usuwaj nieużywane czcionki",
+		"description": "Options page label: 'remove unused fonts'"
+	},
+	"optionRemoveAlternativeFonts": {
+		"message": "usuwaj alternatywne czcionki",
+		"description": "Options page label: 'remove alternative fonts'"
+	},
+	"optionsStylesheetsSubTitle": {
+		"message": "Arkusze stylów",
+		"description": "Options sub-title: 'Stylesheets'"
+	},
+	"optionGroupDuplicateStylesheets": {
+		"message": "grupuj razem duplikaty arkuszy stylów",
+		"description": "Options page label: 'group duplicate stylesheets together'"
+	},
+	"optionMoveStylesInHead": {
+		"message": "przenoś do elementu head style znajdujące się poza nim",
+		"description": "Options page label: 'move in the head element the styles found outside of it'"
+	},
+	"optionCustomStylesheet": {
+		"message": "zastosuj własny arkusz stylów przed zapisaniem strony",
+		"description": "Options page label: 'apply a custom stylesheet before saving the page'"
+	},
+	"optionRemoveUnusedStyles": {
+		"message": "usuwaj nieużywane style",
+		"description": "Options page label: 'remove unused styles'"
+	},
+	"optionRemoveAlternativeMedias": {
+		"message": "usuwaj arkusze stylów dla urządzeń innych niż ekrany",
+		"description": "Options page label: 'remove stylesheets for alternative devices to screens'"
+	},
+	"optionsNetworkSubTitle": {
+		"message": "Sieć",
+		"description": "Options sub-title: 'Network'"
+	},
+	"optionsBlockedResources": {
+		"message": "zablokowane zasoby",
+		"description": "Options page label: 'blocked resources'"
+	},
+	"optionsAcceptHeaders": {
+		"message": "nagłówek \"Akceptuj\"",
+		"description": "Options page label: '\"Accept\" header'"
+	},
+	"optionResourceScript": {
+		"message": "skrypty",
+		"description": "Options page label: 'scripts'"
+	},
+	"optionResourceVideo": {
+		"message": "wideo",
+		"description": "Options page label: 'videos'"
+	},
+	"optionResourceAudio": {
+		"message": "audio",
+		"description": "Options page label: 'audios'"
+	},
+	"optionResourceDocument": {
+		"message": "dokumenty",
+		"description": "Options page label: 'documents'"
+	},
+	"optionResourceFont": {
+		"message": "czcionki",
+		"description": "Options page label: 'fonts'"
+	},
+	"optionResourceStylesheet": {
+		"message": "arkusze stylów",
+		"description": "Options page label: 'stylesheets'"
+	},
+	"optionResourceImage": {
+		"message": "obrazy",
+		"description": "Options page label: 'images'"
+	},
+	"optionsDestinationSubTitle": {
+		"message": "Cel",
+		"description": "Options sub-title: 'Destination'"
+	},
+	"optionsBookmarkSubTitle": {
+		"message": "Zakładki",
+		"description": "Options sub-title: 'Bookmarks'"
+	},
+	"optionsAutoSaveSubTitle": {
+		"message": "Automatyczny zapis",
+		"description": "Options sub-title: 'Auto-save'"
+	},
+	"optionsAutoSettingsSubTitle": {
+		"message": "Reguły automatycznej konfiguracji",
+		"description": "Options sub-title: the table of rules that pick a profile automatically from the URL of the page being saved"
+	},
+	"optionsDeleteDisplayedRulesConfirm": {
+		"message": "Potwierdź usunięcie wszystkich wyświetlanych reguł",
+		"description": "Popup text 'Confirm the deletion of all displayed rules'"
+	},
+	"optionsDeleteRulesTooltip": {
+		"message": "Usuń wszystkie wyświetlane reguły",
+		"description": "Popup text 'Delete all displayed rules'"
+	},
+	"optionsAutoSettingsUrl": {
+		"message": "Adres URL",
+		"description": "Column header in the Auto-settings rules table: the complete or partial URL a rule matches against the page being saved"
+	},
+	"optionsAutoSettingsUrlPlaceholder": {
+		"message": "Wpisz cały lub częściowy adres URL (np. example.com)",
+		"description": "Placeholder of the URL field in the Auto-settings rules table"
+	},
+	"optionsAutoSettingsProfile": {
+		"message": "Profil",
+		"description": "Column header in the Auto-settings rules table, naming the profile of settings used when a page matching the rule is saved manually. It is a noun, the name of a profile, not an instruction to save"
+	},
+	"optionsAutoSettingsAutoSaveProfile": {
+		"message": "Profil automatycznego zapisu",
+		"description": "Column header in the Auto-settings rules table, naming the profile of settings used when a page matching the rule is saved automatically. It is a noun phrase, 'the profile used for auto-saving', never 'automatically save the profile'"
+	},
+	"optionsAutoSettingsShowAllProfiles": {
+		"message": "wyświetlaj wszystkie profile",
+		"description": "Checkbox label under the Auto-settings rules table: list the rules of every profile instead of only those of the profile selected above"
+	},
+	"optionsAutoSettingsShowAutoSaveProfile": {
+		"message": "wyświetlaj kolumnę 'Profil automatycznego zapisu'",
+		"description": "Checkbox label under the Auto-settings rules table: show or hide the 'Auto-save profile' column. The quoted name must match the translation of optionsAutoSettingsAutoSaveProfile"
+	},
+	"optionsUpdateRuleTooltip": {
+		"message": "Uaktualnij regułę",
+		"description": "Popup text 'Update the rule' in the options page"
+	},
+	"optionsDeleteRuleTooltip": {
+		"message": "Usuń regułę",
+		"description": "Popup text 'Delete the rule' in the options page"
+	},
+	"optionsAddRuleTooltip": {
+		"message": "Dodaj regułę",
+		"description": "Popup text 'Add the rule' in the options page"
+	},
+	"optionsValidateChangesTooltip": {
+		"message": "Zatwierdź zmiany",
+		"description": "Popup text 'Validate changes' in the options page"
+	},
+	"optionsCancelChangesTooltip": {
+		"message": "Anuluj zmiany",
+		"description": "Popup text 'Cancel changes' in the options page"
+	},
+	"optionsDeleteRuleConfirm": {
+		"message": "Potwierdź usunięcie wybranej reguły",
+		"description": "Popup text 'Confirm deletion of the selected rule' in the options page"
+	},
+	"optionAutoSaveLoadOrUnload": {
+		"message": "automatycznie zapisuj po załadowaniu lub przy wyładowaniu strony",
+		"description": "auto-save after page load or on page unload"
+	},
+	"optionAutoSaveLoad": {
+		"message": "automatycznie zapisuj po załadowaniu strony",
+		"description": "Options page label: 'auto-save after page load'"
+	},
+	"optionAutoSaveUnload": {
+		"message": "automatycznie zapisuj przy wyładowaniu strony",
+		"description": "Options page label: 'auto-save on page unload'"
+	},
+	"optionAutoSaveDiscard": {
+		"message": "automatycznie zapisuj przy odrzucaniu karty",
+		"description": "Options page label: 'auto-save on tab discard'"
+	},
+	"optionAutoSaveRemove": {
+		"message": "automatycznie zapisuj przy usuwaniu karty",
+		"description": "Options page label: 'auto-save on tab removal'"
+	},
+	"optionAutoSaveDelay": {
+		"message": "opóźnienie oczekiwania automatycznego zapisywania po załadowaniu strony (s)",
+		"description": "Options page label: 'auto-save waiting delay after page load (s)'"
+	},
+	"optionAutoSaveRepeat": {
+		"message": "automatycznie zapisuj okresowo",
+		"description": "Options page label: 'auto-save periodically'"
+	},
+	"optionAutoSaveRepeatDelay": {
+		"message": "okres (s)",
+		"description": "Options page label: 'period (s)'"
+	},
+	"optionAutoSaveExternalSave": {
+		"message": "zapisuj stronę z Sciagen Companion",
+		"description": "Options page label: 'save the page with Sciagen Companion'"
+	},
+	"optionsEditorSubTitle": {
+		"message": "Edytor adnotacji",
+		"description": "Options sub-title: 'Annotation editor'"
+	},
+	"optionOpenEditor": {
+		"message": "adnotuj stronę przed zapisaniem",
+		"description": "Options page label: 'annotate the page before saving'"
+	},
+	"optionOpenSavedPage": {
+		"message": "otwieraj zapisane strony w nowej karcie",
+		"description": "Options page label: 'open saved pages in a new tab'"
+	},
+	"optionAutoOpenEditor": {
+		"message": "otwieraj strony zapisane z Sciagen w edytorze adnotacji",
+		"description": "Options page label: 'open pages saved with Sciagen in the annotation editor'"
+	},
+	"optionDefaultEditorMode": {
+		"message": "tryb domyślny",
+		"description": "Options page label: 'default mode'"
+	},
+	"optionDefaultEditorModeNormal": {
+		"message": "normalny",
+		"description": "Options page label: 'default mode > normal'"
+	},
+	"optionDefaultEditorModeEdit": {
+		"message": "edytuj stronę",
+		"description": "Options page label: 'default mode > edit the page'"
+	},
+	"optionDefaultEditorModeFormat": {
+		"message": "formatuj stronę",
+		"description": "Options page label: 'default mode > format the page'"
+	},
+	"optionDefaultEditorModeCut": {
+		"message": "usuń elementy",
+		"description": "Options page label: 'default mode > remove elements'"
+	},
+	"optionDefaultEditorModeCutExternal": {
+		"message": "usuń elementy zewnętrzne",
+		"description": "Options page label: 'default mode > remove external elements'"
+	},
+	"optionApplySystemTheme": {
+		"message": "zastosuj motyw systemowy podczas formatowania strony",
+		"description": "Title of the button 'apply the system theme when formatting a page'"
+	},
+	"optionContentWidth": {
+		"message": "szerokość zawartości podczas formatowania strony (em)",
+		"description": "Options page label: 'content width when formatting a page (em)'"
+	},
+	"optionWarnUnsavedPage": {
+		"message": "ostrzegaj, jeśli opuszczasz stronę z niezapisanymi zmianami",
+		"description": "Title of the button 'warn if leaving page with unsaved changes'"
+	},
+	"optionDisplayInfobarInEditor": {
+		"message": "wyświetlanie paska informacyjnego",
+		"description": "Title of the button 'display the infobar'"
+	},
+	"optionsMiscSubTitle": {
+		"message": "Różne",
+		"description": "Options sub-title: 'Misc.'"
+	},
+	"optionsExternalCapturePermissionsSubTitle": {
+		"message": "Zewnętrzne API przechwytywania",
+		"description": "Options sub-title: 'External capture API'"
+	},
+	"optionExternalCaptureAllowedIds": {
+		"message": "dozwolone rozszerzenia, po jednym w wierszu",
+		"description": "Options page label: 'allowed extensions, one per line'"
+	},
+	"optionExternalCaptureDeniedIds": {
+		"message": "zablokowane rozszerzenia, po jednym w wierszu",
+		"description": "Options page label: 'blocked extensions, one per line'"
+	},
+	"optionsExternalCapturePendingRequest": {
+		"message": "Rozszerzenie $EXTENSION_ID$ chce użyć Sciagen do przechwytywania stron w tej przeglądarce i otrzymywania ich zawartości HTML. Jeśli na to zezwolisz, będzie mogło przechwycić dowolną kartę w dowolnym momencie bez ponownego pytania, dopóki nie usuniesz go z poniższej listy.",
+		"description": "Options page prompt to approve an external extension capture request.",
+		"placeholders": {
+			"extension_id": {
+				"content": "$1",
+				"example": "archivebox@example.com"
+			}
+		}
+	},
+	"optionsExternalCaptureApproveButton": {
+		"message": "Zezwól",
+		"description": "Options button: 'Allow'"
+	},
+	"optionsExternalCaptureDenyButton": {
+		"message": "Odmów",
+		"description": "Options button: 'Deny'"
+	},
+	"optionBackgroundSave": {
+		"message": "zapisuj strony w tle",
+		"description": "Options page label: 'save pages in background'"
+	},
+	"optionDisplayStats": {
+		"message": "wyświetlaj statystyki w konsoli po przetworzeniu",
+		"description": "Options page label: 'display stats in the console after processing'"
+	},
+	"optionSetMaxResourceSize": {
+		"message": "ustaw maksymalny rozmiar",
+		"description": "Options page label: 'set maximum size'"
+	},
+	"optionMaxResourceSize": {
+		"message": "maksymalny rozmiar (MB)",
+		"description": "Options page label: 'maximum size (MB)'"
+	},
+	"optionSetMaxResourceDelay": {
+		"message": "ustaw maksymalny czas pobierania",
+		"description": "Options page label: 'set maximum download time'"
+	},
+	"optionMaxResourceDelay": {
+		"message": "maksymalny czas pobierania (s)",
+		"description": "Options page label: 'maximum download time (s)'"
+	},
+	"optionPassReferrerOnError": {
+		"message": "przekazuj nagłówek \"Referer\" po błędzie żądania między źródłami",
+		"description": "Options page label: 'pass \"Referer\" header after a cross-origin request error'"
+	},
+	"optionSaveRawPage": {
+		"message": "zapisuj surową stronę",
+		"description": "Options page label: 'save raw page'"
+	},
+	"optionInsertMetaCSP": {
+		"message": "ustaw politykę bezpieczeństwa treści",
+		"description": "Options page label: 'set content security policy'"
+	},
+	"optionInsertCanonicalLink": {
+		"message": "zapisuj link kanoniczny strony",
+		"description": "Options page label: 'save the canonical link of the page'"
+	},
+	"optionSaveToClipboard": {
+		"message": "kopiuj do schowka",
+		"description": "Options page label: 'copy to clipboard'"
+	},
+	"optionSaveToFilesystem": {
+		"message": "zapisuj do systemu plików",
+		"description": "Options page label: 'save to filesystem'"
+	},
+	"optionSharePage": {
+		"message": "udostępnij stronę",
+		"description": "Options page label: 'share page'"
+	},
+	"optionAddProof": {
+		"message": "dodawaj dowód istnienia",
+		"description": "Options page label: 'add proof of existence'"
+	},
+	"optionsAddProofConfirm": {
+		"message": "Potwierdź, że zezwalasz Sciagen na wysyłanie do interfejsu API Woleet skrótu SHA256 każdej strony, którą chcesz zapisać. Więcej informacji na temat tej funkcji można znaleźć na stronie pomocy lub klikając znak zapytania obok opcji.",
+		"description": "Popup text displayed wen enabling the option 'add proof of existence'"
+	},
+	"optionWoleetKey": {
+		"message": "token dostępu",
+		"description": "Options page label: 'access token'"
+	},
+	"optionSaveToGDrive": {
+		"message": "przesyłaj na Dysk Google",
+		"description": "Options page label: 'upload to Google Drive'"
+	},
+	"optionSaveToDropbox": {
+		"message": "przesyłaj na Dropbox",
+		"description": "Options page label: 'upload to Dropbox'"
+	},
+	"optionSaveToGitHub": {
+		"message": "przesyłaj do GitHuba",
+		"description": "Options page label: 'upload to GitHub'"
+	},
+	"optionGitHubToken": {
+		"message": "token dostępu",
+		"description": "Options page label: 'access token'"
+	},
+	"optionGitHubUser": {
+		"message": "nazwa użytkownika",
+		"description": "Options page label: 'user name'"
+	},
+	"optionGitHubRepository": {
+		"message": "nazwa repozytorium",
+		"description": "Options page label: 'repository name'"
+	},
+	"optionGitHubBranch": {
+		"message": "nazwa gałęzi",
+		"description": "Options page label: 'branch name'"
+	},
+	"optionSaveToS3": {
+		"message": "przesyłaj do Amazon S3",
+		"description": "Options page label: 'upload to Amazon S3'"
+	},
+	"optionS3Domain": {
+		"message": "domena",
+		"description": "Options page label: 'domain'"
+	},
+	"optionS3Region": {
+		"message": "region",
+		"description": "Options page label: 'region'"
+	},
+	"optionS3Bucket": {
+		"message": "nazwa komory",
+		"description": "Options page label: 'bucket name'"
+	},
+	"optionS3AccessKey": {
+		"message": "klucz dostępu",
+		"description": "Options page label: 'access key'"
+	},
+	"optionS3SecretKey": {
+		"message": "klucz tajny",
+		"description": "Options page label: 'secret key'"
+	},
+	"optionSaveWithWebDAV": {
+		"message": "przesyłaj na serwer WebDAV",
+		"description": "Options page label: 'upload to a WebDAV server'"
+	},
+	"optionWebDAVURL": {
+		"message": "adres URL",
+		"description": "Options page label: 'URL'"
+	},
+	"optionWebDAVUser": {
+		"message": "identyfikator użytkownika",
+		"description": "Options page label: 'user identifier'"
+	},
+	"optionWebDAVPassword": {
+		"message": "hasło",
+		"description": "Options page label: 'password'"
+	},
+	"optionSaveWithMCP": {
+		"message": "przesyłaj na serwer MCP",
+		"description": "Options page label: 'upload to an MCP server'"
+	},
+	"optionMCPServerUrl": {
+		"message": "adres URL serwera",
+		"description": "Options page label: 'server URL'"
+	},
+	"optionMCPAuthToken": {
+		"message": "token uwierzytelniający",
+		"description": "Options page label: 'authentication token'"
+	},
+	"optionSaveWithCompanion": {
+		"message": "zapisuj z Sciagen Companion",
+		"description": "Options page label: 'save with Sciagen Companion'"
+	},
+	"optionSaveCreatedBookmarks": {
+		"message": "zapisuj stronę nowo utworzonej zakładki",
+		"description": "Options page label: 'save the page of a newly created bookmark'"
+	},
+	"optionReplaceBookmarkURL": {
+		"message": "łącz nową zakładkę z zapisaną stroną",
+		"description": "Options page label: 'link the new bookmark to the saved page'"
+	},
+	"optionAllowedBookmarkFolders": {
+		"message": "dozwolone foldery",
+		"description": "Options page label: 'allowed folders'"
+	},
+	"optionIgnoredBookmarkFolders": {
+		"message": "ignorowane foldery",
+		"description": "Options page label: 'ignored folders'"
+	},
+	"optionsHelpLink": {
+		"message": "pomoc (w języku angielskim)",
+		"description": "Options help link"
+	},
+	"optionSynchronize": {
+		"message": "synchronizuj opcje",
+		"description": "Options label: 'synchronize options'"
+	},
+	"optionsResetButton": {
+		"message": "Resetuj",
+		"description": "Options button: 'Reset'"
+	},
+	"optionsResetTooltip": {
+		"message": "Zresetuj wszystkie opcje do ich wartości domyślnych",
+		"description": "Options 'Reset' button tooltip"
+	},
+	"optionsResetConfirm": {
+		"message": "Potwierdź zresetowanie wszystkich opcji lub bieżącego profilu",
+		"description": "Popup text 'Confirm the reset of all options or the current profile' in the options page"
+	},
+	"optionsResetAllButton": {
+		"message": "Zresetuj wszystkie opcje",
+		"description": "Options confirm button: 'Reset all options'"
+	},
+	"optionsResetCurrentButton": {
+		"message": "Zresetuj bieżący profil",
+		"description": "Options confirm button: 'Reset current profile'"
+	},
+	"optionsOKButton": {
+		"message": "OK",
+		"description": "Options confirm button: 'OK'"
+	},
+	"optionsCancelButton": {
+		"message": "Anuluj",
+		"description": "Options confirm button: 'Cancel'"
+	},
+	"optionsExportButton": {
+		"message": "Eksportuj",
+		"description": "Options button: 'Export'"
+	},
+	"optionsImportButton": {
+		"message": "Importuj",
+		"description": "Options button: 'Import'"
+	},
+	"logPanelDeferredContent": {
+		"message": "Odroczona treść",
+		"description": "Label 'Deferred content' in the log panel"
+	},
+	"logPanelFrameContents": {
+		"message": "Zawartość ramki",
+		"description": "Label 'Frame contents' in the log panel"
+	},
+	"logPanelEmbeddedImage": {
+		"message": "Osadzony obraz",
+		"description": "Label 'Embedded image' in the log panel"
+	},
+	"logPanelStep": {
+		"message": "Krok",
+		"description": "Label 'Step' (for 'Step x / 4') in the log panel"
+	},
+	"logPanelWidth": {
+		"message": "130",
+		"description": "Width of the log panel in pixels, it should be adjusted for the longest label beginning with 'log' (e.g. 'logPanelDeferredContent')"
+	},
+	"maskCancelButton": {
+		"message": "Anuluj (Esc)",
+		"description": "Button 'Cancel (Esc)' in the mask displayed while a page is being saved"
+	},
+	"topPanelError": {
+		"message": "Błąd Sciagen: ",
+		"description": "Label 'Sciagen error: ' in the top panel when displaying an error message"
+	},
+	"topPanelCopyDetailsButton": {
+		"message": "Kopiuj szczegóły",
+		"description": "Button label 'Copy details' in the top panel next to an error message"
+	},
+	"topPanelEmbeddedImageButton": {
+		"message": "Otwórz obraz...",
+		"description": "Top panel button 'Open image...' when embedding an image"
+	},
+	"topPanelSharePageButton": {
+		"message": "Udostępnij stronę...",
+		"description": "Top panel button 'Share page...' when sharing a page"
+	},
+	"topPanelShareSelectionButton": {
+		"message": "Udostępnij wybór...",
+		"description": "Top panel button 'Share selection...' when sharing selected content"
+	},
+	"profileDefaultSettings": {
+		"message": "Ustawienia domyślne",
+		"description": "Label 'Default settings' of the default settings in the options page"
+	},
+	"profileDisabled": {
+		"message": "Wyłączony",
+		"description": "Label 'Disabled' of the disabled profile name in the options page"
+	},
+	"profileAddButtonTooltip": {
+		"message": "Dodaj nowy profil",
+		"description": "Tooltip 'Add a new profile' in the options page"
+	},
+	"profileRenameButtonTooltip": {
+		"message": "Zmień nazwę profilu",
+		"description": "Tooltip 'Rename the profile' in the options page"
+	},
+	"profileDeleteButtonTooltip": {
+		"message": "Usuń profil",
+		"description": "Tooltip 'Delete the profile' in the options page"
+	},
+	"profileAddPrompt": {
+		"message": "Wpisz nazwę tego nowego profilu",
+		"description": "Popup text 'Enter a name for this new profile' in the options page"
+	},
+	"profileDeleteConfirm": {
+		"message": "Potwierdź usunięcie wybranego profilu",
+		"description": "Popup text 'Confirm the deletion of the selected profile' in the options page"
+	},
+	"profileRenamePrompt": {
+		"message": "Wpisz nową nazwę wybranego profilu",
+		"description": "Popup text 'Enter a new name for the selected profile' in the options page"
+	},
+	"editorAddYellowNote": {
+		"message": "Dodaj żółtą notatkę",
+		"description": "Title of the button 'Add a yellow note' in the editor"
+	},
+	"editorAddPinkNote": {
+		"message": "Dodaj różową notatkę",
+		"description": "Title of the button 'Add a pink note' in the editor"
+	},
+	"editorAddBlueNote": {
+		"message": "Dodaj niebieską notatkę",
+		"description": "Title of the button 'Add a blue note' in the editor"
+	},
+	"editorAddGreenNote": {
+		"message": "Dodaj zieloną notatkę",
+		"description": "Title of the button 'Add a green note' in the editor"
+	},
+	"editorHighlightYellow": {
+		"message": "Podświetl wybrany tekst na żółto",
+		"description": "Title of the button 'Highlight selected text in yellow' in the editor"
+	},
+	"editorHighlightPink": {
+		"message": "Podświetl wybrany tekst na różowo",
+		"description": "Title of the button 'Highlight selected text in pink' in the editor"
+	},
+	"editorHighlightBlue": {
+		"message": "Podświetl wybrany tekst na niebiesko",
+		"description": "Title of the button 'Highlight selected text in blue' in the editor"
+	},
+	"editorHighlightGreen": {
+		"message": "Podświetl wybrany tekst na zielono",
+		"description": "Title of the button 'Highlight selected text in green' in the editor"
+	},
+	"editorToggleNotes": {
+		"message": "Wyświetl/ukryj notatki",
+		"description": "Title of the button 'Display/hide notes' in the editor"
+	},
+	"editorToggleHighlights": {
+		"message": "Wyświetl/ukryj podświetlony tekst",
+		"description": "Title of the button 'Display/hide the highlighted text' in the editor"
+	},
+	"editorRemoveHighlight": {
+		"message": "Usuń wybrany podświetlony tekst",
+		"description": "Title of the button 'Remove the selected highlighted text' in the editor"
+	},
+	"editorEditPage": {
+		"message": "Włącz/wyłącz tylko do odczytu",
+		"description": "Title of the button 'Enable/disable read-only' in the editor"
+	},
+	"editorFormatPage": {
+		"message": "Sformatuj stronę dla lepszej czytelności",
+		"description": "Title of the button 'Format the page for better readability' in the editor"
+	},
+	"editorCutInnerPage": {
+		"message": "Włącz/wyłącz usuwanie elementów wewnętrznych",
+		"description": "Title of the button 'Enable/disable removing of internal elements' in the editor"
+	},
+	"editorCutOuterPage": {
+		"message": "Włącz/wyłącz usuwanie elementów zewnętrznych",
+		"description": "Title of the button 'Enable/disable removing of external elements' in the editor"
+	},
+	"editorUndoCutPage": {
+		"message": "Przywróć ostatni usunięty element",
+		"description": "Title of the button 'Restore last removed element' in the editor"
+	},
+	"editorUndoAllCutPage": {
+		"message": "Przywróć wszystkie usunięte elementy",
+		"description": "Title of the button 'Restore all removed elements' in the editor"
+	},
+	"editorRedoCutPage": {
+		"message": "Usuń ostatni przywrócony element",
+		"description": "Title of the button 'Remove last restored element' in the editor"
+	},
+	"editorSavePage": {
+		"message": "Zapisz stronę",
+		"description": "Title of the button 'Save the page' in the editor"
+	},
+	"editorPrintPage": {
+		"message": "Wydrukuj stronę",
+		"description": "Title of the button 'Print the page' in the editor"
+	},
+	"editorImportMht": {
+		"message": "Importuj plik MHTML",
+		"description": "Title of the button 'Import MHTML file' in the editor"
+	},
+	"editorArchiveToc": {
+		"message": "Spis treści",
+		"description": "Title of the table of contents button displayed in the editor when viewing a multi-page archive"
+	},
+	"pendingsTitle": {
+		"message": "Oczekujące zapisy",
+		"description": "Title of the pending save page 'Pending saves' in the editor"
+	},
+	"pendingsCancelAllButton": {
+		"message": "Anuluj wszystkie",
+		"description": "Pending saves button 'Cancel all'"
+	},
+	"pendingsURLTitle": {
+		"message": "Adres URL",
+		"description": "Title of the first column in the table of the pending saves 'URL'"
+	},
+	"pendingsTitleTitle": {
+		"message": "Tytuł",
+		"description": "Title of the first column in the table of the pending saves 'Title'"
+	},
+	"pendingsStatusTitle": {
+		"message": "status",
+		"description": "Title of the second column in the table of the pending saves 'status'"
+	},
+	"pendingsPendingStatus": {
+		"message": "oczekiwanie",
+		"description": "Value of 'status' for pending saves"
+	},
+	"pendingsProcessingStatus": {
+		"message": "przetwarzanie",
+		"description": "Value of 'status' for current saves"
+	},
+	"pendingsCancellingStatus": {
+		"message": "anulowanie",
+		"description": "Value of 'status' for cancelled saves"
+	},
+	"pendingsNoPendings": {
+		"message": "Brak oczekujących zapisów",
+		"description": "Label displayed when there are no pending saves"
+	},
+	"pendingsAddUrlsButton": {
+		"message": "Dodaj adresy URL",
+		"description": "button 'Add URLs'"
+	},
+	"pendingsAddUrls": {
+		"message": "Wprowadź listę adresów URL oddzielonych nowym wierszem",
+		"description": "Label of the add URLs input"
+	},
+	"pendingsAddUrlsOKButton": {
+		"message": "OK",
+		"description": "Add URLs popup confirm button: 'OK'"
+	},
+	"pendingsAddUrlsCancelButton": {
+		"message": "Anuluj",
+		"description": "Add URLs popup cancel button: 'Cancel'"
+	},
+	"batchSaveUrlsTitle": {
+		"message": "Zapisz wsadowo adresy URL",
+		"description": "Title of the 'batch save URLs' page"
+	},
+	"batchSaveUrlsNoURLs": {
+		"message": "Brak adresów URL",
+		"description": "Label displayed when there are no URLs"
+	},
+	"batchSaveUrlsAddUrlButton": {
+		"message": "Dodaj adres URL",
+		"description": "label of the button 'Add URL'"
+	},
+	"batchSaveUrlsAddUrlsButton": {
+		"message": "Dodaj adresy URL...",
+		"description": "label of the button 'Add URLs...'"
+	},
+	"batchSaveUrlsRemoveAllButton": {
+		"message": "Usuń wszystkie",
+		"description": "label of the button 'Remove all'"
+	},
+	"batchSaveUrlsSavePagesButton": {
+		"message": "Zapisz strony",
+		"description": "label of the button 'Save pages'"
+	},
+	"batchSaveUrlsURLTitle": {
+		"message": "Adres URL",
+		"description": "Title of the column in the table of the URLs"
+	},
+	"batchSaveUrlsProfileAuto": {
+		"message": "Profil według reguł i bieżącego wyboru",
+		"description": "First entry of the profile dropdown of the 'batch save URLs' page: the profile of each URL comes from the rules and from the profile selected in the options page"
+	},
+	"batchSaveUrlsSkippedByRule": {
+		"message": "Pominięto: reguła przypisuje tę stronę do wyłączonego profilu",
+		"description": "Status displayed next to a URL the batch save skipped because its rule maps it to the disabled profile"
+	},
+	"optionSaveToRestFormApi": {
+		"message": "przesyłaj do API formularza REST",
+		"description": "Options page label: 'upload to a REST Form API'"
+	},
+	"optionRestFormApiUrl": {
+		"message": "adres URL",
+		"description": "Options page label: 'URL'"
+	},
+	"optionRestFormApiToken": {
+		"message": "token autoryzacji",
+		"description": "Options page label: 'authorization token'"
+	},
+	"optionRestFormApiFileFieldName": {
+		"message": "nazwa pola danych archiwum",
+		"description": "Options page label: 'archive data field name'"
+	},
+	"optionRestFormApiUrlFieldName": {
+		"message": "nazwa pola adresu URL archiwum",
+		"description": "Options page label: 'archive URL field name'"
+	},
+	"optionsEditorTitle": {
+		"message": "Edytor opcji",
+		"description": "Options title: 'Options editor'"
+	},
+	"optionsEditorSaveButton": {
+		"message": "Zapisz",
+		"description": "Options editor button: 'Save'"
+	},
+	"optionsEditorConfigSaved": {
+		"message": "Konfiguracja zapisana",
+		"description": "Options editor message: 'Configuration saved'"
+	},
+	"optionsEditorInvalidJSON": {
+		"message": "Nieprawidłowy JSON",
+		"description": "Options editor error message: 'Invalid JSON'"
+	},
+	"optionsMenusSubTitle": {
+		"message": "Menu",
+		"description": "Options sub-title: 'Menus'"
+	},
+	"optionMenusEditor": {
+		"message": "wybierz wpisy wyświetlane w menu i ich kolejność (wspólne dla wszystkich profili)",
+		"description": "Options page label: 'choose the entries displayed in the menus and their order (shared by all profiles)'"
+	},
+	"optionMenusEditorLink": {
+		"message": "Otwórz edytor menu...",
+		"description": "Options page link: 'Open the menu editor...'"
+	},
+	"optionMenusDefault": {
+		"message": "domyślne menu",
+		"description": "Options page state: 'default menus'"
+	},
+	"optionMenusCustomized": {
+		"message": "dostosowane menu",
+		"description": "Options page state: 'customized menus'"
+	},
+	"menuSubmenu": {
+		"message": "Podmenu",
+		"description": "Menu editor entry: 'Submenu'"
+	},
+	"menuSeparator": {
+		"message": "Separator",
+		"description": "Menu editor entry: 'Separator'"
+	},
+	"menusTitle": {
+		"message": "Edytor menu",
+		"description": "Menu editor title"
+	},
+	"menusSubTitle": {
+		"message": "Wybierz, co i w jakiej kolejności ma się pojawiać w każdym menu Sciagen. Te ustawienia są wspólne dla wszystkich profili.",
+		"description": "Menu editor sub-title"
+	},
+	"menusSurfaceLabel": {
+		"message": "Menu",
+		"description": "Menu editor label of the menu selector"
+	},
+	"menusSurfacePage": {
+		"message": "Menu kontekstowe strony",
+		"description": "Menu editor menu name: 'Page context menu'"
+	},
+	"menusSurfaceButton": {
+		"message": "Menu przycisku",
+		"description": "Menu editor menu name: 'Button menu'"
+	},
+	"menusSurfaceTab": {
+		"message": "Menu karty",
+		"description": "Menu editor menu name: 'Tab menu'"
+	},
+	"menusUseForAllButton": {
+		"message": "Użyj dla wszystkich menu",
+		"description": "Menu editor button: 'Use for all menus'"
+	},
+	"menusUseForAllTooltip": {
+		"message": "Zastąp pozostałe menu bieżącym",
+		"description": "Menu editor tooltip of the 'Use for all menus' button"
+	},
+	"menusUseForAllStatus": {
+		"message": "Wszystkie menu używają teraz tych wpisów.",
+		"description": "Menu editor status after using a layout for all menus"
+	},
+	"menusContextPage": {
+		"message": "Strona",
+		"description": "Menu editor context: 'Page'"
+	},
+	"menusContextSelection": {
+		"message": "Zaznaczenie",
+		"description": "Menu editor context: 'Selection'"
+	},
+	"menusContextFrame": {
+		"message": "Ramka",
+		"description": "Menu editor context: 'Frame'"
+	},
+	"menusContextLink": {
+		"message": "Odnośnik",
+		"description": "Menu editor context: 'Link'"
+	},
+	"menusHintPage": {
+		"message": "Wyświetlane po kliknięciu strony prawym przyciskiem myszy. Wyszarzone wpisy nie pojawiają się w wybranym kontekście.",
+		"description": "Menu editor hint of the page context menu"
+	},
+	"menusHintButton": {
+		"message": "Wyświetlane po kliknięciu prawym przyciskiem myszy przycisku Sciagen na pasku narzędzi.",
+		"description": "Menu editor hint of the button menu"
+	},
+	"menusHintTab": {
+		"message": "Wyświetlane po kliknięciu karty prawym przyciskiem myszy.",
+		"description": "Menu editor hint of the tab menu"
+	},
+	"menusAddLabel": {
+		"message": "Dodaj",
+		"description": "Menu editor label of the entry selector"
+	},
+	"menusAddButton": {
+		"message": "Dodaj",
+		"description": "Menu editor button: 'Add'"
+	},
+	"menusEditHint": {
+		"message": "Nowe wpisy trafiają za wybrany wpis lub do wybranego podmenu. Przeciągaj, aby zmienić kolejność, upuść na podmenu, aby zagnieździć, kliknij dwukrotnie etykietę, aby zmienić nazwę, naciśnij Delete, aby usunąć.",
+		"description": "Menu editor hint about editing"
+	},
+	"menusDynamicBadge": {
+		"message": "dynamiczny",
+		"description": "Menu editor badge of the entries managed by Sciagen"
+	},
+	"menusRemoveTooltip": {
+		"message": "Usuń z tego menu",
+		"description": "Menu editor tooltip of the remove button"
+	},
+	"menusActionLimitLine": {
+		"message": "Wyświetlane są tylko pierwsze wpisy (maksymalnie $1)",
+		"description": "Menu editor line marking the entries hidden by the browser in the button menu"
+	},
+	"menusActionLimitNote": {
+		"message": "Przeglądarka wyświetla w menu przycisku ograniczoną liczbę wpisów najwyższego poziomu (limit: $1).",
+		"description": "Menu editor note about the limit of top-level entries in the button menu"
+	},
+	"menusActionLimitLineWrapped": {
+		"message": "Firefox przenosi poniższe wpisy do podmenu „Sciagen”",
+		"description": "Menu editor line marking the entries Firefox moves into an automatic submenu in the button menu"
+	},
+	"menusActionLimitNoteWrapped": {
+		"message": "Firefox zachowuje w menu przycisku pierwsze wpisy najwyższego poziomu (limit: $1), a pozostałe przenosi do podmenu „Sciagen”.",
+		"description": "Menu editor note about Firefox moving the extra top-level entries of the button menu into an automatic submenu"
+	},
+	"menusWrapButton": {
+		"message": "Zwiń pozostałe w podmenu",
+		"description": "Menu editor button: 'Wrap the rest in a submenu'"
+	},
+	"menusMoreSubmenu": {
+		"message": "Więcej...",
+		"description": "Menu editor default label of the submenu created to wrap the hidden entries"
+	},
+	"menusInspectorEmpty": {
+		"message": "Wybierz wpis w menu, aby zmienić jego etykietę, powiązać go z profilem lub określić, kiedy się pojawia.",
+		"description": "Menu editor text when no entry is selected"
+	},
+	"menusInspectorSeparator": {
+		"message": "Separator. Przeciągnij go, aby przenieść, naciśnij Delete, aby usunąć.",
+		"description": "Menu editor text when a separator is selected"
+	},
+	"menusLabelField": {
+		"message": "Etykieta",
+		"description": "Menu editor field: 'Label'"
+	},
+	"menusLabelHelp": {
+		"message": "Pozostaw puste, aby użyć standardowej etykiety. W systemach Windows i Linux znak & przed literą czyni ją skrótem klawiszowym.",
+		"description": "Menu editor help of the 'Label' field"
+	},
+	"menusProfileField": {
+		"message": "Profil",
+		"description": "Menu editor field: 'Profile'"
+	},
+	"menusProfileNone": {
+		"message": "Profil używany dla strony",
+		"description": "Menu editor option when no profile is bound to the entry"
+	},
+	"menusProfileHelp": {
+		"message": "Powiąż ten wpis z profilem, aby zapisywać z jego użyciem jednym kliknięciem, niezależnie od bieżącego profilu.",
+		"description": "Menu editor help of the 'Profile' field"
+	},
+	"menusPresentationField": {
+		"message": "Prezentacja",
+		"description": "Menu editor field: 'Presentation'"
+	},
+	"menusPresentationSubmenu": {
+		"message": "Jedno podmenu „Zapisz stronę z profilem”",
+		"description": "Menu editor presentation option: submenu"
+	},
+	"menusPresentationInline": {
+		"message": "Jeden wpis na profil, bezpośrednio na liście",
+		"description": "Menu editor presentation option: inline"
+	},
+	"menusPresentationHelp": {
+		"message": "Lista odpowiada profilom zdefiniowanym w opcjach. Aby pokazać tylko niektóre profile, dodaj zamiast tego powiązane z nimi wpisy „Zapisz stronę”.",
+		"description": "Menu editor help of the 'Presentation' field"
+	},
+	"menusContentsField": {
+		"message": "Zawartość",
+		"description": "Menu editor field: 'Contents'"
+	},
+	"menusContentsHelp": {
+		"message": "Ten wpis to grupa opcji wyboru, której pozycje są zarządzane przez Sciagen. Możesz go przenieść lub zmienić jego nazwę, ale nie możesz edytować jego pozycji.",
+		"description": "Menu editor help of the 'Contents' field"
+	},
+	"menusContextsField": {
+		"message": "Pojawia się po kliknięciu prawym przyciskiem",
+		"description": "Menu editor field: 'Appears when right-clicking'"
+	},
+	"menusAltLabelHelp": {
+		"message": "Bez własnej etykiety menu wyświetla „$1”, gdy wpis dotyczy strony.",
+		"description": "Menu editor help about the alternative label of an entry"
+	},
+	"menusSubmenuField": {
+		"message": "Podmenu",
+		"description": "Menu editor field: 'Submenu'"
+	},
+	"menusSubmenuHelp": {
+		"message": "Liczba wpisów: $1. Upuść wpisy na ten wiersz, aby je dodać.",
+		"description": "Menu editor help of the 'Submenu' field"
+	},
+	"menusRemoveButton": {
+		"message": "Usuń z tego menu",
+		"description": "Menu editor button: 'Remove from this menu'"
+	},
+	"menusPageOnly": {
+		"message": "„$1” istnieje tylko w menu kontekstowym strony.",
+		"description": "Menu editor status when an entry is not allowed in a menu"
+	},
+	"menusJsonLabel": {
+		"message": "Menu jako JSON",
+		"description": "Menu editor section: 'Layout as JSON'"
+	},
+	"menusJsonApplyButton": {
+		"message": "Zastosuj",
+		"description": "Menu editor button: 'Apply'"
+	},
+	"menusJsonInvalid": {
+		"message": "Nieprawidłowy JSON",
+		"description": "Menu editor status: 'Invalid JSON'"
+	},
+	"menusJsonIgnored": {
+		"message": "Zastosowano, ale pominięto nieprawidłowe wpisy: $1.",
+		"description": "Menu editor status after applying JSON that contained entries which are not valid (unknown action, wrong shape)"
+	},
+	"menusUnsupportedBadge": {
+		"message": "nieobsługiwany",
+		"description": "Menu editor badge of the entries the current browser cannot show"
+	},
+	"menusUnsupportedActionHelp": {
+		"message": "Ta przeglądarka nie obsługuje tego wpisu, więc nie jest on wyświetlany.",
+		"description": "Menu editor note for an entry the current browser cannot show"
+	},
+	"menusProfileMissingHelp": {
+		"message": "Profil „$1” już nie istnieje, więc ten wpis korzysta z profilu używanego dla strony.",
+		"description": "Menu editor note for an entry bound to a deleted profile"
+	},
+	"menusEmptySubmenuHelp": {
+		"message": "To podmenu nie ma widocznych wpisów, więc nie jest wyświetlane.",
+		"description": "Menu editor note for a submenu whose entries are all skipped"
+	},
+	"menusResetButton": {
+		"message": "Przywróć domyślne",
+		"description": "Menu editor button: 'Reset to default'"
+	},
+	"menusResetConfirm": {
+		"message": "Przywrócić domyślne menu?",
+		"description": "Menu editor confirmation before restoring the default menus"
+	},
+	"menusSaveError": {
+		"message": "Nie można zapisać menu: $1",
+		"description": "Menu editor status when saving the layout fails (for example the sync storage quota)"
+	},
+	"menusUnsupported": {
+		"message": "Ta przeglądarka nie obsługuje menu rozszerzeń, więc nie ma tu nic do dostosowania.",
+		"description": "Menu editor message shown instead of the editor when the browser has no menus API (for example on Android)"
+	},
+	"menusProfilesBadge": {
+		"message": "wymaga 2+ profili",
+		"description": "Menu editor badge of the entries that only appear when more than one profile exists"
+	},
+	"menusProfilesHelp": {
+		"message": "Ten wpis jest wyświetlany tylko wtedy, gdy masz więcej niż jeden profil.",
+		"description": "Menu editor note for the entries that only appear when more than one profile exists"
+	},
+	"menusContextHelp": {
+		"message": "Ten wpis nie jest wyświetlany w wybranym kontekście ($1).",
+		"description": "Menu editor note for an entry whose contexts exclude the context selected above the list"
+	}
+}

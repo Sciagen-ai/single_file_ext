@@ -1,0 +1,514 @@
+/* Sciagen look, loaded after each page's own stylesheet. Brand colours come from the Sciagen logo. */
+:root {
+    --sg-navy: #030460;
+    --sg-cyan: #02b4d8;
+    --sg-accent: var(--sg-navy);
+    --sg-bg: #f3f6fb;
+    --sg-surface: #ffffff;
+    --sg-surface-2: #f7f9fc;
+    --sg-border: #e2e7f0;
+    --sg-text: #0b1240;
+    --sg-muted: #5d6680;
+    --sg-soft: #e6f7fb;
+    --sg-switch-off: #c9d1df;
+    --sg-shadow: 0 1px 2px rgba(3, 4, 96, .06), 0 6px 20px rgba(3, 4, 96, .06);
+    accent-color: var(--sg-cyan);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --sg-accent: var(--sg-cyan);
+        --sg-bg: #070a22;
+        --sg-surface: #0e1335;
+        --sg-surface-2: #121842;
+        --sg-border: #232b5e;
+        --sg-text: #e8ecff;
+        --sg-muted: #9aa3c7;
+        --sg-soft: #10224f;
+        --sg-switch-off: #333c70;
+        --sg-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+    }
+}
+
+/* ---------- shared controls (all extension pages) ---------- */
+
+html,
+body {
+    background-color: var(--sg-bg);
+    color: var(--sg-text);
+}
+
+body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+a,
+a:visited {
+    color: var(--sg-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button,
+select,
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=url],
+textarea {
+    font: inherit;
+    color: var(--sg-text);
+    background-color: var(--sg-surface);
+    border: 1px solid var(--sg-border);
+    border-radius: 8px;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=url],
+textarea,
+select {
+    padding: 5px 9px;
+}
+
+button {
+    padding: 6px 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .15s, border-color .15s, color .15s;
+}
+
+button:not([disabled]):hover,
+button:focus,
+button:active {
+    background-color: var(--sg-soft);
+    border-color: var(--sg-cyan);
+    color: var(--sg-text);
+}
+
+button[disabled] {
+    opacity: .45;
+    cursor: default;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 2px solid var(--sg-cyan);
+    outline-offset: 1px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--sg-border);
+    border-radius: 999px;
+    border: 2px solid var(--sg-bg);
+}
+
+/* ---------- options page ---------- */
+
+.sciagen-options body {
+    font-size: 13px;
+    max-width: 860px;
+}
+
+.sciagen-options main {
+    background: transparent;
+    padding: 0 16px 24px;
+}
+
+/* header */
+.sciagen-options main>h3 {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    align-items: center;
+    gap: 12px;
+    margin: 0 -16px 16px;
+    padding: 12px 20px;
+    min-height: 0;
+    background: var(--sg-surface);
+    border-bottom: 1px solid var(--sg-border);
+    box-shadow: var(--sg-shadow);
+}
+
+.sciagen-options main>h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--sg-navy), var(--sg-cyan));
+}
+
+.sciagen-options .options-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sciagen-options .sciagen-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.sciagen-options .sciagen-brand {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--sg-text);
+}
+
+.sciagen-options .sciagen-brand small {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--sg-muted);
+    letter-spacing: .02em;
+}
+
+.sciagen-options #expandAllButton {
+    display: inline-grid;
+    place-items: center;
+    min-width: 24px;
+    max-width: 24px;
+    height: 24px;
+    margin-left: 6px;
+    border: 1px solid var(--sg-border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--sg-muted);
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.sciagen-options #expandAllButton:hover {
+    color: var(--sg-text);
+    border-color: var(--sg-cyan);
+}
+
+.sciagen-options .new-window-link {
+    padding: 0;
+    opacity: .55;
+}
+
+.sciagen-options .new-window-link:hover {
+    opacity: 1;
+}
+
+/* profile picker */
+.sciagen-options .profiles {
+    gap: 6px;
+    align-items: center;
+}
+
+.sciagen-options .profiles select {
+    min-width: 170px;
+    width: auto;
+    text-align-last: left;
+    height: 32px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.sciagen-options .profiles button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    display: inline-grid;
+    place-items: center;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.sciagen-options .profiles button img {
+    display: none;
+}
+
+.sciagen-options #addProfileButton::before {
+    content: "+";
+}
+
+.sciagen-options #deleteProfileButton::before {
+    content: "\2212";
+}
+
+.sciagen-options #renameProfileButton::before {
+    content: "\270E";
+    font-size: 14px;
+}
+
+/* sections as cards */
+.sciagen-options details,
+.sciagen-options details:last-of-type {
+    margin: 0 0 12px;
+    color: var(--sg-text);
+    background: var(--sg-surface);
+    border: 1px solid var(--sg-border);
+    border-radius: 14px;
+    box-shadow: var(--sg-shadow);
+    overflow: hidden;
+}
+
+.sciagen-options details>summary {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 650;
+    color: var(--sg-text);
+    background: var(--sg-surface);
+}
+
+.sciagen-options details>summary::-webkit-details-marker {
+    display: none;
+}
+
+.sciagen-options details>summary::after {
+    content: "";
+    margin-left: auto;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--sg-muted);
+    border-bottom: 2px solid var(--sg-muted);
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform .2s;
+}
+
+.sciagen-options details[open]>summary {
+    color: var(--sg-accent);
+    border-bottom: 1px solid var(--sg-border);
+}
+
+.sciagen-options details[open]>summary::after {
+    transform: rotate(225deg) translateY(-2px);
+    border-color: var(--sg-accent);
+}
+
+.sciagen-options details>summary:hover {
+    background: var(--sg-surface-2);
+}
+
+/* option rows */
+.sciagen-options details .option:not([hidden]) {
+    margin: 0;
+    padding: 9px 18px;
+    min-height: 26px;
+    gap: 16px;
+    color: var(--sg-text);
+}
+
+.sciagen-options details .option:not([hidden])+.option:not([hidden]) {
+    border-top: 1px solid var(--sg-border);
+}
+
+.sciagen-options details .option.second-level {
+    margin-left: 0;
+    padding-left: 38px;
+    background: var(--sg-surface-2);
+}
+
+.sciagen-options .option>label {
+    line-height: 1.45;
+}
+
+.sciagen-options .option>label::first-letter {
+    text-transform: uppercase;
+}
+
+.sciagen-options .option.vertical {
+    align-items: stretch;
+}
+
+.sciagen-options .option.vertical input,
+.sciagen-options .option.vertical textarea {
+    width: auto;
+    align-self: stretch;
+    margin-top: 6px;
+}
+
+/* toggle switches */
+.sciagen-options .option>input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    flex: none;
+    position: relative;
+    width: 36px;
+    height: 20px;
+    margin: 0;
+    border-radius: 999px;
+    background: var(--sg-switch-off);
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.sciagen-options .option>input[type=checkbox]::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+    transition: transform .2s;
+}
+
+.sciagen-options .option>input[type=checkbox]:checked {
+    background: linear-gradient(90deg, var(--sg-navy), var(--sg-cyan));
+}
+
+.sciagen-options .option>input[type=checkbox]:checked::before {
+    transform: translateX(16px);
+}
+
+.sciagen-options .option>input[type=checkbox]:disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+/* help */
+.sciagen-options .help-icon>img {
+    display: none;
+}
+
+.sciagen-options .help-icon {
+    margin-left: 6px;
+}
+
+.sciagen-options .help-icon::before {
+    content: "?";
+    display: inline-grid;
+    place-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--sg-border);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--sg-muted);
+    cursor: pointer;
+    vertical-align: 1px;
+}
+
+.sciagen-options .help-icon:hover::before {
+    color: #fff;
+    background: var(--sg-cyan);
+    border-color: var(--sg-cyan);
+}
+
+.sciagen-options .help-content {
+    margin: 0 18px 12px;
+    padding: 6px 10px;
+    color: var(--sg-text);
+    background: var(--sg-soft);
+    border: none;
+    border-left: 3px solid var(--sg-cyan);
+    border-radius: 8px;
+}
+
+/* tables (rules, filename replacements) */
+.sciagen-options .rules-table-container {
+    border: 1px solid var(--sg-border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sciagen-options .rules-table-container .thead {
+    background: var(--sg-surface-2);
+    color: var(--sg-muted);
+    font-weight: 600;
+}
+
+.sciagen-options .rules-table-container button {
+    padding: 2px 8px;
+}
+
+/* footer bar */
+.sciagen-options .option.bottom:not([hidden]) {
+    margin-top: 16px;
+    padding: 14px 18px;
+    background: var(--sg-surface);
+    border: 1px solid var(--sg-border);
+    border-radius: 14px;
+    box-shadow: var(--sg-shadow);
+    align-items: center;
+}
+
+.sciagen-options .option.bottom #helpLabel {
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.sciagen-options .option.bottom .buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sciagen-options .option.bottom .sync-input {
+    margin: 0 6px 0 0;
+}
+
+.sciagen-options #resetButton {
+    color: #d92d20;
+}
+
+/* dialogs */
+.sciagen-options .popup {
+    background-color: rgba(3, 4, 30, .45);
+}
+
+.sciagen-options .popup-content {
+    color: var(--sg-text);
+    background: var(--sg-surface);
+    border: 1px solid var(--sg-border);
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .3);
+    padding: 18px;
+}
+
+.sciagen-options .popup-content footer button[type=submit] {
+    color: #fff;
+    background: var(--sg-navy);
+    border-color: var(--sg-navy);
+}
+
+.sciagen-options .popup-content footer button[type=submit]:hover {
+    background: var(--sg-cyan);
+    border-color: var(--sg-cyan);
+}
+
+/* side panel / maximized variants */
+.sciagen-options.side-panel body,
+.sciagen-options.side-panel body>main,
+.sciagen-options.maximized body>main {
+    background: var(--sg-bg);
+    border: none;
+}
+
+.sciagen-options.side-panel details>summary,
+.sciagen-options.side-panel button,
+.sciagen-options.side-panel select {
+    background-color: var(--sg-surface);
+}

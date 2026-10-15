@@ -1,0 +1,8 @@
+/.vscode/
+**/node_modules/
+.idea/
+.woleet-key
+.staging/
+singlefile-extension-*.zip
+/test/.browser/
+saved-tests/

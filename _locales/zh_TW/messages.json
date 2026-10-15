@@ -1,0 +1,1520 @@
+{
+	"extensionDescription": {
+		"message": "將完整網頁儲存為單一 HTML 檔案",
+		"description": "Description of the extension."
+	},
+	"commandSaveSelectedTabs": {
+		"message": "儲存所選分頁或其選取的內容",
+		"description": "Command (Ctrl+Shift+Y): 'Save the selected tabs or their selected contents'"
+	},
+	"commandSaveAllTabs": {
+		"message": "儲存所有分頁",
+		"description": "Command (Ctrl+Shift+U): 'Save all tabs'"
+	},
+	"commandCustomShortcut": {
+		"message": "自訂快速鍵",
+		"description": "Command label: 'Custom shortcut'"
+	},
+	"commandCustomShortcut0": {
+		"message": "自訂快速鍵 #1",
+		"description": "Command label: 'Custom shortcut #1'"
+	},
+	"commandCustomShortcut1": {
+		"message": "自訂快速鍵 #2",
+		"description": "Command label: 'Custom shortcut #2'"
+	},
+	"commandCustomShortcut2": {
+		"message": "自訂快速鍵 #3",
+		"description": "Command label: 'Custom shortcut #3'"
+	},
+	"commandCustomShortcut3": {
+		"message": "自訂快速鍵 #4",
+		"description": "Command label: 'Custom shortcut #4'"
+	},
+	"commandCustomShortcut4": {
+		"message": "自訂快速鍵 #5",
+		"description": "Command label: 'Custom shortcut #5'"
+	},
+	"commandCustomShortcut5": {
+		"message": "自訂快速鍵 #6",
+		"description": "Command label: 'Custom shortcut #6'"
+	},
+	"commandCustomShortcut6": {
+		"message": "自訂快速鍵 #7",
+		"description": "Command label: 'Custom shortcut #7'"
+	},
+	"commandCustomShortcut7": {
+		"message": "自訂快速鍵 #8",
+		"description": "Command label: 'Custom shortcut #8'"
+	},
+	"commandCustomShortcut8": {
+		"message": "自訂快速鍵 #9",
+		"description": "Command label: 'Custom shortcut #9'"
+	},
+	"commandCustomShortcut9": {
+		"message": "自訂快速鍵 #10",
+		"description": "Command label: 'Custom shortcut #10'"
+	},
+	"menuSavePage": {
+		"message": "使用 Sciagen 儲存網頁",
+		"description": "Menu entry: 'Save page with Sciagen'"
+	},
+	"menuSaveSelectedLinks": {
+		"message": "儲存所選連結",
+		"description": "Menu entry: 'Save selected links'"
+	},
+	"menuEditPage": {
+		"message": "為網頁加上註解...",
+		"description": "Menu entry: 'Annotate the page...'"
+	},
+	"menuEditAndSavePage": {
+		"message": "為網頁加上註解並儲存...",
+		"description": "Menu entry: 'Annotate and save the page...'"
+	},
+	"menuSaveWithProfile": {
+		"message": "使用設定檔儲存網頁",
+		"description": "Menu entry: 'Save with profile'"
+	},
+	"menuViewPendingSaves": {
+		"message": "查看等候儲存的項目...",
+		"description": "Menu entry: 'View pending saves...'"
+	},
+	"menuSelectProfile": {
+		"message": "選取預設設定檔",
+		"description": "Menu entry: 'Select the default profile'"
+	},
+	"menuUpdateRule": {
+		"message": "選取目前規則的設定檔",
+		"description": "Menu entry: 'Select the profile of the current rule'"
+	},
+	"menuCreateDomainRule": {
+		"message": "選取目前網域的設定檔",
+		"description": "Menu entry: 'Select the profile of the current domain'"
+	},
+	"menuSaveSelection": {
+		"message": "儲存選取範圍",
+		"description": "Menu entry: 'Save selection'"
+	},
+	"menuSaveFrame": {
+		"message": "儲存頁框",
+		"description": "Menu entry: 'Save frame'"
+	},
+	"menuSaveTabs": {
+		"message": "儲存分頁",
+		"description": "Menu entry (Sciagen button only): 'Save tabs'"
+	},
+	"menuSaveSelectedTabs": {
+		"message": "儲存所選分頁",
+		"description": "Menu entry: 'Save selected tabs'"
+	},
+	"menuSaveUnpinnedTabs": {
+		"message": "儲存未固定的分頁",
+		"description": "Menu entry: 'Save unpinned tabs'"
+	},
+	"menuSaveAllTabs": {
+		"message": "儲存所有分頁",
+		"description": "Menu entry: 'Save all tabs'"
+	},
+	"menuBatchSaveUrls": {
+		"message": "批次儲存網址...",
+		"description": "Menu entry: 'Batch save URLs...'"
+	},
+	"menuAutoSave": {
+		"message": "自動儲存",
+		"description": "Menu entry: 'Auto-save'"
+	},
+	"menuAutoSaveDisabled": {
+		"message": "已停用",
+		"description": "Menu entry: 'Auto-save' > Disabled'"
+	},
+	"menuAutoSaveTab": {
+		"message": "自動儲存這個分頁",
+		"description": "Menu entry: 'Auto-save' > Auto-save this tab'"
+	},
+	"menuAutoSaveUnpinnedTabs": {
+		"message": "自動儲存未固定的分頁",
+		"description": "Menu entry: 'Auto-save' > Auto-save unpinned tabs'"
+	},
+	"menuAutoSaveAllTabs": {
+		"message": "自動儲存所有分頁",
+		"description": "Menu entry: 'Auto-save' > Auto-save all tabs'"
+	},
+	"buttonDefaultTooltip": {
+		"message": "使用 Sciagen 儲存網頁",
+		"description": "Button title: 'Save page with Sciagen'"
+	},
+	"buttonBlockedBadge": {
+		"message": "🚫",
+		"description": "Button badge when the page is blocked: '🚫'"
+	},
+	"buttonBlockedTooltip": {
+		"message": "無法使用 Sciagen 儲存這個網頁",
+		"description": "Button title: 'This page cannot be saved with Sciagen'"
+	},
+	"buttonInitializingTooltip": {
+		"message": "正在初始化 Sciagen",
+		"description": "Button title during initialization: 'Initializing Sciagen (x/2)'"
+	},
+	"buttonInitializingBadge": {
+		"message": "•••",
+		"description": "Badge label during initialization: '•••'"
+	},
+	"buttonSaveProgressTooltip": {
+		"message": "儲存進度：",
+		"description": "Button title during save: 'Save progress: xx%'"
+	},
+	"buttonUploadProgressTooltip": {
+		"message": "上傳進度：",
+		"description": "Button title during save: 'Upload progress: xx%'"
+	},
+	"buttonOKBadge": {
+		"message": "OK",
+		"description": "Badge label: 'OK'"
+	},
+	"buttonErrorBadge": {
+		"message": "ERR",
+		"description": "Badge label for unexpected errors"
+	},
+	"buttonAutoSaveActiveTooltip": {
+		"message": "自動儲存已啟用",
+		"description": "Button title: 'Auto-save active'"
+	},
+	"buttonAutoSaveActiveBadge": {
+		"message": "[A]",
+		"description": "Badge label when auto-save is active"
+	},
+	"optionsTitle": {
+		"message": "選項",
+		"description": "Options page title"
+	},
+	"optionsNewWindowLink": {
+		"message": "在新分頁中開啟選項",
+		"description": "Accessible label of the icon opening the options in a new tab"
+	},
+	"optionsEditorLink": {
+		"message": "開啟選項編輯器",
+		"description": "Accessible label of the icon opening the options editor"
+	},
+	"optionsUserInterfaceSubTitle": {
+		"message": "使用者介面",
+		"description": "Options sub-title: 'User interface'"
+	},
+	"optionAddMenuEntry": {
+		"message": "在網頁的內容選單中加入項目",
+		"description": "Options page label: 'add entry in the context menu of the webpage'"
+	},
+	"optionDisplayShadow": {
+		"message": "處理網頁時覆蓋陰影",
+		"description": "Options page label: 'overlay a shadow on the page during processing'"
+	},
+	"optionDisplayInfobar": {
+		"message": "查看已儲存的網頁時顯示資訊列",
+		"description": "Options page label: 'display an infobar when viewing a saved page'"
+	},
+	"optionInfobarTemplate": {
+		"message": "資訊列內容範本",
+		"description": "Options page label: 'template of the infobar content'"
+	},
+	"optionBlockMixedContent": {
+		"message": "封鎖混合內容",
+		"description": "Options page label: 'block mixed content'"
+	},
+	"optionSaveOriginalURLs": {
+		"message": "儲存嵌入資源的原始網址",
+		"description": "Options page label: 'save original URLs of embedded resources'"
+	},
+	"optionIncludeInfobar": {
+		"message": "在已儲存的網頁中加入資訊列",
+		"description": "Options page label: 'include the infobar in the saved page'"
+	},
+	"optionOpenInfobar": {
+		"message": "保持資訊列開啟",
+		"description": "Options page label: 'keep infobar open'"
+	},
+	"optionAnimateInfobar": {
+		"message": "為資訊列加入動畫效果",
+		"description": "Options page label: 'animate the infobar'"
+	},
+	"optionRemoveInfobarSavedDate": {
+		"message": "不加入儲存日期",
+		"description": "Options page label: 'do not include the saved date'"
+	},
+	"optionConfirmInfobar": {
+		"message": "開啟提示對話方塊以編輯資訊列內容",
+		"description": "Options page label: 'open a prompt dialog to edit the infobar content'"
+	},
+	"optionAutoClose": {
+		"message": "網頁儲存後自動關閉分頁",
+		"description": "Options page label: 'auto-close the tab after the page is saved'"
+	},
+	"optionCustomShortcut": {
+		"message": "鍵盤快速鍵指令",
+		"description": "Options page label: 'keyboard shortcut command'"
+	},
+	"optionCustomShortcutDefault": {
+		"message": "預設快速鍵",
+		"description": "Options page label: 'default shortcut'"
+	},
+	"optionsFileNameSubTitle": {
+		"message": "檔案名稱",
+		"description": "Options sub-title: 'File name'"
+	},
+	"optionFilenameTemplate": {
+		"message": "範本",
+		"description": "Options page label: 'template'"
+	},
+	"optionFilenameMaxLength": {
+		"message": "長度上限",
+		"description": "Options page label: 'max length'"
+	},
+	"optionFilenameMaxLengthBytesUnit": {
+		"message": "位元組",
+		"description": "Options page label: 'bytes'"
+	},
+	"optionFilenameMaxLengthCharsUnit": {
+		"message": "字元",
+		"description": "Options page label: 'characters'"
+	},
+	"optionFilenameReplacementCharacter": {
+		"message": "替換字元",
+		"description": "Options page label: 'replacement character'"
+	},
+	"optionFilenameReplacements": {
+		"message": "檔案名稱中被替換的字元",
+		"description": "Options page label: 'characters replaced in file names'"
+	},
+	"optionsFilenameReplacedCharacters": {
+		"message": "字元",
+		"description": "Options page column label in the replaced characters table: 'Character(s)'"
+	},
+	"optionsFilenameReplacementCharacters": {
+		"message": "替換為",
+		"description": "Options page column label in the replaced characters table: 'Replaced with'"
+	},
+	"optionsFilenameReplacedCharactersPlaceholder": {
+		"message": "輸入字元（例如「:」）",
+		"description": "Placeholder in the replaced characters table: 'Type a character (e.g. \":\")'"
+	},
+	"optionsAddFilenameReplacementTooltip": {
+		"message": "新增字元",
+		"description": "Popup text 'Add the character' in the options page"
+	},
+	"optionsDeleteFilenameReplacementTooltip": {
+		"message": "停止替換此字元",
+		"description": "Popup text 'Stop replacing this character' in the options page"
+	},
+	"optionsFilenameReplacementsResetButton": {
+		"message": "還原預設字元",
+		"description": "Button label 'Restore default characters' in the options page"
+	},
+	"optionsFilenameReplacementsPreviewFilename": {
+		"message": "測試檔案名稱",
+		"description": "Options page column label in the preview table: 'Test a file name'"
+	},
+	"optionsFilenameReplacementsPreviewResult": {
+		"message": "結果",
+		"description": "Options page column label in the preview table: 'Result'"
+	},
+	"optionsFilenameReplacementsPreviewPlaceholder": {
+		"message": "輸入檔案名稱",
+		"description": "Placeholder in the preview table: 'Type a file name'"
+	},
+	"optionReplaceEmojisInFilename": {
+		"message": "將表情符號替換為文字",
+		"description": "Options page label: 'replace emojis with text'"
+	},
+	"optionSaveFilenameTemplateData": {
+		"message": "將檔名範本資料儲存至網頁中",
+		"description": "Options page label: 'save the filename template data into the page'"
+	},
+	"optionConfirmFilename": {
+		"message": "開啟「另存新檔」對話方塊以確認檔案名稱",
+		"description": "Options page label: 'open the \"Save as\" dialog to confirm the file name'"
+	},
+	"optionFilenameConflictAction": {
+		"message": "檔案名稱衝突處理方式",
+		"description": "Options page label: 'filename conflict resolution'"
+	},
+	"optionFilenameConflictActionUniquify": {
+		"message": "建立不重複的名稱",
+		"description": "Value for 'filename conflict resolution' option: 'create a unique name'"
+	},
+	"optionFilenameConflictActionOverwrite": {
+		"message": "覆寫現有檔案",
+		"description": "Value for 'filename conflict resolution' option: 'overwrite the existing file'"
+	},
+	"optionFilenameConflictActionPrompt": {
+		"message": "提示輸入名稱",
+		"description": "Value for 'name conflict resolution' option: 'prompt for a name'"
+	},
+	"optionFilenameConflictActionSkip": {
+		"message": "略過重複的檔案",
+		"description": "Value for 'filename conflict resolution' option: 'skip duplicate files'"
+	},
+	"optionsHTMLContentSubTitle": {
+		"message": "HTML 內容",
+		"description": "Options sub-title: 'HTML content'"
+	},
+	"optionCompressHTML": {
+		"message": "壓縮 HTML 內容",
+		"description": "Options page label: 'compress HTML content'"
+	},
+	"optionRemoveFrames": {
+		"message": "移除頁框",
+		"description": "Options page label: 'remove frames'"
+	},
+	"optionRemoveHiddenElements": {
+		"message": "移除隱藏的元素",
+		"description": "Options page label: 'remove hidden elements'"
+	},
+	"optionRemovedElementsSelector": {
+		"message": "移除特定元素",
+		"description": "Options page label: 'remove specific elements'"
+	},
+	"optionsFileFormatSubTitle": {
+		"message": "檔案格式",
+		"description": "Options sub-title: 'File format'"
+	},
+	"optionFileFormat": {
+		"message": "格式",
+		"description": "Options page label: 'format'"
+	},
+	"optionFileFormatSelectHTML": {
+		"message": "HTML",
+		"description": "Options page label: 'HTML'"
+	},
+	"optionFileFormatSelectSelfExtractingUniversal": {
+		"message": "自我解壓縮 ZIP（通用）",
+		"description": "Options page label: 'self-extracting ZIP (universal)'"
+	},
+	"optionFileFormatSelectSelfExtracting": {
+		"message": "自我解壓縮 ZIP",
+		"description": "Options page label: 'self-extracting ZIP'"
+	},
+	"optionFileFormatSelectZIP": {
+		"message": "ZIP",
+		"description": "Options page label: 'ZIP'"
+	},
+	"optionPassword": {
+		"message": "密碼",
+		"description": "Options page label: 'password'"
+	},
+	"optionCreateRootDirectory": {
+		"message": "建立根目錄",
+		"description": "Options page label: 'create a root directory'"
+	},
+	"optionDisableCompression": {
+		"message": "停用壓縮",
+		"description": "Options page label: 'disable compression'"
+	},
+	"optionPreventAppendedData": {
+		"message": "不要在 ZIP 資料後方附加資料",
+		"description": "Options page label: 'do not append data after the ZIP data'"
+	},
+	"optionInsertTextBody": {
+		"message": "讓文字可供搜尋",
+		"description": "Options page label: 'make text searchable'"
+	},
+	"optionInsertEmbeddedImage": {
+		"message": "嵌入圖片",
+		"description": "Options page label: 'embed image'"
+	},
+	"optionInsertEmbeddedScreenshotImage": {
+		"message": "網頁螢幕擷圖",
+		"description": "Options page label: 'page screenshot'"
+	},
+	"optionInsertEmbeddedCustomImage": {
+		"message": "自訂圖片",
+		"description": "Options page label: 'custom image'"
+	},
+	"optionsInfobarSubTitle": {
+		"message": "資訊列",
+		"description": "Options sub-title: 'Infobar'"
+	},
+	"optionsImagesSubTitle": {
+		"message": "圖片",
+		"description": "Options sub-title: 'Images'"
+	},
+	"optionsDeferredContentSubTitle": {
+		"message": "延後載入的內容",
+		"description": "Options sub-title: 'Deferred content'"
+	},
+	"optionGroupDuplicateImages": {
+		"message": "將重複的圖片歸為一組",
+		"description": "Options page label: 'group duplicate images together'"
+	},
+	"optionImageReductionFactor": {
+		"message": "圖片縮小比例",
+		"description": "Options page label: 'image reduction factor'"
+	},
+	"optionImageQuality": {
+		"message": "縮小後圖片的品質",
+		"description": "Options page label: 'quality of resized images'"
+	},
+	"optionLoadDeferredContent": {
+		"message": "儲存捲動時載入的內容",
+		"description": "Options page label: 'save content loaded while scrolling'"
+	},
+	"optionLoadDeferredContentMaxIdleTime": {
+		"message": "閒置時間上限（毫秒）",
+		"description": "Options page label: 'maximum idle time (ms)'"
+	},
+	"optionLoadDeferredContentKeepZoomLevel": {
+		"message": "儲存期間縮小網頁",
+		"description": "Options page label: 'zoom out the page during the capture'"
+	},
+	"optionLoadDeferredContentDispatchScrollEvent": {
+		"message": "模擬捲動",
+		"description": "Options page label: 'simulate scrolling'"
+	},
+	"optionLoadDeferredContentBeforeFrames": {
+		"message": "先在頁框中載入",
+		"description": "Options page label: 'load in frames first'"
+	},
+	"optionRemoveAlternativeImages": {
+		"message": "移除其他螢幕解析度適用的圖片",
+		"description": "Options page label: 'remove images for alternative screen resolutions'"
+	},
+	"optionsFontsSubTitle": {
+		"message": "字型",
+		"description": "Options sub-title: 'Fonts'"
+	},
+	"optionRemoveUnusedFonts": {
+		"message": "移除未使用的字型",
+		"description": "Options page label: 'remove unused fonts'"
+	},
+	"optionRemoveAlternativeFonts": {
+		"message": "移除替代字型",
+		"description": "Options page label: 'remove alternative fonts'"
+	},
+	"optionsStylesheetsSubTitle": {
+		"message": "樣式表",
+		"description": "Options sub-title: 'Stylesheets'"
+	},
+	"optionGroupDuplicateStylesheets": {
+		"message": "將重複的樣式表歸為一組",
+		"description": "Options page label: 'group duplicate stylesheets together'"
+	},
+	"optionMoveStylesInHead": {
+		"message": "將 head 元素外的樣式移入其中",
+		"description": "Options page label: 'move in the head element the styles found outside of it'"
+	},
+	"optionCustomStylesheet": {
+		"message": "儲存頁面前套用自訂樣式表",
+		"description": "Options page label: 'apply a custom stylesheet before saving the page'"
+	},
+	"optionRemoveUnusedStyles": {
+		"message": "移除未使用的樣式",
+		"description": "Options page label: 'remove unused styles'"
+	},
+	"optionRemoveAlternativeMedias": {
+		"message": "移除螢幕以外裝置適用的樣式表",
+		"description": "Options page label: 'remove stylesheets for alternative devices to screens'"
+	},
+	"optionsNetworkSubTitle": {
+		"message": "網路",
+		"description": "Options sub-title: 'Network'"
+	},
+	"optionsBlockedResources": {
+		"message": "已封鎖的資源",
+		"description": "Options page label: 'blocked resources'"
+	},
+	"optionsAcceptHeaders": {
+		"message": "「Accept」標頭",
+		"description": "Options page label: '\"Accept\" header'"
+	},
+	"optionResourceScript": {
+		"message": "指令碼",
+		"description": "Options page label: 'scripts'"
+	},
+	"optionResourceVideo": {
+		"message": "影片",
+		"description": "Options page label: 'videos'"
+	},
+	"optionResourceAudio": {
+		"message": "音訊",
+		"description": "Options page label: 'audios'"
+	},
+	"optionResourceDocument": {
+		"message": "文件",
+		"description": "Options page label: 'documents'"
+	},
+	"optionResourceFont": {
+		"message": "字型",
+		"description": "Options page label: 'fonts'"
+	},
+	"optionResourceStylesheet": {
+		"message": "樣式表",
+		"description": "Options page label: 'stylesheets'"
+	},
+	"optionResourceImage": {
+		"message": "圖片",
+		"description": "Options page label: 'images'"
+	},
+	"optionsDestinationSubTitle": {
+		"message": "儲存位置",
+		"description": "Options sub-title: 'Destination'"
+	},
+	"optionsBookmarkSubTitle": {
+		"message": "書籤",
+		"description": "Options sub-title: 'Bookmarks'"
+	},
+	"optionsAutoSaveSubTitle": {
+		"message": "自動儲存",
+		"description": "Options sub-title: 'Auto-save'"
+	},
+	"optionsAutoSettingsSubTitle": {
+		"message": "自動設定規則",
+		"description": "Options sub-title: the table of rules that pick a profile automatically from the URL of the page being saved"
+	},
+	"optionsDeleteDisplayedRulesConfirm": {
+		"message": "確認刪除所有顯示的規則",
+		"description": "Popup text 'Confirm the deletion of all displayed rules'"
+	},
+	"optionsDeleteRulesTooltip": {
+		"message": "刪除所有顯示的規則",
+		"description": "Popup text 'Delete all displayed rules'"
+	},
+	"optionsAutoSettingsUrl": {
+		"message": "網址",
+		"description": "Column header in the Auto-settings rules table: the complete or partial URL a rule matches against the page being saved"
+	},
+	"optionsAutoSettingsUrlPlaceholder": {
+		"message": "輸入完整或部分網址（例如 example.com）",
+		"description": "Placeholder of the URL field in the Auto-settings rules table"
+	},
+	"optionsAutoSettingsProfile": {
+		"message": "設定檔",
+		"description": "Column header in the Auto-settings rules table, naming the profile of settings used when a page matching the rule is saved manually. It is a noun, the name of a profile, not an instruction to save"
+	},
+	"optionsAutoSettingsAutoSaveProfile": {
+		"message": "自動儲存所用設定檔",
+		"description": "Column header in the Auto-settings rules table, naming the profile of settings used when a page matching the rule is saved automatically. It is a noun phrase, 'the profile used for auto-saving', never 'automatically save the profile'"
+	},
+	"optionsAutoSettingsShowAllProfiles": {
+		"message": "顯示所有設定檔",
+		"description": "Checkbox label under the Auto-settings rules table: list the rules of every profile instead of only those of the profile selected above"
+	},
+	"optionsAutoSettingsShowAutoSaveProfile": {
+		"message": "顯示「自動儲存所用設定檔」欄",
+		"description": "Checkbox label under the Auto-settings rules table: show or hide the 'Auto-save profile' column. The quoted name must match the translation of optionsAutoSettingsAutoSaveProfile"
+	},
+	"optionsUpdateRuleTooltip": {
+		"message": "更新規則",
+		"description": "Popup text 'Update the rule' in the options page"
+	},
+	"optionsDeleteRuleTooltip": {
+		"message": "刪除規則",
+		"description": "Popup text 'Delete the rule' in the options page"
+	},
+	"optionsAddRuleTooltip": {
+		"message": "新增規則",
+		"description": "Popup text 'Add the rule' in the options page"
+	},
+	"optionsValidateChangesTooltip": {
+		"message": "驗證變更",
+		"description": "Popup text 'Validate changes' in the options page"
+	},
+	"optionsCancelChangesTooltip": {
+		"message": "取消變更",
+		"description": "Popup text 'Cancel changes' in the options page"
+	},
+	"optionsDeleteRuleConfirm": {
+		"message": "確認刪除所選規則",
+		"description": "Popup text 'Confirm the deletion of the selected rule' in the options page"
+	},
+	"optionAutoSaveLoadOrUnload": {
+		"message": "網頁載入後或卸載時自動儲存",
+		"description": "auto-save after page load or on page unload"
+	},
+	"optionAutoSaveLoad": {
+		"message": "網頁載入後自動儲存",
+		"description": "Options page label: 'auto-save after page load'"
+	},
+	"optionAutoSaveUnload": {
+		"message": "網頁卸載時自動儲存",
+		"description": "Options page label: 'auto-save on page unload'"
+	},
+	"optionAutoSaveDiscard": {
+		"message": "捨棄分頁時自動儲存",
+		"description": "Options page label: 'auto-save on tab discard'"
+	},
+	"optionAutoSaveRemove": {
+		"message": "移除分頁時自動儲存",
+		"description": "Options page label: 'auto-save on tab removal'"
+	},
+	"optionAutoSaveDelay": {
+		"message": "網頁載入後的自動儲存等待時間（秒）",
+		"description": "Options page label: 'auto-save waiting delay after page load (s)'"
+	},
+	"optionAutoSaveRepeat": {
+		"message": "定期自動儲存",
+		"description": "Options page label: 'auto-save periodically'"
+	},
+	"optionAutoSaveRepeatDelay": {
+		"message": "間隔時間（秒）",
+		"description": "Options page label: 'period (s)'"
+	},
+	"optionAutoSaveExternalSave": {
+		"message": "使用 Sciagen Companion 儲存網頁",
+		"description": "Options page label: 'save the page with Sciagen Companion'"
+	},
+	"optionsEditorSubTitle": {
+		"message": "註解編輯器",
+		"description": "Options sub-title: 'Annotation editor'"
+	},
+	"optionOpenEditor": {
+		"message": "儲存前先為網頁加上註解",
+		"description": "Options page label: 'annotate the page before saving'"
+	},
+	"optionOpenSavedPage": {
+		"message": "在新分頁中開啟已儲存的網頁",
+		"description": "Options page label: 'open saved pages in a new tab'"
+	},
+	"optionAutoOpenEditor": {
+		"message": "在註解編輯器中開啟以 Sciagen 儲存的網頁",
+		"description": "Options page label: 'open pages saved with Sciagen in the annotation editor'"
+	},
+	"optionDefaultEditorMode": {
+		"message": "預設模式",
+		"description": "Options page label: 'default mode'"
+	},
+	"optionDefaultEditorModeNormal": {
+		"message": "一般",
+		"description": "Options page label: 'default mode > normal'"
+	},
+	"optionDefaultEditorModeEdit": {
+		"message": "編輯網頁",
+		"description": "Options page label: 'default mode > edit the page'"
+	},
+	"optionDefaultEditorModeFormat": {
+		"message": "設定網頁格式",
+		"description": "Options page label: 'default mode > format the page'"
+	},
+	"optionDefaultEditorModeCut": {
+		"message": "移除元素",
+		"description": "Options page label: 'default mode > remove elements'"
+	},
+	"optionDefaultEditorModeCutExternal": {
+		"message": "移除外部元素",
+		"description": "Options page label: 'default mode > remove external elements'"
+	},
+	"optionApplySystemTheme": {
+		"message": "設定網頁格式時套用系統主題",
+		"description": "Title of the button 'apply the system theme when formatting a page'"
+	},
+	"optionContentWidth": {
+		"message": "設定網頁格式時的內容寬度（em）",
+		"description": "Options page label: 'content width when formatting a page (em)'"
+	},
+	"optionWarnUnsavedPage": {
+		"message": "離開有未儲存變更的網頁時發出警告",
+		"description": "Title of the button 'warn if leaving page with unsaved changes'"
+	},
+	"optionDisplayInfobarInEditor": {
+		"message": "顯示資訊列",
+		"description": "Title of the button 'display the infobar'"
+	},
+	"optionsMiscSubTitle": {
+		"message": "其他",
+		"description": "Options sub-title: 'Misc.'"
+	},
+	"optionsExternalCapturePermissionsSubTitle": {
+		"message": "外部擷取 API",
+		"description": "Options sub-title: 'External capture API'"
+	},
+	"optionExternalCaptureAllowedIds": {
+		"message": "允許的擴充功能，每行一個",
+		"description": "Options page label: 'allowed extensions, one per line'"
+	},
+	"optionExternalCaptureDeniedIds": {
+		"message": "封鎖的擴充功能，每行一個",
+		"description": "Options page label: 'blocked extensions, one per line'"
+	},
+	"optionsExternalCapturePendingRequest": {
+		"message": "擴充功能 $EXTENSION_ID$ 要求使用 Sciagen 在這個瀏覽器中擷取網頁，並接收網頁的 HTML 內容。如果你允許，這項擴充功能就能隨時擷取任何分頁，不會再次徵詢你的同意，直到你將它從下方清單中移除為止。",
+		"description": "Options page prompt to approve an external extension capture request.",
+		"placeholders": {
+			"extension_id": {
+				"content": "$1",
+				"example": "archivebox@example.com"
+			}
+		}
+	},
+	"optionsExternalCaptureApproveButton": {
+		"message": "允許",
+		"description": "Options button: 'Allow'"
+	},
+	"optionsExternalCaptureDenyButton": {
+		"message": "拒絕",
+		"description": "Options button: 'Deny'"
+	},
+	"optionBackgroundSave": {
+		"message": "在背景儲存網頁",
+		"description": "Options page label: 'save pages in background'"
+	},
+	"optionDisplayStats": {
+		"message": "處理完成後在主控台顯示統計資料",
+		"description": "Options page label: 'display stats in the console after processing'"
+	},
+	"optionSetMaxResourceSize": {
+		"message": "設定大小上限",
+		"description": "Options page label: 'set maximum size'"
+	},
+	"optionMaxResourceSize": {
+		"message": "大小上限（MB）",
+		"description": "Options page label: 'maximum size (MB)'"
+	},
+	"optionSetMaxResourceDelay": {
+		"message": "設定下載時間上限",
+		"description": "Options page label: 'set maximum download time'"
+	},
+	"optionMaxResourceDelay": {
+		"message": "下載時間上限（秒）",
+		"description": "Options page label: 'maximum download time (s)'"
+	},
+	"optionPassReferrerOnError": {
+		"message": "發生跨來源要求錯誤後傳遞「Referer」標頭",
+		"description": "Options page label: 'pass \"Referer\" header after a cross-origin request error'"
+	},
+	"optionSaveRawPage": {
+		"message": "儲存原始網頁",
+		"description": "Options page label: 'save raw page'"
+	},
+	"optionInsertMetaCSP": {
+		"message": "設定內容安全政策",
+		"description": "Options page label: 'set content security policy'"
+	},
+	"optionInsertCanonicalLink": {
+		"message": "儲存網頁的標準連結",
+		"description": "Options page label: 'save the canonical link of the page'"
+	},
+	"optionSaveToClipboard": {
+		"message": "複製到剪貼簿",
+		"description": "Options page label: 'copy to clipboard'"
+	},
+	"optionSaveToFilesystem": {
+		"message": "儲存到檔案系統",
+		"description": "Options page label: 'save to filesystem'"
+	},
+	"optionSharePage": {
+		"message": "分享網頁",
+		"description": "Options page label: 'share page'"
+	},
+	"optionAddProof": {
+		"message": "新增存在證明",
+		"description": "Options page label: 'add proof of existence'"
+	},
+	"optionsAddProofConfirm": {
+		"message": "請確認你允許 Sciagen 將你要儲存的每個網頁的 SHA256 雜湊傳送給 Woleet API。如要進一步瞭解這項功能，請參閱說明頁面，或點選選項旁的問號。",
+		"description": "Popup text displayed wen enabling the option 'add proof of existence'"
+	},
+	"optionWoleetKey": {
+		"message": "存取權杖",
+		"description": "Options page label: 'access token'"
+	},
+	"optionSaveToGDrive": {
+		"message": "上傳到 Google 雲端硬碟",
+		"description": "Options page label: 'upload to Google Drive'"
+	},
+	"optionSaveToDropbox": {
+		"message": "上傳到 Dropbox",
+		"description": "Options page label: 'upload to Dropbox'"
+	},
+	"optionSaveToGitHub": {
+		"message": "上傳到 GitHub",
+		"description": "Options page label: 'upload to GitHub'"
+	},
+	"optionGitHubToken": {
+		"message": "存取權杖",
+		"description": "Options page label: 'access token'"
+	},
+	"optionGitHubUser": {
+		"message": "使用者名稱",
+		"description": "Options page label: 'user name'"
+	},
+	"optionGitHubRepository": {
+		"message": "存放區名稱",
+		"description": "Options page label: 'repository name'"
+	},
+	"optionGitHubBranch": {
+		"message": "分支名稱",
+		"description": "Options page label: 'branch name'"
+	},
+	"optionSaveToS3": {
+		"message": "上傳到 Amazon S3",
+		"description": "Options page label: 'upload to Amazon S3'"
+	},
+	"optionS3Domain": {
+		"message": "網域",
+		"description": "Options page label: 'domain'"
+	},
+	"optionS3Region": {
+		"message": "地區",
+		"description": "Options page label: 'region'"
+	},
+	"optionS3Bucket": {
+		"message": "值區名稱",
+		"description": "Options page label: 'bucket name'"
+	},
+	"optionS3AccessKey": {
+		"message": "存取金鑰",
+		"description": "Options page label: 'access key'"
+	},
+	"optionS3SecretKey": {
+		"message": "私密金鑰",
+		"description": "Options page label: 'secret key'"
+	},
+	"optionSaveWithWebDAV": {
+		"message": "上傳到 WebDAV 伺服器",
+		"description": "Options page label: 'upload to a WebDAV server'"
+	},
+	"optionWebDAVURL": {
+		"message": "網址",
+		"description": "Options page label: 'URL'"
+	},
+	"optionWebDAVUser": {
+		"message": "使用者 ID",
+		"description": "Options page label: 'user identifier'"
+	},
+	"optionWebDAVPassword": {
+		"message": "密碼",
+		"description": "Options page label: 'password'"
+	},
+	"optionSaveWithMCP": {
+		"message": "上傳到 MCP 伺服器",
+		"description": "Options page label: 'upload to an MCP server'"
+	},
+	"optionMCPServerUrl": {
+		"message": "伺服器網址",
+		"description": "Options page label: 'server URL'"
+	},
+	"optionMCPAuthToken": {
+		"message": "驗證權杖",
+		"description": "Options page label: 'authentication token'"
+	},
+	"optionSaveWithCompanion": {
+		"message": "使用 Sciagen Companion 儲存",
+		"description": "Options page label: 'save with Sciagen Companion'"
+	},
+	"optionSaveCreatedBookmarks": {
+		"message": "儲存新增書籤的網頁",
+		"description": "Options page label: 'save the page of a newly created bookmark'"
+	},
+	"optionReplaceBookmarkURL": {
+		"message": "將新增書籤連結至已儲存的網頁",
+		"description": "Options page label: 'link the new bookmark to the saved page'"
+	},
+	"optionAllowedBookmarkFolders": {
+		"message": "允許的資料夾",
+		"description": "Options page label: 'allowed folders'"
+	},
+	"optionIgnoredBookmarkFolders": {
+		"message": "忽略的資料夾",
+		"description": "Options page label: 'ignored folders'"
+	},
+	"optionsHelpLink": {
+		"message": "說明",
+		"description": "Options help link"
+	},
+	"optionSynchronize": {
+		"message": "同步處理選項",
+		"description": "Options label: 'synchronize options'"
+	},
+	"optionsResetButton": {
+		"message": "重設",
+		"description": "Options button: 'Reset'"
+	},
+	"optionsResetTooltip": {
+		"message": "將所有選項重設為預設值",
+		"description": "Options 'Reset' button tooltip"
+	},
+	"optionsResetConfirm": {
+		"message": "確認重設所有選項或目前的設定檔",
+		"description": "Popup text 'Confirm the reset of all options or the current profile' in the options page"
+	},
+	"optionsResetAllButton": {
+		"message": "重設所有選項",
+		"description": "Options confirm button: 'Reset all options'"
+	},
+	"optionsResetCurrentButton": {
+		"message": "重設目前的設定檔",
+		"description": "Options confirm button: 'Reset current profile'"
+	},
+	"optionsOKButton": {
+		"message": "確定",
+		"description": "Options confirm button: 'OK'"
+	},
+	"optionsCancelButton": {
+		"message": "取消",
+		"description": "Options confirm button: 'Cancel'"
+	},
+	"optionsExportButton": {
+		"message": "匯出",
+		"description": "Options button: 'Export'"
+	},
+	"optionsImportButton": {
+		"message": "匯入",
+		"description": "Options button: 'Import'"
+	},
+	"logPanelDeferredContent": {
+		"message": "延後載入的內容",
+		"description": "Label 'Deferred content' in the log panel"
+	},
+	"logPanelFrameContents": {
+		"message": "頁框內容",
+		"description": "Label 'Frame contents' in the log panel"
+	},
+	"logPanelEmbeddedImage": {
+		"message": "嵌入的圖片",
+		"description": "Label 'Embedded image' in the log panel"
+	},
+	"logPanelStep": {
+		"message": "步驟",
+		"description": "Label 'Step' (for 'Step x / 4') in the log panel"
+	},
+	"logPanelWidth": {
+		"message": "122",
+		"description": "Width of the log panel in pixels, it should be adjusted for the longest label beginning with 'log' (e.g. 'logPanelDeferredContent')"
+	},
+	"maskCancelButton": {
+		"message": "取消 (Esc)",
+		"description": "Button 'Cancel (Esc)' in the mask displayed while a page is being saved"
+	},
+	"topPanelError": {
+		"message": "Sciagen 錯誤：",
+		"description": "Label 'Sciagen error: ' in the top panel when displaying an error message"
+	},
+	"topPanelCopyDetailsButton": {
+		"message": "複製詳細資訊",
+		"description": "Button label 'Copy details' in the top panel next to an error message"
+	},
+	"topPanelEmbeddedImageButton": {
+		"message": "開啟圖片...",
+		"description": "Top panel button 'Open image...' when embedding an image"
+	},
+	"topPanelSharePageButton": {
+		"message": "分享網頁...",
+		"description": "Top panel button 'Share page...' when sharing a page"
+	},
+	"topPanelShareSelectionButton": {
+		"message": "分享選取範圍...",
+		"description": "Top panel button 'Share selection...' when sharing selected content"
+	},
+	"profileDefaultSettings": {
+		"message": "預設設定",
+		"description": "Label 'Default settings' of the default settings in the options page"
+	},
+	"profileDisabled": {
+		"message": "已停用",
+		"description": "Label 'Disabled' of the disabled profile name in the options page"
+	},
+	"profileAddButtonTooltip": {
+		"message": "新增設定檔",
+		"description": "Tooltip 'Add a new profile' in the options page"
+	},
+	"profileRenameButtonTooltip": {
+		"message": "重新命名設定檔",
+		"description": "Tooltip 'Rename the profile' in the options page"
+	},
+	"profileDeleteButtonTooltip": {
+		"message": "刪除設定檔",
+		"description": "Tooltip 'Delete the profile' in the options page"
+	},
+	"profileAddPrompt": {
+		"message": "請輸入這個新設定檔的名稱",
+		"description": "Popup text 'Enter a name for this new profile' in the options page"
+	},
+	"profileDeleteConfirm": {
+		"message": "確認刪除所選設定檔",
+		"description": "Popup text 'Confirm the deletion of the selected profile' in the options page"
+	},
+	"profileRenamePrompt": {
+		"message": "請輸入所選設定檔的新名稱",
+		"description": "Popup text 'Enter a new name for the selected profile' in the options page"
+	},
+	"editorAddYellowNote": {
+		"message": "新增黃色附註",
+		"description": "Title of the button 'Add a yellow note' in the editor"
+	},
+	"editorAddPinkNote": {
+		"message": "新增粉紅色附註",
+		"description": "Title of the button 'Add a pink note' in the editor"
+	},
+	"editorAddBlueNote": {
+		"message": "新增藍色附註",
+		"description": "Title of the button 'Add a blue note' in the editor"
+	},
+	"editorAddGreenNote": {
+		"message": "新增綠色附註",
+		"description": "Title of the button 'Add a green note' in the editor"
+	},
+	"editorHighlightYellow": {
+		"message": "以黃色醒目顯示所選文字",
+		"description": "Title of the button 'Highlight selected text in yellow' in the editor"
+	},
+	"editorHighlightPink": {
+		"message": "以粉紅色醒目顯示所選文字",
+		"description": "Title of the button 'Highlight selected text in pink' in the editor"
+	},
+	"editorHighlightBlue": {
+		"message": "以藍色醒目顯示所選文字",
+		"description": "Title of the button 'Highlight selected text in blue' in the editor"
+	},
+	"editorHighlightGreen": {
+		"message": "以綠色醒目顯示所選文字",
+		"description": "Title of the button 'Highlight selected text in green' in the editor"
+	},
+	"editorToggleNotes": {
+		"message": "顯示／隱藏附註",
+		"description": "Title of the button 'Display/hide notes' in the editor"
+	},
+	"editorToggleHighlights": {
+		"message": "顯示／隱藏醒目顯示的文字",
+		"description": "Title of the button 'Display/hide the highlighted text' in the editor"
+	},
+	"editorRemoveHighlight": {
+		"message": "移除所選的醒目顯示文字",
+		"description": "Title of the button 'Remove the selected highlighted text' in the editor"
+	},
+	"editorEditPage": {
+		"message": "啟用／停用唯讀模式",
+		"description": "Title of the button 'Enable/disable read-only' in the editor"
+	},
+	"editorFormatPage": {
+		"message": "設定網頁格式以提高可讀性",
+		"description": "Title of the button 'Format the page for better readability' in the editor"
+	},
+	"editorCutInnerPage": {
+		"message": "啟用／停用內部元素移除功能",
+		"description": "Title of the button 'Enable/disable removing of internal elements' in the editor"
+	},
+	"editorCutOuterPage": {
+		"message": "啟用／停用外部元素移除功能",
+		"description": "Title of the button 'Enable/disable removing of external elements' in the editor"
+	},
+	"editorUndoCutPage": {
+		"message": "還原上次移除的元素",
+		"description": "Title of the button 'Restore last removed element' in the editor"
+	},
+	"editorUndoAllCutPage": {
+		"message": "還原所有已移除的元素",
+		"description": "Title of the button 'Restore all removed elements' in the editor"
+	},
+	"editorRedoCutPage": {
+		"message": "移除上次還原的元素",
+		"description": "Title of the button 'Remove last restored element' in the editor"
+	},
+	"editorSavePage": {
+		"message": "儲存網頁",
+		"description": "Title of the button 'Save the page' in the editor"
+	},
+	"editorPrintPage": {
+		"message": "列印網頁",
+		"description": "Title of the button 'Print the page' in the editor"
+	},
+	"editorImportMht": {
+		"message": "匯入 MHTML 檔案",
+		"description": "Title of the button 'Import MHTML file' in the editor"
+	},
+	"editorArchiveToc": {
+		"message": "目錄",
+		"description": "Title of the table of contents button displayed in the editor when viewing a multi-page archive"
+	},
+	"pendingsTitle": {
+		"message": "等候儲存的項目",
+		"description": "Title of the pending save page 'Pending saves' in the editor"
+	},
+	"pendingsCancelAllButton": {
+		"message": "全部取消",
+		"description": "Pending saves button 'Cancel all'"
+	},
+	"pendingsURLTitle": {
+		"message": "網址",
+		"description": "Title of the first column in the table of the pending saves 'URL'"
+	},
+	"pendingsTitleTitle": {
+		"message": "標題",
+		"description": "Title of the first column in the table of the pending saves 'Title'"
+	},
+	"pendingsStatusTitle": {
+		"message": "狀態",
+		"description": "Title of the second column in the table of the pending saves 'status'"
+	},
+	"pendingsPendingStatus": {
+		"message": "待處理",
+		"description": "Value of 'status' for pending saves"
+	},
+	"pendingsProcessingStatus": {
+		"message": "處理中",
+		"description": "Value of 'status' for current saves"
+	},
+	"pendingsCancellingStatus": {
+		"message": "取消中",
+		"description": "Value of 'status' for cancelled saves"
+	},
+	"pendingsNoPendings": {
+		"message": "沒有等候儲存的項目",
+		"description": "Label displayed when there are no pending saves"
+	},
+	"pendingsAddUrlsButton": {
+		"message": "新增網址",
+		"description": "button 'Add URLs'"
+	},
+	"pendingsAddUrls": {
+		"message": "請輸入以換行分隔的網址清單",
+		"description": "Label of the add URLs input"
+	},
+	"pendingsAddUrlsOKButton": {
+		"message": "確定",
+		"description": "Add URLs popup confirm button: 'OK'"
+	},
+	"pendingsAddUrlsCancelButton": {
+		"message": "取消",
+		"description": "Add URLs popup cancel button: 'Cancel'"
+	},
+	"batchSaveUrlsTitle": {
+		"message": "批次儲存網址",
+		"description": "Title of the 'batch save URLs' page"
+	},
+	"batchSaveUrlsNoURLs": {
+		"message": "沒有網址",
+		"description": "Label displayed when there are no URLs"
+	},
+	"batchSaveUrlsAddUrlButton": {
+		"message": "新增網址",
+		"description": "label of the button 'Add URL'"
+	},
+	"batchSaveUrlsAddUrlsButton": {
+		"message": "新增網址...",
+		"description": "label of the button 'Add URLs...'"
+	},
+	"batchSaveUrlsRemoveAllButton": {
+		"message": "全部移除",
+		"description": "label of the button 'Remove all'"
+	},
+	"batchSaveUrlsSavePagesButton": {
+		"message": "儲存網頁",
+		"description": "label of the button 'Save pages'"
+	},
+	"batchSaveUrlsURLTitle": {
+		"message": "網址",
+		"description": "Title of the column in the table of the URLs"
+	},
+	"batchSaveUrlsProfileAuto": {
+		"message": "依規則與目前選擇決定設定檔",
+		"description": "First entry of the profile dropdown of the 'batch save URLs' page: the profile of each URL comes from the rules and from the profile selected in the options page"
+	},
+	"batchSaveUrlsSkippedByRule": {
+		"message": "已略過：規則將此頁面對應到已停用的設定檔",
+		"description": "Status displayed next to a URL the batch save skipped because its rule maps it to the disabled profile"
+	},
+	"optionSaveToRestFormApi": {
+		"message": "上傳到 REST Form API",
+		"description": "Options page label: 'upload to a REST Form API'"
+	},
+	"optionRestFormApiUrl": {
+		"message": "網址",
+		"description": "Options page label: 'URL'"
+	},
+	"optionRestFormApiToken": {
+		"message": "授權權杖",
+		"description": "Options page label: 'authorization token'"
+	},
+	"optionRestFormApiFileFieldName": {
+		"message": "封存資料欄位名稱",
+		"description": "Options page label: 'archive data field name'"
+	},
+	"optionRestFormApiUrlFieldName": {
+		"message": "封存網址欄位名稱",
+		"description": "Options page label: 'archive URL field name'"
+	},
+	"optionsEditorTitle": {
+		"message": "選項編輯器",
+		"description": "Options title: 'Options editor'"
+	},
+	"optionsEditorSaveButton": {
+		"message": "儲存",
+		"description": "Options editor button: 'Save'"
+	},
+	"optionsEditorConfigSaved": {
+		"message": "設定已儲存",
+		"description": "Options editor message: 'Configuration saved'"
+	},
+	"optionsEditorInvalidJSON": {
+		"message": "JSON 無效",
+		"description": "Options editor error message: 'Invalid JSON'"
+	},
+	"optionsMenusSubTitle": {
+		"message": "選單",
+		"description": "Options sub-title: 'Menus'"
+	},
+	"optionMenusEditor": {
+		"message": "選擇選單中顯示的項目及其順序（所有設定檔共用）",
+		"description": "Options page label: 'choose the entries displayed in the menus and their order (shared by all profiles)'"
+	},
+	"optionMenusEditorLink": {
+		"message": "開啟選單編輯器...",
+		"description": "Options page link: 'Open the menu editor...'"
+	},
+	"optionMenusDefault": {
+		"message": "預設選單",
+		"description": "Options page state: 'default menus'"
+	},
+	"optionMenusCustomized": {
+		"message": "自訂選單",
+		"description": "Options page state: 'customized menus'"
+	},
+	"menuSubmenu": {
+		"message": "子選單",
+		"description": "Menu editor entry: 'Submenu'"
+	},
+	"menuSeparator": {
+		"message": "分隔線",
+		"description": "Menu editor entry: 'Separator'"
+	},
+	"menusTitle": {
+		"message": "選單編輯器",
+		"description": "Menu editor title"
+	},
+	"menusSubTitle": {
+		"message": "選擇每個 Sciagen 選單中顯示的項目及其順序。這些設定由所有設定檔共用。",
+		"description": "Menu editor sub-title"
+	},
+	"menusSurfaceLabel": {
+		"message": "選單",
+		"description": "Menu editor label of the menu selector"
+	},
+	"menusSurfacePage": {
+		"message": "網頁內容選單",
+		"description": "Menu editor menu name: 'Page context menu'"
+	},
+	"menusSurfaceButton": {
+		"message": "按鈕選單",
+		"description": "Menu editor menu name: 'Button menu'"
+	},
+	"menusSurfaceTab": {
+		"message": "分頁選單",
+		"description": "Menu editor menu name: 'Tab menu'"
+	},
+	"menusUseForAllButton": {
+		"message": "套用到所有選單",
+		"description": "Menu editor button: 'Use for all menus'"
+	},
+	"menusUseForAllTooltip": {
+		"message": "以這個選單取代其他選單",
+		"description": "Menu editor tooltip of the 'Use for all menus' button"
+	},
+	"menusUseForAllStatus": {
+		"message": "所有選單現在都使用這些項目。",
+		"description": "Menu editor status after using a layout for all menus"
+	},
+	"menusContextPage": {
+		"message": "網頁",
+		"description": "Menu editor context: 'Page'"
+	},
+	"menusContextSelection": {
+		"message": "選取範圍",
+		"description": "Menu editor context: 'Selection'"
+	},
+	"menusContextFrame": {
+		"message": "頁框",
+		"description": "Menu editor context: 'Frame'"
+	},
+	"menusContextLink": {
+		"message": "連結",
+		"description": "Menu editor context: 'Link'"
+	},
+	"menusHintPage": {
+		"message": "在網頁上按右鍵時顯示。灰色的項目不會出現在所選的情境中。",
+		"description": "Menu editor hint of the page context menu"
+	},
+	"menusHintButton": {
+		"message": "在工具列的 Sciagen 按鈕上按右鍵時顯示。",
+		"description": "Menu editor hint of the button menu"
+	},
+	"menusHintTab": {
+		"message": "在分頁上按右鍵時顯示。",
+		"description": "Menu editor hint of the tab menu"
+	},
+	"menusAddLabel": {
+		"message": "新增",
+		"description": "Menu editor label of the entry selector"
+	},
+	"menusAddButton": {
+		"message": "新增",
+		"description": "Menu editor button: 'Add'"
+	},
+	"menusEditHint": {
+		"message": "新項目會加在所選項目之後，或所選子選單之內。拖曳可調整順序，拖放到子選單上可放入其中，在標籤上按兩下可重新命名，按 Delete 鍵可移除。",
+		"description": "Menu editor hint about editing"
+	},
+	"menusDynamicBadge": {
+		"message": "動態",
+		"description": "Menu editor badge of the entries managed by Sciagen"
+	},
+	"menusRemoveTooltip": {
+		"message": "從這個選單移除",
+		"description": "Menu editor tooltip of the remove button"
+	},
+	"menusActionLimitLine": {
+		"message": "只會顯示前 $1 個項目",
+		"description": "Menu editor line marking the entries hidden by the browser in the button menu"
+	},
+	"menusActionLimitNote": {
+		"message": "瀏覽器在按鈕選單中最多只會顯示 $1 個頂層項目。",
+		"description": "Menu editor note about the limit of top-level entries in the button menu"
+	},
+	"menusActionLimitLineWrapped": {
+		"message": "Firefox 會將以下項目移至「Sciagen」子選單",
+		"description": "Menu editor line marking the entries Firefox moves into an automatic submenu in the button menu"
+	},
+	"menusActionLimitNoteWrapped": {
+		"message": "Firefox 會在按鈕選單中保留前 $1 個頂層項目，並將其餘項目移至「Sciagen」子選單。",
+		"description": "Menu editor note about Firefox moving the extra top-level entries of the button menu into an automatic submenu"
+	},
+	"menusWrapButton": {
+		"message": "將其餘項目收進子選單",
+		"description": "Menu editor button: 'Wrap the rest in a submenu'"
+	},
+	"menusMoreSubmenu": {
+		"message": "更多...",
+		"description": "Menu editor default label of the submenu created to wrap the hidden entries"
+	},
+	"menusInspectorEmpty": {
+		"message": "在選單中選取一個項目，即可變更它的標籤、綁定設定檔，或選擇它顯示的時機。",
+		"description": "Menu editor text when no entry is selected"
+	},
+	"menusInspectorSeparator": {
+		"message": "分隔線。拖曳可移動，按 Delete 鍵可移除。",
+		"description": "Menu editor text when a separator is selected"
+	},
+	"menusLabelField": {
+		"message": "標籤",
+		"description": "Menu editor field: 'Label'"
+	},
+	"menusLabelHelp": {
+		"message": "留空則使用標準標籤。在 Windows 和 Linux 上，字母前的 & 會將該字母設為鍵盤快速鍵。",
+		"description": "Menu editor help of the 'Label' field"
+	},
+	"menusProfileField": {
+		"message": "設定檔",
+		"description": "Menu editor field: 'Profile'"
+	},
+	"menusProfileNone": {
+		"message": "網頁目前使用的設定檔",
+		"description": "Menu editor option when no profile is bound to the entry"
+	},
+	"menusProfileHelp": {
+		"message": "將這個項目綁定到某個設定檔後，無論目前使用哪個設定檔，都能一鍵以它儲存。",
+		"description": "Menu editor help of the 'Profile' field"
+	},
+	"menusPresentationField": {
+		"message": "呈現方式",
+		"description": "Menu editor field: 'Presentation'"
+	},
+	"menusPresentationSubmenu": {
+		"message": "一個「使用設定檔儲存網頁」子選單",
+		"description": "Menu editor presentation option: submenu"
+	},
+	"menusPresentationInline": {
+		"message": "每個設定檔一個項目，直接列出",
+		"description": "Menu editor presentation option: inline"
+	},
+	"menusPresentationHelp": {
+		"message": "清單會依照選項中定義的設定檔顯示。若只想顯示部分設定檔，請改為新增綁定到這些設定檔的「儲存網頁」項目。",
+		"description": "Menu editor help of the 'Presentation' field"
+	},
+	"menusContentsField": {
+		"message": "內容",
+		"description": "Menu editor field: 'Contents'"
+	},
+	"menusContentsHelp": {
+		"message": "這個項目是由 Sciagen 管理的單選群組。你可以移動或重新命名它，但無法編輯它的選項。",
+		"description": "Menu editor help of the 'Contents' field"
+	},
+	"menusContextsField": {
+		"message": "按右鍵時顯示於",
+		"description": "Menu editor field: 'Appears when right-clicking'"
+	},
+	"menusAltLabelHelp": {
+		"message": "未設定自訂標籤時，這個項目套用到網頁時，選單會顯示「$1」。",
+		"description": "Menu editor help about the alternative label of an entry"
+	},
+	"menusSubmenuField": {
+		"message": "子選單",
+		"description": "Menu editor field: 'Submenu'"
+	},
+	"menusSubmenuHelp": {
+		"message": "$1 個項目。將項目拖放到這一列即可加入。",
+		"description": "Menu editor help of the 'Submenu' field"
+	},
+	"menusRemoveButton": {
+		"message": "從這個選單移除",
+		"description": "Menu editor button: 'Remove from this menu'"
+	},
+	"menusPageOnly": {
+		"message": "「$1」只存在於網頁內容選單中。",
+		"description": "Menu editor status when an entry is not allowed in a menu"
+	},
+	"menusJsonLabel": {
+		"message": "JSON 格式的選單",
+		"description": "Menu editor section: 'Layout as JSON'"
+	},
+	"menusJsonApplyButton": {
+		"message": "套用",
+		"description": "Menu editor button: 'Apply'"
+	},
+	"menusJsonInvalid": {
+		"message": "無效的 JSON",
+		"description": "Menu editor status: 'Invalid JSON'"
+	},
+	"menusJsonIgnored": {
+		"message": "已套用，但忽略了 $1 個無效項目。",
+		"description": "Menu editor status after applying JSON that contained entries which are not valid (unknown action, wrong shape)"
+	},
+	"menusUnsupportedBadge": {
+		"message": "不支援",
+		"description": "Menu editor badge of the entries the current browser cannot show"
+	},
+	"menusUnsupportedActionHelp": {
+		"message": "這個瀏覽器不支援這個項目，因此不會顯示。",
+		"description": "Menu editor note for an entry the current browser cannot show"
+	},
+	"menusProfileMissingHelp": {
+		"message": "設定檔「$1」已不存在，因此這個項目會使用網頁目前使用的設定檔。",
+		"description": "Menu editor note for an entry bound to a deleted profile"
+	},
+	"menusEmptySubmenuHelp": {
+		"message": "這個子選單沒有可見的項目，因此不會顯示。",
+		"description": "Menu editor note for a submenu whose entries are all skipped"
+	},
+	"menusResetButton": {
+		"message": "還原預設值",
+		"description": "Menu editor button: 'Reset to default'"
+	},
+	"menusResetConfirm": {
+		"message": "要還原預設選單嗎？",
+		"description": "Menu editor confirmation before restoring the default menus"
+	},
+	"menusSaveError": {
+		"message": "無法儲存選單：$1",
+		"description": "Menu editor status when saving the layout fails (for example the sync storage quota)"
+	},
+	"menusUnsupported": {
+		"message": "這個瀏覽器不支援擴充功能選單，因此這裡沒有可自訂的內容。",
+		"description": "Menu editor message shown instead of the editor when the browser has no menus API (for example on Android)"
+	},
+	"menusProfilesBadge": {
+		"message": "需 2 個以上設定檔",
+		"description": "Menu editor badge of the entries that only appear when more than one profile exists"
+	},
+	"menusProfilesHelp": {
+		"message": "這個項目只有在你有多個設定檔時才會顯示。",
+		"description": "Menu editor note for the entries that only appear when more than one profile exists"
+	},
+	"menusContextHelp": {
+		"message": "這個項目不會在所選的情境（$1）中顯示。",
+		"description": "Menu editor note for an entry whose contexts exclude the context selected above the list"
+	}
+}
