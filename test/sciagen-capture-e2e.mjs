@@ -78,6 +78,8 @@ writeFileSync(join(userDataDir, "Default", "Preferences"), JSON.stringify({ down
 const chrome = spawn(CHROME_PATH, ["--headless=new", "--remote-debugging-port=" + DEBUG_PORT, "--user-data-dir=" + userDataDir,
 	"--load-extension=" + EXTENSION_PATH, "--disable-extensions-except=" + EXTENSION_PATH, "--no-first-run", "--enable-logging=stderr", "about:blank"], { stdio: ["ignore", "ignore", process.env.SF_DEBUG ? "inherit" : "ignore"] });
 let failures = 0;
+const workerLogs = [];
+let debugWorkerSessionId;
 try {
 	const extensionId = await waitFor(async () => {
 		const target = (await getTargets()).find(target => target.type == "service_worker" && target.url.startsWith("chrome-extension://"));
@@ -134,10 +136,19 @@ try {
 		await waitFor(() => pageRequestCount, "test page opened");
 		const workerTarget = (await getTargets()).find(target => target.type == "service_worker" && target.url.includes(extensionId));
 		const { sessionId: workerSessionId } = await cdp.Target.attachToTarget({ targetId: workerTarget.id, flatten: true });
-		await waitFor(async () => (await cdp.Runtime.evaluate({
-			expression: "chrome.tabs.query({}).then(tabs => tabs.filter(tab => tab.url == " + JSON.stringify(pageURL) + ").sort((tab1, tab2) => tab2.id - tab1.id)[0]).then(tab => tab && tab.status == 'complete' && tab).then(tab => tab && (chrome.action.onClicked.dispatch(tab), true))",
+		debugWorkerSessionId = workerSessionId;
+		// background errors are printed if the toolbar save fails
+		cdp.Runtime.addEventListener("consoleAPICalled", ({ params }) => params.sessionId == workerSessionId && ["error", "warning", "log"].includes(params.type) && workerLogs.push(params.type + " " + params.args.map(arg => arg.value || arg.description).join(" ")));
+		cdp.Runtime.addEventListener("exceptionThrown", ({ params }) => params.sessionId == workerSessionId && workerLogs.push("exception " + (params.exceptionDetails.exception || {}).description));
+		await cdp.Runtime.enable(null, workerSessionId);
+		const tabId = await waitFor(async () => (await cdp.Runtime.evaluate({
+			expression: "chrome.tabs.query({}).then(tabs => tabs.filter(tab => tab.url == " + JSON.stringify(pageURL) + ").sort((tab1, tab2) => tab2.id - tab1.id)[0]).then(tab => tab && tab.status == 'complete' && tab.id)",
 			awaitPromise: true, returnByValue: true
-		}, workerSessionId)).result.value, "toolbar click dispatched");
+		}, workerSessionId)).result.value, "test page loaded");
+		// the extension re-initialises a tab ~1.5s after it loads and drops saves still queued for it,
+		// so click like a person would, not in the same millisecond the page finishes loading
+		await new Promise(resolve => setTimeout(resolve, 2500));
+		await cdp.Runtime.evaluate({ expression: "chrome.tabs.get(" + tabId + ").then(tab => chrome.action.onClicked.dispatch(tab))", awaitPromise: true }, workerSessionId);
 		const toolbarSavedPath = await waitFor(() => {
 			const filename = readdirSync(downloadDir).find(filename => filename.endsWith(".html") && !previousFilenames.includes(filename));
 			return filename && join(downloadDir, filename);
@@ -151,8 +162,11 @@ try {
 } catch (error) {
 	failures++;
 	console.error("FATAL", error);
-	if (process.env.SF_DEBUG) {
-		console.error("downloads:", readdirSync(downloadDir));
+	console.error("downloads:", readdirSync(downloadDir));
+	console.error("background logs:", workerLogs);
+	if (debugWorkerSessionId) {
+		const { result } = await cdp.Runtime.evaluate({ expression: "chrome.tabs.query({}).then(tabs => Promise.all(tabs.map(async tab => [tab.id, tab.url.slice(0, 40), tab.status, await chrome.action.getBadgeText({ tabId: tab.id }), await chrome.action.getTitle({ tabId: tab.id })]))).then(JSON.stringify)", awaitPromise: true }, debugWorkerSessionId).catch(error => ({ result: { value: error.message } }));
+		console.error("tabs/badges:", result.value);
 	}
 } finally {
 	chrome.kill();

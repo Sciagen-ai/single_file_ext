@@ -74,8 +74,6 @@
 					<li>You can customize the entries of the menus and their order in the "Menus" section of the
 						options page.</li>
 					<li>Right-click on the Sciagen button and select "Options" to open the options page.</li>
-					<li id="saveToGDriveHint">Enable the option "Destination &gt; upload to Google Drive" to upload
-						pages to Google Drive</li>
 					<li id="shortcutsSection">You can use the customizable shortcut Ctrl+Shift+Y to save the current tab
 						or the highlighted tabs. Note that if text is selected in the page, this shortcut saves only
 						the selected content instead of the entire page.
@@ -606,14 +604,6 @@
 							<code>Authorization: Bearer &lt;token&gt;</code> header with each request.
 						</p>
 					</li>
-					<li data-options-label="saveToGDriveLabel" id="saveToGDriveOption"> <span class="option">Option:
-							upload to Google Drive</span>
-						<p>Check this option to save the page on Google Drive.</p>
-						<p>The permissions requested by Sciagen allow it to access only to the files and folders it
-							has created. When you uncheck this option, Sciagen revokes automatically its access to
-							your Google Drive account.</p>
-						<p class="notice">It is recommended to <u>uncheck</u> this option</p>
-					</li>
 					<li data-options-label="saveToS3Label" id="saveToS3Option"> <span class="option">Option: upload to
 							Amazon S3</span>
 						<p>Check this option to save the page on Amazon S3. You must configure the bucket policy to
@@ -638,13 +628,6 @@
 					</li>
 					<li data-options-label="S3SecretKeyLabel"> <span class="option">Option: secret key</span>
 						<p>Enter your secret key on Amazon S3.</p>
-					</li>
-					<li data-options-label="saveToDropboxLabel" id="saveToDropboxOption"> <span class="option">Option:
-							upload to Dropbox</span>
-						<p>Check this option to save the page on Dropbox.</p>
-						<p>The permissions requested by Sciagen allow it to access only to the files and folders it
-							has created.</p>
-						<p class="notice">It is recommended to <u>uncheck</u> this option</p>
 					</li>
 					<li data-options-label="saveWithCompanionLabel" id="saveWithCompanionOption"> <span
 							class="option">Option: save with

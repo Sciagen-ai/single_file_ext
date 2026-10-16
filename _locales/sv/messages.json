@@ -813,14 +813,6 @@
 		"message": "åtkomsttoken",
 		"description": "Options page label: 'access token'"
 	},
-	"optionSaveToGDrive": {
-		"message": "ladda upp till Google Drive",
-		"description": "Options page label: 'upload to Google Drive'"
-	},
-	"optionSaveToDropbox": {
-		"message": "ladda upp till Dropbox",
-		"description": "Options page label: 'upload to Dropbox'"
-	},
 	"optionSaveToGitHub": {
 		"message": "ladda upp till GitHub",
 		"description": "Options page label: 'upload to GitHub'"

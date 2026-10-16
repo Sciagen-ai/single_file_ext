@@ -200,8 +200,6 @@ async function captureTab(tab, options = {}) {
 		openSavedPage: false,
 		backgroundSave: false,
 		saveToClipboard: false,
-		saveToGDrive: false,
-		saveToDropbox: false,
 		saveWithWebDAV: false,
 		saveWithMCP: false,
 		saveToGitHub: false,

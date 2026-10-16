@@ -131,12 +131,6 @@
 			"use_dynamic_url": true
 		}
 	],
-	"oauth2": {
-		"client_id": "207618107333-7tjs1im1pighftpoepea2kvkubnfjj44.apps.googleusercontent.com",
-		"scopes": [
-			"https://www.googleapis.com/auth/drive.file"
-		]
-	},
 	"permissions": [
 		"contextMenus",
 		"downloads",
@@ -149,7 +143,6 @@
 		"declarativeNetRequest"
 	],
 	"optional_permissions": [
-		"identity",
 		"clipboardWrite",
 		"nativeMessaging",
 		"bookmarks"

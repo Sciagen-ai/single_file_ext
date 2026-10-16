@@ -157,25 +157,13 @@ async function saveContent(message, tab) {
 			} else {
 				pageData = await offscreen.processPage(options);
 				let skipped;
-				if (!options.saveToGDrive && !options.saveWithWebDAV && !options.saveWithMCP && !options.saveToGitHub && !options.saveToDropbox && !options.saveWithCompanion && !options.saveToRestFormApi && !options.saveToS3) {
+				if (!options.saveWithWebDAV && !options.saveWithMCP && !options.saveToGitHub && !options.saveWithCompanion && !options.saveToRestFormApi && !options.saveToS3) {
 					const testSkip = await downloads.testSkipSave(pageData.filename, options);
 					skipped = testSkip.skipped;
 					options.filenameConflictAction = testSkip.filenameConflictAction;
 				}
 				if (!skipped) {
-					if (options.saveToGDrive) {
-						const content = await (await fetch(pageData.url)).blob();
-						await downloads.saveToGDrive(message.taskId, downloads.encodeSharpCharacter(pageData.filename), content, {
-							forceWebAuthFlow: options.forceWebAuthFlow
-						}, {
-							filenameConflictAction: options.filenameConflictAction
-						});
-					} else if (options.saveToDropbox) {
-						const content = await (await fetch(pageData.url)).blob();
-						await downloads.saveToDropbox(message.taskId, downloads.encodeSharpCharacter(pageData.filename), content, {
-							filenameConflictAction: options.filenameConflictAction
-						});
-					} else if (options.saveWithWebDAV) {
+					if (options.saveWithWebDAV) {
 						const content = await (await fetch(pageData.url)).blob();
 						await downloads.saveWithWebDAV(message.taskId, downloads.encodeSharpCharacter(pageData.filename), content, options.webDAVURL, options.webDAVUser, options.webDAVPassword, {
 							filenameConflictAction: options.filenameConflictAction

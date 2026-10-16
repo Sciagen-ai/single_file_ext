@@ -84,24 +84,6 @@ if (typeof globalThis == "undefined") {
 			getUILanguage: () => nativeAPI.i18n.getUILanguage(),
 			getMessage: (messageName, substitutions) => nativeAPI.i18n.getMessage(messageName, substitutions)
 		},
-		identity: {
-			// "identity" is an optional permission, so nativeAPI.identity is undefined
-			// until it is granted. The getters below allow callers to feature-detect it
-			// instead of throwing a TypeError when the permission is missing.
-			getRedirectURL: () => nativeAPI.identity.getRedirectURL(),
-			get getAuthToken() {
-				return nativeAPI.identity && nativeAPI.identity.getAuthToken &&
-					(details => nativeAPI.identity.getAuthToken(details));
-			},
-			get launchWebAuthFlow() {
-				return nativeAPI.identity && nativeAPI.identity.launchWebAuthFlow &&
-					(details => nativeAPI.identity.launchWebAuthFlow(details));
-			},
-			get removeCachedAuthToken() {
-				return nativeAPI.identity && nativeAPI.identity.removeCachedAuthToken &&
-					(details => nativeAPI.identity.removeCachedAuthToken(details));
-			}
-		},
 		contextMenus: nativeAPI.contextMenus && {
 			onClicked: {
 				addListener: listener => nativeAPI.contextMenus.onClicked.addListener(listener)

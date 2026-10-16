@@ -68,8 +68,6 @@ async function downloadPage(pageData, options) {
 		filename: pageData.filename,
 		mimeType: pageData.mimeType,
 		saveToClipboard: options.saveToClipboard,
-		saveToGDrive: options.saveToGDrive,
-		saveToDropbox: options.saveToDropbox,
 		saveWithWebDAV: options.saveWithWebDAV,
 		webDAVURL: options.webDAVURL,
 		webDAVUser: options.webDAVUser,
@@ -83,7 +81,6 @@ async function downloadPage(pageData, options) {
 		githubRepository: options.githubRepository,
 		githubBranch: options.githubBranch,
 		saveWithCompanion: options.saveWithCompanion,
-		forceWebAuthFlow: options.forceWebAuthFlow,
 		filenameReplacementCharacter: options.filenameReplacementCharacter,
 		filenameReplacedCharacters: options.filenameReplacedCharacters,
 		filenameReplacementCharacters: options.filenameReplacementCharacters,
@@ -137,7 +134,7 @@ async function downloadPage(pageData, options) {
 		browser.runtime.sendMessage({ method: "ping" }).then(() => { });
 	}, 15000);
 	if (options.compressContent) {
-		if ((!options.backgroundSave || options.saveToGDrive || options.saveToGitHub || options.saveWithCompanion || options.saveWithWebDAV || options.saveWithMCP || options.saveToDropbox || options.saveToRestFormApi || options.saveToS3) && options.confirmFilename && !options.openEditor) {
+		if ((!options.backgroundSave || options.saveToGitHub || options.saveWithCompanion || options.saveWithWebDAV || options.saveWithMCP || options.saveToRestFormApi || options.saveToS3) && options.confirmFilename && !options.openEditor) {
 			pageData.filename = ui.prompt("Save as", pageData.filename);
 		}
 		if (pageData.filename) {
@@ -176,9 +173,9 @@ async function downloadPage(pageData, options) {
 			browser.runtime.sendMessage({ method: "ui.processCancelled" });
 		}
 	} else {
-		if ((options.backgroundSave && !options.sharePage) || options.openEditor || options.saveToGDrive || options.saveToGitHub || options.saveWithCompanion || options.saveWithWebDAV || options.saveWithMCP || options.saveToDropbox || options.saveToRestFormApi || options.saveToS3) {
+		if ((options.backgroundSave && !options.sharePage) || options.openEditor || options.saveToGitHub || options.saveWithCompanion || options.saveWithWebDAV || options.saveWithMCP || options.saveToRestFormApi || options.saveToS3) {
 			let filename = pageData.filename;
-			if ((options.saveToGDrive || options.saveToGitHub || options.saveWithCompanion || options.saveWithWebDAV || options.saveWithMCP || options.saveToDropbox || options.saveToRestFormApi || options.saveToS3) && options.confirmFilename && !options.openEditor) {
+			if ((options.saveToGitHub || options.saveWithCompanion || options.saveWithWebDAV || options.saveWithMCP || options.saveToRestFormApi || options.saveToS3) && options.confirmFilename && !options.openEditor) {
 				filename = ui.prompt("Save as", pageData.filename);
 			}
 			if (filename) {

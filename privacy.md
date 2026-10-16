@@ -3,8 +3,6 @@ Your data always belongs to you, and only you. SingleFile does not collect any d
 
 ## How your data is protected and used
 - By default, SingleFile does not send any data to our servers or any third parties. All your data is processed and stored locally on your device. 
-- If you connect SingleFile to your Google Drive account, data is only transmitted from your browser to servers belonging to Google. 
-- If you connect SingleFile to your Dropbox account, data is only transmitted from your browser to servers belonging to Dropbox. 
 - If you save pages on GitHub, data is only transmitted from your browser to servers belonging to GitHub. 
 - If you save pages with WebDAV, on Amazon S3 or with a REST form API, data is only transmitted from your browser to the server you configured. 
 - If you enable the "synchronize options" setting, your options will be sent to servers belonging to the vendor of the browser you are using. 

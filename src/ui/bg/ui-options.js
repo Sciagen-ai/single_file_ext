@@ -82,8 +82,6 @@ const saveToFilesystemLabel = document.getElementById("saveToFilesystemLabel");
 const sharePageLabel = document.getElementById("sharePageLabel");
 const addProofLabel = document.getElementById("addProofLabel");
 const woleetKeyLabel = document.getElementById("woleetKeyLabel");
-const saveToGDriveLabel = document.getElementById("saveToGDriveLabel");
-const saveToDropboxLabel = document.getElementById("saveToDropboxLabel");
 const saveWithWebDAVLabel = document.getElementById("saveWithWebDAVLabel");
 const webDAVURLLabel = document.getElementById("webDAVURLLabel");
 const webDAVUserLabel = document.getElementById("webDAVUserLabel");
@@ -266,8 +264,6 @@ const insertCanonicalLinkInput = document.getElementById("insertCanonicalLinkInp
 const saveToClipboardInput = document.getElementById("saveToClipboardInput");
 const addProofInput = document.getElementById("addProofInput");
 const woleetKeyInput = document.getElementById("woleetKeyInput");
-const saveToGDriveInput = document.getElementById("saveToGDriveInput");
-const saveToDropboxInput = document.getElementById("saveToDropboxInput");
 const saveWithWebDAVInput = document.getElementById("saveWithWebDAVInput");
 const webDAVURLInput = document.getElementById("webDAVURLInput");
 const webDAVUserInput = document.getElementById("webDAVUserInput");
@@ -404,8 +400,6 @@ const cancelButton = document.getElementById("cancelButton");
 const promptInput = document.getElementById("promptInput");
 const promptCancelButton = document.getElementById("promptCancelButton");
 const promptConfirmButton = document.getElementById("promptConfirmButton");
-const manifest = browser.runtime.getManifest();
-const requestPermissionIdentity = manifest.optional_permissions && manifest.optional_permissions.includes("identity");
 const saveToRestFormApiLabel = document.getElementById("saveToRestFormApiLabel");
 const saveToRestFormApiUrlLabel = document.getElementById("saveToRestFormApiUrlLabel");
 const saveToRestFormApiFileFieldNameLabel = document.getElementById("saveToRestFormApiFileFieldNameLabel");
@@ -585,9 +579,6 @@ importButton.addEventListener("click", () => {
 			const config = JSON.parse(await getText(fileInput.files[0]));
 			Object.keys(config.profiles).forEach(profileName => {
 				const profile = config.profiles[profileName];
-				if (profile.saveToGDrive && !profile.forceWebAuthFlow) {
-					profile.saveToGDrive = false;
-				}
 				profile.saveToClipboard = false;
 				profile.saveWithCompanion = false;
 				profile.saveCreatedBookmarks = false;
@@ -629,8 +620,6 @@ expandAllButton.addEventListener("click", () => {
 saveToFilesystemInput.addEventListener("click", () => disableDestinationPermissions(["clipboardWrite", "nativeMessaging"]), false);
 saveToClipboardInput.addEventListener("click", () => disableDestinationPermissions(["nativeMessaging"]), false);
 saveWithCompanionInput.addEventListener("click", () => disableDestinationPermissions(["clipboardWrite"]), false);
-saveToGDriveInput.addEventListener("click", () => disableDestinationPermissions(["clipboardWrite", "nativeMessaging"], false), false);
-saveToDropboxInput.addEventListener("click", () => disableDestinationPermissions(["clipboardWrite", "nativeMessaging"], true, false), false);
 saveWithWebDAVInput.addEventListener("click", () => disableDestinationPermissions(["clipboardWrite", "nativeMessaging"]), false);
 saveWithMCPInput.addEventListener("click", () => disableDestinationPermissions(["clipboardWrite", "nativeMessaging"]), false);
 saveToRestFormApiInput.addEventListener("click", () => disableDestinationPermissions(["clipboardWrite", "nativeMessaging"]), false);
@@ -639,8 +628,6 @@ saveCreatedBookmarksInput.addEventListener("click", saveCreatedBookmarks, false)
 autoSaveExternalSaveInput.addEventListener("click", () => enableExternalSave(autoSaveExternalSaveInput), false);
 saveWithCompanionInput.addEventListener("click", () => enableExternalSave(saveWithCompanionInput), false);
 saveToClipboardInput.addEventListener("click", onClickSaveToClipboard, false);
-saveToGDriveInput.addEventListener("click", onClickSaveToGDrive, false);
-saveToDropboxInput.addEventListener("click", onClickSaveToDropbox, false);
 addProofInput.addEventListener("click", async event => {
 	if (addProofInput.checked) {
 		addProofInput.checked = false;
@@ -782,8 +769,6 @@ saveToFilesystemLabel.textContent = browser.i18n.getMessage("optionSaveToFilesys
 sharePageLabel.textContent = browser.i18n.getMessage("optionSharePage");
 addProofLabel.textContent = browser.i18n.getMessage("optionAddProof");
 woleetKeyLabel.textContent = browser.i18n.getMessage("optionWoleetKey");
-saveToGDriveLabel.textContent = browser.i18n.getMessage("optionSaveToGDrive");
-saveToDropboxLabel.textContent = browser.i18n.getMessage("optionSaveToDropbox");
 saveWithWebDAVLabel.textContent = browser.i18n.getMessage("optionSaveWithWebDAV");
 webDAVURLLabel.textContent = browser.i18n.getMessage("optionWebDAVURL");
 webDAVUserLabel.textContent = browser.i18n.getMessage("optionWebDAVUser");
@@ -1117,8 +1102,6 @@ async function refresh(profileName) {
 	addProofInput.checked = profileOptions.addProof;
 	woleetKeyInput.value = profileOptions.woleetKey;
 	woleetKeyInput.disabled = !profileOptions.addProof;
-	saveToGDriveInput.checked = profileOptions.saveToGDrive;
-	saveToDropboxInput.checked = profileOptions.saveToDropbox;
 	saveWithWebDAVInput.checked = profileOptions.saveWithWebDAV;
 	webDAVURLInput.value = profileOptions.webDAVURL;
 	webDAVURLInput.disabled = !profileOptions.saveWithWebDAV;
@@ -1162,7 +1145,7 @@ async function refresh(profileName) {
 	S3SecretKeyInput.value = profileOptions.S3SecretKey;
 	S3SecretKeyInput.disabled = !profileOptions.saveToS3;
 	sharePageInput.checked = profileOptions.sharePage;
-	saveToFilesystemInput.checked = !profileOptions.saveToGDrive && !profileOptions.saveToGitHub && !profileOptions.saveToS3 && !profileOptions.saveWithCompanion && !profileOptions.saveToClipboard && !profileOptions.saveWithWebDAV && !profileOptions.saveWithMCP && !profileOptions.saveToDropbox && !profileOptions.saveToRestFormApi && !profileOptions.sharePage;
+	saveToFilesystemInput.checked = !profileOptions.saveToGitHub && !profileOptions.saveToS3 && !profileOptions.saveWithCompanion && !profileOptions.saveToClipboard && !profileOptions.saveWithWebDAV && !profileOptions.saveWithMCP && !profileOptions.saveToRestFormApi && !profileOptions.sharePage;
 	compressHTMLInput.checked = profileOptions.compressHTML;
 	groupDuplicateStylesheetsInput.checked = profileOptions.groupDuplicateStylesheets;
 	moveStylesInHeadInput.checked = profileOptions.moveStylesInHead;
@@ -1387,8 +1370,6 @@ async function update() {
 			saveToClipboard: saveToClipboardInput.checked,
 			addProof: addProofInput.checked,
 			woleetKey: woleetKeyInput.value,
-			saveToGDrive: saveToGDriveInput.checked,
-			saveToDropbox: saveToDropboxInput.checked,
 			saveWithWebDAV: saveWithWebDAVInput.checked,
 			webDAVURL: webDAVURLInput.value,
 			webDAVUser: webDAVUserInput.value,
@@ -1555,7 +1536,6 @@ async function onClickSaveToClipboard() {
 			const permissionGranted = await browser.permissions.request({ permissions: ["clipboardWrite"] });
 			if (permissionGranted) {
 				saveToClipboardInput.checked = true;
-				await browser.runtime.sendMessage({ method: "downloads.disableGDrive" });
 			}
 			// eslint-disable-next-line no-unused-vars
 		} catch (error) {
@@ -1668,57 +1648,7 @@ function parseExtensionEntries(value) {
 	return entries;
 }
 
-async function onClickSaveToGDrive() {
-	if (saveToGDriveInput.checked) {
-		saveToGDriveInput.checked = false;
-		try {
-			if (requestPermissionIdentity) {
-				const permissionGranted = await browser.permissions.request({ permissions: ["identity"] });
-				if (permissionGranted) {
-					saveToGDriveInput.checked = true;
-				}
-			} else {
-				saveToGDriveInput.checked = true;
-			}
-			// eslint-disable-next-line no-unused-vars
-		} catch (error) {
-			saveToGDriveInput.checked = false;
-			await browser.runtime.sendMessage({ method: "downloads.disableGDrive" });
-		}
-	}
-	await update();
-	await refresh();
-}
-
-async function onClickSaveToDropbox() {
-	if (saveToDropboxInput.checked) {
-		saveToDropboxInput.checked = false;
-		try {
-			if (requestPermissionIdentity) {
-				const permissionGranted = await browser.permissions.request({ permissions: ["identity"] });
-				if (permissionGranted) {
-					saveToDropboxInput.checked = true;
-				}
-			} else {
-				saveToDropboxInput.checked = true;
-			}
-			// eslint-disable-next-line no-unused-vars
-		} catch (error) {
-			saveToDropboxInput.checked = false;
-			await browser.runtime.sendMessage({ method: "downloads.disableDropbox" });
-		}
-	}
-	await update();
-	await refresh();
-}
-
-async function disableDestinationPermissions(permissions, disableGDrive = true, disableDropbox = true) {
-	if (disableGDrive) {
-		await browser.runtime.sendMessage({ method: "downloads.disableGDrive" });
-	}
-	if (disableDropbox) {
-		await browser.runtime.sendMessage({ method: "downloads.disableDropbox" });
-	}
+async function disableDestinationPermissions(permissions) {
 	try {
 		await browser.permissions.remove({ permissions });
 		// eslint-disable-next-line no-unused-vars

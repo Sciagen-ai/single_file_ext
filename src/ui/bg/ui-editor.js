@@ -311,6 +311,10 @@ let updatedResources = {};
 
 addEventListener("resize", viewportSizeChange);
 addEventListener("message", async event => {
+	// only the editor iframe may drive the editor (not frames nested in the page being edited)
+	if (event.source != editorElement.contentWindow) {
+		return;
+	}
 	const message = JSON.parse(event.data);
 	if (message.method == "setContent") {
 		tabData.options.openEditor = false;

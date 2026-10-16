@@ -21,61 +21,13 @@
  *   Source.
  */
 
-/* global browser, URLSearchParams, URL */
+/* global browser */
 
 export {
-	queryTabs,
-	extractAuthCode,
-	launchWebAuthFlow
+	queryTabs
 };
 
 async function queryTabs(options) {
 	const tabs = await browser.tabs.query(options);
 	return tabs.sort((tab1, tab2) => tab1.index - tab2.index);
-}
-
-function extractAuthCode(authURL, authFlow = {}) {
-	return new Promise((resolve, reject) => {
-		let listenerRemoved;
-		browser.tabs.onUpdated.addListener(onTabUpdated);
-		authFlow.cancel = removeListener;
-
-		function onTabUpdated(tabId, changeInfo) {
-			if (!listenerRemoved && changeInfo && changeInfo.url && changeInfo.url.startsWith(authURL)) {
-				if (authFlow.tabId === undefined || tabId != authFlow.tabId) {
-					return;
-				}
-				removeListener();
-				const searchParams = new URLSearchParams(new URL(changeInfo.url).search);
-				const code = searchParams.get("code");
-				if (code && searchParams.get("state") == authFlow.state) {
-					browser.tabs.remove(tabId);
-					resolve(code);
-				} else {
-					reject(new Error("invalid_auth_response"));
-				}
-			}
-		}
-
-		function removeListener() {
-			if (!listenerRemoved) {
-				listenerRemoved = true;
-				browser.tabs.onUpdated.removeListener(onTabUpdated);
-			}
-		}
-	});
-}
-
-async function launchWebAuthFlow(options, authFlow = {}) {
-	const tab = await browser.tabs.create({ url: options.url, active: true });
-	authFlow.tabId = tab.id;
-	return new Promise((resolve, reject) => {
-		browser.tabs.onRemoved.addListener(onTabRemoved);
-		function onTabRemoved(tabId) {
-			if (tabId == tab.id) {
-				browser.tabs.onRemoved.removeListener(onTabRemoved);
-				reject(new Error("code_required"));
-			}
-		}
-	});
 }

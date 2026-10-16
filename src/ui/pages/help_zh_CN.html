@@ -56,7 +56,6 @@
                     <li>从上下文菜单中选择“保存选择”，而不首先选择任何内容，以显示一个选择器，该选择器将通过用鼠标悬停在内容上来帮助您选择内容。</li>
                     <li>您可以在选项页面的“菜单”部分自定义菜单中显示的条目及其顺序。</li>
                     <li>右键单击Sciagen按钮，选择“选项”打开选项页面。</li>
-                    <li id="saveToGDriveHint">启用“目的地&gt;上传到Google Drive”选项，将页面上传到Google云端硬盘</li>
                     <li id="shortcutsSection">
                         您可以使用可自定义的快捷键Ctrl+Shift+Y保存当前选项卡或所选选项卡。转到about:addons，在齿轮菜单中选择“管理扩展快捷方式”，在Firefox中更改它。首选chrome://extensions/shortcuts在Chrome中更改它。。
                     </li>
@@ -392,12 +391,6 @@
                         <p>如果 MCP 服务器需要认证，Sciagen 会在每个请求中通过 <code>Authorization: Bearer &lt;token&gt;</code>
                             请求头发送该令牌。</p>
                     </li>
-                    <li data-options-label="saveToGDriveLabel" id="saveToGDriveOption"><span
-                            class="option">选项：上传到谷歌云端硬盘</span>
-                        <p>选中此选项可将页面保存在Google云端硬盘上。</p>
-                        <p>Sciagen请求的权限只允许它访问它创建的文件和文件夹。当您取消选中此选项时，Sciagen会自动撤销其对您的Google Drive帐户的访问权限。</p>
-                        <p class="notice">建议<u>取消选中</u>此选项</p>
-                    </li>
                     <li data-options-label="saveToS3Label" id="saveToS3Option"><span class="option">选项：上传到亚马逊S3</span>
                         <p>选中此选项可将页面保存在Amazon
                             S3上。您必须配置bucket策略以包含权限<code>s3:PutObject</code>，以及<code>s3:HeadObject</code>或<code>s3:ListObjects</code>，或<code>s3:GetObject</code>如果您不想在文件名冲突时覆盖或跳过现有文件。
@@ -418,12 +411,6 @@
                     </li>
                     <li data-options-label="S3SecretKeyLabel"><span class="option">选项：密钥</span>
                         <p>在Amazon S3上输入您的密钥。</p>
-                    </li>
-                    <li data-options-label="saveToDropboxLabel" id="saveToDropboxOption"><span
-                            class="option">选项：上传到Dropbox</span>
-                        <p>选中此选项可将页面保存在Dropbox上。</p>
-                        <p>Sciagen请求的权限只允许它访问它创建的文件和文件夹。</p>
-                        <p class="notice">建议<u>取消选中</u>此选项</p>
                     </li>
                     <li data-options-label="saveWithCompanionLabel" id="saveWithCompanionOption"><span
                             class="option">选项：使用Sciagen Companion保存</span>

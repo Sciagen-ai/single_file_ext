@@ -7,16 +7,17 @@ import { createServer } from "node:http";
 import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { homedir, tmpdir } from "node:os";
 import { basename, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { cdp, getTargets, options } from "simple-cdp";
 
-const EXTENSION_PATH = process.env.SF_EXTENSION_PATH || resolve(new URL("..", import.meta.url).pathname);
+const EXTENSION_PATH = process.env.SF_EXTENSION_PATH || resolve(fileURLToPath(new URL("..", import.meta.url)));
 const SERVICE_WORKER_PATH = "/" + JSON.parse(readFileSync(join(EXTENSION_PATH, "manifest.json"), "utf8")).background.service_worker;
-const FIXTURES_PATH = new URL("../node_modules/single-file-core/test/fixtures/", import.meta.url).pathname;
+const FIXTURES_PATH = fileURLToPath(new URL("../node_modules/single-file-core/test/fixtures/", import.meta.url));
 const FIXTURE_PATH = process.env.SF_FIXTURE_PATH || join(FIXTURES_PATH, "multi-page.zip.html");
 const SINGLE_PAGE_FIXTURE_PATH = process.env.SF_SINGLE_PAGE_FIXTURE_PATH || join(FIXTURES_PATH, "single-page.zip.html");
 const DEDUP_FIXTURE_PATH = process.env.SF_DEDUP_FIXTURE_PATH || join(FIXTURES_PATH, "multi-page-dedup.zip.html");
 const DIGEST_FIXTURE_PATH = process.env.SF_DIGEST_FIXTURE_PATH || join(FIXTURES_PATH, "classic-digest.html");
-const NESTING_FIXTURE_PATH = new URL("fixtures/nesting.zip.html", import.meta.url).pathname;
+const NESTING_FIXTURE_PATH = fileURLToPath(new URL("fixtures/nesting.zip.html", import.meta.url));
 const ZIP_MODULE_URL = new URL("../node_modules/single-file-core/vendor/zip/zip.js", import.meta.url).href;
 const FILENAME_CAPTURE_SCRIPT = "(() => {" +
 	"if (!window.__sendMessagePatched) {" +
@@ -53,7 +54,7 @@ function findChrome() {
 	if (process.env.SF_CHROME_PATH) {
 		return process.env.SF_CHROME_PATH;
 	}
-	const roots = [new URL(".browser", import.meta.url).pathname, join(homedir(), ".cache", "puppeteer", "chrome")];
+	const roots = [fileURLToPath(new URL(".browser", import.meta.url)), join(homedir(), ".cache", "puppeteer", "chrome")];
 	for (const root of roots) {
 		const executablePath = findChromeExecutable(root, 0);
 		if (executablePath) {
