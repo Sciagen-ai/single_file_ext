@@ -9,7 +9,7 @@ import { createServer } from "node:http";
 import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { cdp, getTargets, options } from "simple-cdp";
 
 const EXTENSION_PATH = resolve(fileURLToPath(new URL("..", import.meta.url)));
@@ -26,6 +26,10 @@ const RESOURCES = {
 		"<div id=my-cursor style=position:fixed;pointer-events:none>dot</div>" +
 		"<div class=film data-src=/film.mp4></div><picture><source srcset=/still.webp type=image/webp><img src=/timeline.gif></picture>" +
 		"<model-viewer src=/models/cube.glb></model-viewer><a href=/models/scene.gltf>scene</a>" +
+		// a WebGL scene loaded from ES modules through an import map
+		"<canvas data-engine=\"three.js r165\"></canvas><p id=module-result></p>" +
+		"<script type=importmap>{\"imports\": {\"scene\": \"/modules/scene.js\"}}</script>" +
+		"<script type=module>const { result } = await import(\"scene\"); document.getElementById(\"module-result\").textContent = result + \" \" + location.protocol;</script>" +
 		// stands in for UI another extension injects into every page
 		"<script>const host = document.createElement('div'); document.body.append(host); host.attachShadow({ mode: 'open' }).innerHTML = '<p>EXT_WIDGET' + '_MARKER</p><img src=chrome-extension://abcdefghijklmnopabcdefghijklmnop/favicon.png>';</script></body></html>"],
 	"/anim.gif": ["image/gif", GIF],
@@ -34,6 +38,8 @@ const RESOURCES = {
 	"/still.webp": ["image/webp", Buffer.from("RIFF_WEBP_MARKER")],
 	"/timeline.gif": ["image/gif", Buffer.concat([GIF, Buffer.from("TIMELINE")])],
 	"/sound.wav": ["audio/wav", Buffer.from("AUDIO_MARKER")],
+	"/modules/scene.js": ["text/javascript", "import { part } from \"./part.js\"; export const result = \"MODULE_\" + part;"],
+	"/modules/part.js": ["text/javascript", "export const part = \"OK\";"],
 	"/models/cube.glb": ["model/gltf-binary", Buffer.from("glTF_GLB_MARKER")],
 	"/models/scene.gltf": ["model/gltf+json", Buffer.from("{\"asset\":{\"version\":\"2.0\"}}")]
 };
@@ -95,6 +101,15 @@ try {
 		const ok = !content.includes("EXT_WIDGET_MARKER");
 		failures += ok ? 0 : 1;
 		console.log((ok ? "ok   " : "FAIL ") + "other extensions' UI left out");
+		// open the saved copy from disk: the module must run again offline (protocol switches to file:)
+		const { targetId: savedTargetId } = await cdp.Target.createTarget({ url: pathToFileURL(savedPath).href });
+		const { sessionId: savedSessionId } = await cdp.Target.attachToTarget({ targetId: savedTargetId, flatten: true });
+		const moduleResult = await waitFor(async () => (await cdp.Runtime.evaluate({ expression: "(document.getElementById('module-result') || {}).textContent == 'MODULE_OK file:' || undefined" }, savedSessionId)).result.value, "saved page runs its ES modules", 15000).catch(() => false);
+		const canvasResult = (await cdp.Runtime.evaluate({ expression: "getComputedStyle(document.querySelector('canvas[data-engine]')).display" }, savedSessionId)).result.value != "none";
+		for (const [label, passed] of [["saved page runs ES modules from its import map offline", moduleResult], ["WebGL canvas snapshot kept as fallback", canvasResult]]) {
+			failures += passed ? 0 : 1;
+			console.log((passed ? "ok   " : "FAIL ") + label);
+		}
 	}
 	for (const [label, expected] of EXPECTED_CHECKS) {
 		const ok = content.includes(expected);

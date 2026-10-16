@@ -300,6 +300,7 @@ async function capturePage(message) {
 
 async function processPage(options) {
 	const restoreFiles = await embedLinkedFiles(options);
+	const restoreModules = await embedModules(options);
 	const restoreCursors = options.removeCustomCursors && markCursorElements();
 	const restoreExtensionElements = markExtensionElements();
 	options.removedElementsSelector = [options.removedElementsSelector, "[" + EXTENSION_ELEMENT_ATTRIBUTE_NAME + "]"].filter(Boolean).join(",");
@@ -312,16 +313,141 @@ async function processPage(options) {
 		if (options.removeCustomCursors && page && typeof page.content == "string") {
 			page.content = page.content.replace(/<body|$/i, CUSTOM_CURSOR_RESET_STYLE + "$&");
 		}
+		if (restoreModules && page && typeof page.content == "string") {
+			page.content = page.content.replace(/<body|$/i, LIVE_CANVAS_STYLE + "$&");
+		}
 		return page;
 	} finally {
 		if (restoreFiles) {
 			restoreFiles();
+		}
+		if (restoreModules) {
+			restoreModules();
 		}
 		if (restoreCursors) {
 			restoreCursors();
 		}
 		restoreExtensionElements();
 	}
+}
+
+// ES modules (e.g. three.js scenes loaded through an import map from a CDN) are fetched with everything they
+// import and stored in the page's import map as data: URIs, so the scene starts again in the saved page. Relative
+// imports are rewritten to absolute URLs first because a data: module has no base URL to resolve them against.
+// The canvas snapshot SingleFile saves (three.js tags its canvases with data-engine) stays visible until the
+// script appends its live canvas after it.
+// The frozen overlays saved next to it (CSS2D labels, callouts) are hidden too: they sit between the old and new canvas.
+// ponytail: only string-literal imports are followed, specifiers built at runtime are not
+const LIVE_CANVAS_STYLE = "<style>canvas[data-engine]:has(~ canvas[data-engine]),canvas[data-engine]:has(~ canvas[data-engine]) ~ :has(~ canvas[data-engine]){display:none!important}</style>";
+const WEBGL_LIBRARY_REGEXP = /three|babylon|playcanvas|model-viewer|aframe|cesium/i;
+const MODULE_SPECIFIER_REGEXP = /(\b(?:import|export)\s*(?:[\w$*{}\s,]+?\s*from\s*)?|\bimport\s*\(\s*)(["'])([^"'\n]+)\2/g;
+
+async function embedModules(options) {
+	const importMapElement = document.querySelector("script[type=importmap]");
+	const moduleElements = Array.from(document.querySelectorAll("script[type=module]"));
+	// scripts are only turned back on for pages that render WebGL (scenes are often created lazily on scroll)
+	const usesWebGL = document.querySelector("canvas[data-engine]") ||
+		WEBGL_LIBRARY_REGEXP.test((importMapElement ? importMapElement.textContent : "") + moduleElements.map(element => element.getAttribute("src") || "").join(" "));
+	if (!moduleElements.length || (options.blockScripts && !usesWebGL)) {
+		return;
+	}
+	let importMap = { imports: {} };
+	try {
+		importMap = Object.assign(importMap, importMapElement && JSON.parse(importMapElement.textContent));
+		// eslint-disable-next-line no-unused-vars
+	} catch (error) {
+		// invalid import map, ignored
+	}
+	const mappedImports = importMap.imports || {};
+	const resolve = (specifier, baseURL) => {
+		if (mappedImports[specifier]) {
+			return new URL(mappedImports[specifier], document.baseURI).href;
+		}
+		const prefix = Object.keys(mappedImports).filter(key => key.endsWith("/") && specifier.startsWith(key)).sort((key1, key2) => key2.length - key1.length)[0];
+		if (prefix) {
+			return new URL(mappedImports[prefix] + specifier.substring(prefix.length), document.baseURI).href;
+		}
+		if (/^(\.{0,2}\/|[a-z][a-z0-9+.-]*:)/i.test(specifier)) {
+			return new URL(specifier, baseURL).href;
+		}
+	};
+	const newImports = {};
+	const dataURIs = new Map();
+	const pending = [];
+	// a module's data: URI never waits for the modules it imports, so import cycles can't deadlock
+	const embed = url => {
+		if (!dataURIs.has(url)) {
+			const promise = (async () => {
+				const response = await fetch(url, { cache: "no-cache" });
+				if (response.status >= 400) {
+					throw new Error("HTTP " + response.status);
+				}
+				const code = rewriteImports(new globalThis.TextDecoder().decode(await response.arrayBuffer()), url);
+				return readAsDataURL(new globalThis.Blob([code], { type: "text/javascript" }));
+			})();
+			dataURIs.set(url, promise);
+			pending.push(promise.catch(() => { }));
+		}
+		return dataURIs.get(url);
+	};
+	// relative specifiers become absolute so they can be looked up in the import map
+	const rewriteImports = (code, baseURL) => code.replace(MODULE_SPECIFIER_REGEXP, (match, prefix, quote, specifier) => {
+		const url = resolve(specifier, baseURL);
+		if (!url || url.startsWith("data:")) {
+			return match;
+		}
+		const isBare = !/^(\.{0,2}\/|[a-z][a-z0-9+.-]*:)/i.test(specifier);
+		pending.push(embed(url).then(dataURI => {
+			newImports[isBare ? specifier : url] = dataURI;
+			newImports[url] = dataURI;
+		}).catch(() => { }));
+		return isBare ? match : prefix + quote + url + quote;
+	});
+	const restores = [];
+	moduleElements.forEach(element => {
+		const src = element.getAttribute("src");
+		if (src) {
+			const url = new URL(src, document.baseURI).href;
+			pending.push(embed(url).then(dataURI => {
+				element.setAttribute("src", dataURI);
+				restores.push(() => element.setAttribute("src", src));
+			}).catch(() => { }));
+		} else {
+			const code = element.textContent;
+			element.textContent = rewriteImports(code, document.baseURI);
+			restores.push(() => element.textContent = code);
+		}
+	});
+	while (pending.length) {
+		await Promise.all(pending.splice(0));
+	}
+	if (!dataURIs.size) {
+		restores.forEach(restore => restore());
+		return;
+	}
+	const newImportMap = JSON.stringify({ ...importMap, imports: { ...mappedImports, ...newImports } });
+	if (importMapElement) {
+		const importMapText = importMapElement.textContent;
+		importMapElement.textContent = newImportMap;
+		restores.push(() => importMapElement.textContent = importMapText);
+	} else {
+		const newImportMapElement = document.createElement("script");
+		newImportMapElement.type = "importmap";
+		newImportMapElement.textContent = newImportMap;
+		document.head.prepend(newImportMapElement);
+		restores.push(() => newImportMapElement.remove());
+	}
+	options.blockScripts = false;
+	return () => restores.forEach(restore => restore());
+}
+
+function readAsDataURL(blob) {
+	return new Promise((resolve, reject) => {
+		const reader = new globalThis.FileReader();
+		reader.onload = () => resolve(reader.result);
+		reader.onerror = reject;
+		reader.readAsDataURL(blob);
+	});
 }
 
 // UI injected by other browser extensions (quick search bars, bookmark panels, Grammarly-like buttons...)
@@ -410,13 +536,7 @@ async function embedLinkedFiles(options) {
 					}
 					const extension = match[0].match(/\.([a-z0-9]+)(?:[?#]|$)/i)[1].toLowerCase();
 					const contentType = LINKED_FILE_MIME_TYPES[extension] || response.headers.get("content-type") || "application/octet-stream";
-					const blob = new globalThis.Blob([await response.arrayBuffer()], { type: contentType });
-					const dataURI = await new Promise((resolve, reject) => {
-						const reader = new globalThis.FileReader();
-						reader.onload = () => resolve(reader.result);
-						reader.onerror = reject;
-						reader.readAsDataURL(blob);
-					});
+					const dataURI = await readAsDataURL(new globalThis.Blob([await response.arrayBuffer()], { type: contentType }));
 					if (pictureFallback) {
 						const sourceElement = document.createElement("source");
 						sourceElement.setAttribute("srcset", dataURI);

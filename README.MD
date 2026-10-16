@@ -7,6 +7,8 @@ Changes from SingleFile:
 - Embeds videos and audio as data URIs (`blockVideos` / `blockAudios` off), so media from external sources is stored in the HTML file itself.
 - Keeps hidden elements (`removeHiddenElements` off), such as collapsed sections, inactive tabs and hidden panels.
 - Embeds 3D files (`.glb .gltf .obj .stl .fbx .usdz .ply .dae .3mf ...`) referenced from attributes, e.g. `<model-viewer src>`, A-Frame assets, or links. When it finds 3D files it keeps the page scripts so viewers still render offline.
+- Keeps three.js/WebGL scenes interactive: ES modules loaded through an import map (e.g. from a CDN) are stored in the file as data: URIs, and the saved canvas snapshot is shown only until the live scene starts.
+- Leaves out UI injected by other browser extensions (bookmark bars, quick-search panels), recognised by their `chrome-extension://` resources.
 - Embeds video/audio/GIF files that only appear in attributes such as `data-src` (click-to-play players), keeping the page scripts so the player still works offline.
 - Keeps every image variant (`removeAlternativeImages` off); a GIF fallback inside `<picture>` is kept next to the displayed WebP/AVIF.
 - Keeps all CSS and fonts (`removeUnusedStyles` / `removeUnusedFonts` off), so styles for animations, menus and content JS reveals later still apply.
@@ -16,7 +18,7 @@ Changes from SingleFile:
 Build: `npm ci && bash build.sh`, then load this folder via `chrome://extensions` > Developer mode > Load unpacked.
 Check: `npm run install-test-browser && npm run test:sciagen`. Save any page with the extension headlessly: `node test/sciagen-capture-e2e.mjs <url> out.html`.
 
-Known limits: streamed or embedded-player video (YouTube, Google Drive, `blob:`/MSE players), WebGL scenes whose libraries load as ES modules from a CDN (saved as a still image of the canvas) and 3D models loaded only from JavaScript (e.g. three.js loaders with URLs built in code) can't be captured. Very large videos make very large HTML files.
+Known limits: streamed or embedded-player video (YouTube, Google Drive, `blob:`/MSE players), WebGL scenes whose module URLs are built at runtime and 3D models loaded only from JavaScript (e.g. three.js loaders with URLs built in code) can't be captured. Very large videos make very large HTML files.
 
 ---
 
